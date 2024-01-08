@@ -34,6 +34,7 @@ func _physics_process(delta: float) -> void:
 		hit(delta)
 		return
 	
+	
 	character.velocity.y += default_gravity * delta/4
 	hit_velocity_x /= 1.01
 	character.velocity.x = hit_velocity_x
