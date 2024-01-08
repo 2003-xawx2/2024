@@ -1,0 +1,12 @@
+res://world/main_world.tscn
+res://misc/global/transition/transition.gdshader
+res://entity/player/flash.gdshader
+res://entity/player/player.tscn
+res://entity/enemy/pig_enemy/pig_enemy.tscn
+res://misc/global/transition/transition.tscn
+res://entity/player/player.gd
+res://misc/custom_component/state_machine/basic_state.gd
+res://entity/player/player_state/jump.gd
+res://misc/custom_component/state_machine/basic_hit.gd
+res://entity/player/player_state/hit.gd
+res://misc/global/global.gd
