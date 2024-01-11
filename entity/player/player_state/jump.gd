@@ -10,8 +10,8 @@ var temp_jump_frames:int
 
 func initialize()->void:
 	super()
-	animation_player.play("jump")
 	temp_jump_frames = jump_frames
+	animation_player.play("jump")
 
 
 func quit()->void:
@@ -36,8 +36,7 @@ func _process(delta: float) -> void:
 	super(delta)
 	#state change
 	if character.velocity.y>=-1 and state_time>.05:
-		state_factory.change_state("fall")
-
+		change_state("fall")
 
 
 func jump(delta)->void:

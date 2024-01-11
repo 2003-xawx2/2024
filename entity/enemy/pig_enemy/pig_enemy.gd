@@ -32,7 +32,7 @@ func get_attack_vector()->Vector2:
 
 
 func _on_hit_box_be_hit(direction: Vector2) -> void:
-	state_factory.change_state("hit")
+	state_factory.current_state.change_state("hit")
 	hit.hit_direction = direction
 
 

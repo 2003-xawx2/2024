@@ -24,8 +24,8 @@ func _physics_process(delta: float) -> void:
 #state change
 func _process(delta: float) -> void:
 	if detect_player_ray.is_colliding():
-		state_factory.change_state("attack")
+		change_state("attack")
 
 
 func _on_state_change_timer_timeout() -> void:
-	state_factory.change_state("walk")
+	change_state("walk")

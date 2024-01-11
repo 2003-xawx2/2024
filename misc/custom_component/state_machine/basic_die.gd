@@ -10,6 +10,7 @@ func _ready() -> void:
 
 func initialize()->void:
 	super()
+	print_debug("initialize DEAD!")
 	hit_collision.disabled = true
 	set_process(true)
 	set_physics_process(true)

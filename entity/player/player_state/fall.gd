@@ -10,6 +10,18 @@ var is_landing:bool = false
 var is_character_on_floor:=false
 
 
+func _ready() -> void:
+	super()
+	await owner.ready
+	animation_player.animation_finished.connect(func(animation:String):
+		if animation != "land" or !is_work:
+			return
+		if character.get_input_movement()==Vector2.ZERO:
+			change_state("idle")
+		else:
+			change_state("walk"))
+
+
 func initialize()->void:
 	super()
 	is_landing = false
@@ -29,15 +41,6 @@ func quit()->void:
 func _physics_process(delta: float) -> void:
 	var input_vector = character.get_input_movement()
 	move(delta,input_vector)
-	#state change
-	if is_character_on_floor and !is_landing:
-		is_landing = true
-		animation_player.play("land")
-		await animation_player.animation_finished
-		if character.get_input_movement()==Vector2.ZERO:
-			state_factory.change_state("idle")
-		else:
-			state_factory.change_state("walk")
 
 
 func _process(delta: float) -> void:
@@ -46,14 +49,18 @@ func _process(delta: float) -> void:
 	
 	if !pre_input_jump_timer.is_stopped():
 		if is_character_on_floor:
-			state_factory.change_state("jump")
+			change_state("jump")
 		elif !coyote_timer.is_stopped():
-			state_factory.change_state("jump")
-	if !pre_input_attack_timer.is_stopped():
+			change_state("jump")
+	elif !pre_input_attack_timer.is_stopped():
 		if is_character_on_floor:
-			state_factory.change_state("attack")
-	if fall_detecte_enemy_ray.is_colliding():
-		state_factory.change_state("jump")
+			change_state("attack")
+	elif fall_detecte_enemy_ray.is_colliding():
+		change_state("jump")
+	elif is_character_on_floor and !is_landing:
+		is_landing = true
+		animation_player.play("land")
+
 
 
 func _input(event: InputEvent) -> void:

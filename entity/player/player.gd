@@ -53,14 +53,14 @@ func is_jump_input()->bool:
 func _on_hit_box_be_hit(direction: Vector2) -> void:
 	if died:
 		return
-	state_factory.change_state("hit")
+	state_factory.current_state.change_state("hit")
 	hit.hit_direction = direction
 
 
 func _on_health_manager_die() -> void:
 	hit.died = true
 	set_deferred("died",true)
-	print("player dead")
+	print_debug("DEAD!")
 
 
 func get_face_direction()->Vector2:

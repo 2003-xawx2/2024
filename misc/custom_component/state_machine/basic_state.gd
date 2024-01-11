@@ -5,6 +5,7 @@ class_name basic_state
 @export var acceleration:float = 10
 @export var max_speed:float = 200
 
+var is_work:=false
 var animation_player:AnimationPlayer
 var state_factory:state_machine
 var character:CharacterBody2D
@@ -24,11 +25,16 @@ func set_up_state(_character:CharacterBody2D,_animation_player:AnimationPlayer)-
 
 
 func initialize()->void:
+	is_work = true
 	state_time = 0
+	set_process(true)
+	set_physics_process(true)
 
 
 func quit()->void:
-	pass
+	is_work = false
+	set_process(false)
+	set_physics_process(false)
 
 
 func stand(delta:float,gravity:float = default_gravity)->void:
@@ -42,6 +48,7 @@ func stand(delta:float,gravity:float = default_gravity)->void:
 
 
 func move(delta:float,direction:Vector2,gravity:float = default_gravity)->void:
+
 	var velocity :Vector2 = character.get_real_velocity()
 	
 	velocity.y += gravity * delta/4
@@ -55,6 +62,11 @@ func _process(delta: float) -> void:
 	state_time += delta
 
 
+func change_state(state:String):
+	quit()
+	print(name+"->"+state)
+	state_factory.change_state(state)
+	process_mode = Node.PROCESS_MODE_DISABLED
 
 
 

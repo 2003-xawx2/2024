@@ -760,7 +760,6 @@ process_mode = 3
 script = ExtResource("1_1bmcs")
 animation_player = NodePath("../Graphic/AnimationPlayer")
 character = NodePath("..")
-debug = true
 
 [node name="idle" type="Node" parent="state_machine"]
 script = ExtResource("4_n1js4")
@@ -769,11 +768,12 @@ state_name = "idle"
 [node name="walk" type="Node" parent="state_machine"]
 script = ExtResource("5_gshbm")
 acceleration = 7.0
-max_speed = 140.0
+max_speed = 160.0
 
 [node name="attack" type="Node" parent="state_machine"]
 script = ExtResource("6_mobyt")
 state_name = "attack"
+max_speed = 150.0
 
 [node name="AttackTimer" type="Timer" parent="state_machine/attack"]
 wait_time = 0.82
@@ -787,7 +787,7 @@ one_shot = true
 script = ExtResource("7_34y71")
 state_name = "fall"
 acceleration = 6.0
-max_speed = 120.0
+max_speed = 150.0
 
 [node name="PreInputJumpTimer" type="Timer" parent="state_machine/fall"]
 wait_time = 0.15
@@ -808,7 +808,7 @@ jump_acceleration_y = 120.0
 jump_velocity_y = -200.0
 state_name = "jump"
 acceleration = 6.0
-max_speed = 120.0
+max_speed = 160.0
 
 [node name="hit" type="Node" parent="state_machine" node_paths=PackedStringArray("hit_collision")]
 script = ExtResource("16_icu2k")
@@ -818,12 +818,13 @@ hit_velocity = 300.0
 hit_collision = NodePath("../../Component/HitBox/CollisionShape2D")
 state_name = "hit"
 acceleration = 1.0
+max_speed = 150.0
 
 [node name="die" type="Node" parent="state_machine" node_paths=PackedStringArray("hit_collision")]
 script = ExtResource("18_en46a")
 hit_collision = NodePath("../../Component/HitBox/CollisionShape2D")
 state_name = "die"
-acceleration = 1.0
+acceleration = 5.0
 max_speed = 100.0
 
 [node name="Component" type="Node2D" parent="."]

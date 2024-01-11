@@ -21,11 +21,11 @@ func _process(delta: float) -> void:
 	
 	#state change
 	if !character.is_on_floor():
-		state_factory.change_state("fall")
+		change_state("fall")
 	elif Input.is_action_just_pressed("ui_accept"):
-		state_factory.change_state("jump")
+		change_state("jump")
 	elif character.is_attack_input():
-		state_factory.change_state("attack")
+		change_state("attack")
 	elif move_direction == Vector2.ZERO or\
 	 detect_wall_ray.is_colliding() and (character.get_face_direction()*move_direction).x>0:
-		state_factory.change_state("idle")
+		change_state("idle")

@@ -29,15 +29,15 @@ func _physics_process(delta: float) -> void:
 func _process(delta: float) -> void:
 	super(delta)
 	if if_can_jump and !pre_input_jump_timer.is_stopped():
-		state_factory.change_state("jump")
+		change_state("jump")
 	
 	if !attack_timer.is_stopped():
 		return
 	
 	if character.get_input_movement()==Vector2.ZERO:
-		state_factory.change_state("idle")
+		change_state("idle")
 	else:
-		state_factory.change_state("walk")
+		change_state("walk")
 
 
 func _input(event: InputEvent) -> void:

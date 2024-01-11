@@ -341,7 +341,7 @@ size = Vector2(23, 20)
 [node name="PigEnemy" type="CharacterBody2D"]
 process_physics_priority = 1
 collision_layer = 4
-collision_mask = 7
+collision_mask = 3
 floor_block_on_wall = false
 script = ExtResource("1_4lf47")
 
@@ -399,6 +399,7 @@ character = NodePath("..")
 [node name="idle" type="Node" parent="state_machine"]
 script = ExtResource("4_drevy")
 state_name = "idle"
+max_speed = 10.0
 
 [node name="StateChangeTimer" type="Timer" parent="state_machine/idle"]
 wait_time = 8.0
@@ -421,7 +422,7 @@ one_shot = true
 script = ExtResource("6_sm4ew")
 state_name = "attack"
 acceleration = 15.0
-max_speed = 220.0
+max_speed = 150.0
 
 [node name="StateChangeTimer" type="Timer" parent="state_machine/attack"]
 wait_time = 5.0
@@ -433,11 +434,12 @@ one_shot = true
 
 [node name="hit" type="Node" parent="state_machine" node_paths=PackedStringArray("hit_collision")]
 script = ExtResource("7_58pur")
-all_hit_frames = 5
+all_hit_frames = 7
 hit_acceleration = 300.0
 hit_velocity = 300.0
 hit_collision = NodePath("../../Component/HitBox/CollisionShape2D")
 state_name = "hit"
+max_speed = 150.0
 
 [node name="HitStoptimer" type="Timer" parent="state_machine/hit"]
 wait_time = 0.2

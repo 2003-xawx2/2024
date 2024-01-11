@@ -47,11 +47,8 @@ func change_state(state_name:String)->void:
 	var new_state:=get_state(state_name)
 	if current_state == new_state:
 		return
-	if debug:
-		print(character.name+" "+ state_name)
-	if current_state != null:
-		current_state.quit()
-		current_state.process_mode = Node.PROCESS_MODE_DISABLED
+	if debug and current_state != null:
+		print(character.name+" "+ current_state.name +"->"+state_name)
 	current_state = new_state
 	current_state.process_mode = Node.PROCESS_MODE_ALWAYS
 	current_state.initialize()

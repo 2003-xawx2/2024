@@ -42,7 +42,7 @@ func _process(delta: float) -> void:
 
 #stage change
 func _on_state_change_timer_timeout() -> void:
-	state_factory.change_state("walk")
+	change_state("walk")
 
 
 func _on_stop_change_move_direction_timer_timeout() -> void:

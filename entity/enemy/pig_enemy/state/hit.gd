@@ -34,8 +34,8 @@ func _process(delta: float) -> void:
 		return
 	
 	if died: 
-		state_factory.change_state("die")
+		change_state("die")
 		return
 	if character.is_on_floor():
-		state_factory.change_state("attack")
+		change_state("attack")
 

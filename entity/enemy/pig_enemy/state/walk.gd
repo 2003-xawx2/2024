@@ -37,11 +37,11 @@ func _process(delta: float) -> void:
 
 	#stage change
 	if detect_player_ray.is_colliding():
-		state_factory.change_state("attack")
+		change_state("attack")
 
 
 func _on_state_change_timer_timeout() -> void:
-	state_factory.change_state("idle")
+	change_state("idle")
 
 
 func _on_stop_change_move_direction_timer_timeout() -> void:
