@@ -1,4 +1,4 @@
-res://world/main_world.tscn
+res://entity/player/player.tscn
 res://misc/global/transition/transition.gdshader
 res://entity/player/flash.gdshader
 res://entity/player/player.tscn
