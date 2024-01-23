@@ -696,6 +696,7 @@ height = 34.0
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 5
+platform_on_leave = 1
 script = ExtResource("1_1yvdm")
 
 [node name="PlayerCollision" type="CollisionPolygon2D" parent="."]
@@ -788,7 +789,7 @@ one_shot = true
 script = ExtResource("7_34y71")
 state_name = "fall"
 acceleration = 6.0
-max_speed = 150.0
+max_speed = 160.0
 
 [node name="PreInputJumpTimer" type="Timer" parent="state_machine/fall"]
 wait_time = 0.15
@@ -813,7 +814,7 @@ max_speed = 160.0
 
 [node name="swing" type="Node" parent="state_machine"]
 script = ExtResource("18_nqtyu")
-force_mulitiper = 50.0
+force_mulitiper = 80.0
 state_name = "swing"
 
 [node name="hit" type="Node" parent="state_machine" node_paths=PackedStringArray("hit_collision")]
@@ -848,8 +849,6 @@ shape = SubResource("CapsuleShape2D_7tnum")
 [node name="HealthManager" type="Node" parent="Component"]
 script = ExtResource("16_igdg8")
 max_health = 8.0
-
-[node name="Debug" type="Node2D" parent="."]
 
 [connection signal="hurt" from="Graphic/HurtBox" to="." method="_on_hurt_box_hurt"]
 [connection signal="die_animation_finished" from="state_machine/die" to="." method="_on_dead"]

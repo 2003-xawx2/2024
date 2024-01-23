@@ -1,4 +1,4 @@
-extends basic_state
+extends air_state
 
 @export_category("jump")
 @export var jump_frames:int = 3
@@ -27,9 +27,9 @@ func _physics_process(delta: float) -> void:
 	var input_vector = character.get_input_movement()
 
 	if character.is_jump_input() and state_time < .5:
-		move(delta,input_vector,default_gravity/2)
+		air_move(delta,default_gravity / 2)
 	else:
-		move(delta,input_vector,default_gravity*2)
+		air_move(delta,default_gravity * 2)
 
 
 func _process(delta: float) -> void:

@@ -1,13 +1,12 @@
 extends CharacterBody2D
 class_name player_character
 
-
+@onready var animation_player: AnimationPlayer = $Graphic/AnimationPlayer
 @onready var state_factory: state_machine = $state_machine
-@onready var graphic: Node2D = $Graphic
 @onready var hit_box: HitBox = $Component/HitBox
 @onready var swing: Node = $state_machine/swing
 @onready var hit: Node = $state_machine/hit
-@onready var animation_player: AnimationPlayer = $Graphic/AnimationPlayer
+@onready var graphic: Node2D = $Graphic
 
 var died:=false
 

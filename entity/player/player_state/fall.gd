@@ -1,4 +1,4 @@
-extends basic_state
+extends air_state
 
 @onready var pre_input_jump_timer: Timer = $PreInputJumpTimer
 @onready var pre_input_attack_timer: Timer = $PreInputAttackTimer
@@ -39,8 +39,7 @@ func quit()->void:
 
 
 func _physics_process(delta: float) -> void:
-	var input_vector = character.get_input_movement()
-	move(delta,input_vector)
+	air_move(delta,default_gravity)
 
 
 func _process(delta: float) -> void:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsef0m1feyvsl"]
+[gd_scene load_steps=7 format=3 uid="uid://bsef0m1feyvsl"]
 
 [ext_resource type="Script" path="res://world component/hook place/hook_place.gd" id="1_l1kv2"]
 [ext_resource type="Script" path="res://misc/custom_node_script/dynamic_line.gd" id="2_aj01d"]
@@ -6,9 +6,16 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_1lnyh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_makac"]
+radius = 8.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nt1s0"]
-radius = 20.025
+radius = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xoc32"]
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
 
 [node name="HookPlace" type="StaticBody2D"]
 script = ExtResource("1_l1kv2")
@@ -26,6 +33,7 @@ offset_bottom = 3.0
 node_a = NodePath("..")
 node_b = NodePath("../PlayerConnect")
 length = 10.0
+rest_length = 10.0
 stiffness = 64.0
 damping = 0.1
 
@@ -36,12 +44,6 @@ collision_layer = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConnect"]
 shape = SubResource("CircleShape2D_makac")
 
-[node name="ColorRect" type="ColorRect" parent="PlayerConnect"]
-offset_left = -2.0
-offset_right = 1.0
-offset_bottom = 3.0
-pivot_offset = Vector2(2, 1)
-
 [node name="DetectPlayer" type="Area2D" parent="PlayerConnect"]
 collision_layer = 0
 collision_mask = 2
@@ -49,8 +51,18 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConnect/DetectPlayer"]
 shape = SubResource("CircleShape2D_nt1s0")
 
+[node name="Panel" type="Panel" parent="PlayerConnect"]
+custom_minimum_size = Vector2(8, 8)
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+scale = Vector2(1.73, 1.73)
+pivot_offset = Vector2(4, 4)
+theme_override_styles/panel = SubResource("StyleBoxFlat_xoc32")
+
 [node name="Line2D" type="Line2D" parent="." node_paths=PackedStringArray("pointA", "pointB")]
-points = PackedVector2Array(0, 0, 0, 0)
+points = PackedVector2Array(0, 0, -65, 15)
 width = 2.0
 script = ExtResource("2_aj01d")
 pointA = NodePath("..")
