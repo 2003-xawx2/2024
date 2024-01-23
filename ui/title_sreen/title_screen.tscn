@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://1js0c6vvvm3u"]
+
+[ext_resource type="Script" path="res://ui/title_sreen/title_screen.gd" id="1_26oat"]
+
+[node name="TitleScreen" type="CanvasLayer"]
+script = ExtResource("1_26oat")
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = -346.0
+offset_right = 193.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 221
+text = "GGJ"
+
+[node name="Buttoncontainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -23.0
+offset_right = 100.0
+offset_bottom = 219.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start" type="Button" parent="Buttoncontainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 81
+text = "Start"
+
+[node name="Quit" type="Button" parent="Buttoncontainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 81
+text = "Quit
+"
+
+[connection signal="pressed" from="Buttoncontainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Buttoncontainer/Quit" to="." method="_on_quit_pressed"]
