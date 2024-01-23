@@ -848,7 +848,7 @@ shape = SubResource("CapsuleShape2D_7tnum")
 
 [node name="HealthManager" type="Node" parent="Component"]
 script = ExtResource("16_igdg8")
-max_health = 8.0
+max_health = 1.0
 
 [connection signal="hurt" from="Graphic/HurtBox" to="." method="_on_hurt_box_hurt"]
 [connection signal="die_animation_finished" from="state_machine/die" to="." method="_on_dead"]

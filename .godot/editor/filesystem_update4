@@ -1,6 +1,7 @@
-res://world/main_world.tscn
+res://entity/player/player.tscn
 res://misc/global/transition/transition.gdshader
 res://entity/player/flash.gdshader
-res://entity/player/player.tscn
 res://entity/enemy/pig_enemy/pig_enemy.tscn
 res://world component/hook place/hook_place.tscn
+res://world component/hook place new/RopePiece/rope_piece.tscn
+res://world component/hook place new/hook_place_new.tscn

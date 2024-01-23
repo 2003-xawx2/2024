@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://sddf8tqylegb"]
+
+[ext_resource type="Script" path="res://world component/hook place new/hook_place_new.gd" id="1_usftx"]
+[ext_resource type="PackedScene" uid="uid://cvcbqrt8giwhf" path="res://world component/hook place new/RopePiece/rope_piece.tscn" id="2_d1ykl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sxtar"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_foynv"]
+radius = 8.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gvatr"]
+radius = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0kgnx"]
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="HookPlaceNew" type="StaticBody2D"]
+position = Vector2(134, 53)
+script = ExtResource("1_usftx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_sxtar")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+node_a = NodePath("..")
+node_b = NodePath("RopePiece")
+
+[node name="RopePiece" parent="PinJoint2D" instance=ExtResource("2_d1ykl")]
+
+[node name="PlayerConnect" type="RigidBody2D" parent="."]
+position = Vector2(0, 80)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConnect"]
+shape = SubResource("CircleShape2D_foynv")
+
+[node name="DetectPlayer" type="Area2D" parent="PlayerConnect"]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConnect/DetectPlayer"]
+shape = SubResource("CircleShape2D_gvatr")
+
+[node name="Panel" type="Panel" parent="PlayerConnect"]
+custom_minimum_size = Vector2(8, 8)
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+scale = Vector2(1.73, 1.73)
+pivot_offset = Vector2(4, 4)
+theme_override_styles/panel = SubResource("StyleBoxFlat_0kgnx")
+metadata/_edit_use_anchors_ = true
+
+[node name="PreHookInteractTimer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true

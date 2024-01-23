@@ -60,6 +60,7 @@ offset_bottom = 4.0
 scale = Vector2(1.73, 1.73)
 pivot_offset = Vector2(4, 4)
 theme_override_styles/panel = SubResource("StyleBoxFlat_xoc32")
+metadata/_edit_use_anchors_ = true
 
 [node name="Line2D" type="Line2D" parent="." node_paths=PackedStringArray("pointA", "pointB")]
 points = PackedVector2Array(0, 0, -65, 15)

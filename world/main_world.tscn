@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://s50yxe53a18y"]
+[gd_scene load_steps=8 format=3 uid="uid://s50yxe53a18y"]
 
 [ext_resource type="Texture2D" uid="uid://6o1nqnovlwle" path="res://asset/2D RPG/Assets/Buildings.png" id="1_1rpts"]
 [ext_resource type="PackedScene" uid="uid://bsef0m1feyvsl" path="res://world component/hook place/hook_place.tscn" id="2_i40nc"]
 [ext_resource type="PackedScene" uid="uid://bbjljtogn8tuh" path="res://entity/player/player.tscn" id="2_tn4p0"]
 [ext_resource type="PackedScene" uid="uid://n04dvxjs2y18" path="res://misc/camera/player_camera.tscn" id="3_0nxrr"]
+[ext_resource type="PackedScene" uid="uid://sddf8tqylegb" path="res://world component/hook place new/hook_place_new.tscn" id="3_g40u2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ke37u"]
 texture = ExtResource("1_1rpts")
@@ -1240,6 +1241,9 @@ layer_0/tile_data = PackedInt32Array(1638406, 131072, 4, 1572870, 131072, 2, 150
 
 [node name="HookPlace" parent="TileMap" instance=ExtResource("2_i40nc")]
 position = Vector2(461.333, 551.333)
+
+[node name="HookPlaceNew" parent="TileMap" instance=ExtResource("3_g40u2")]
+position = Vector2(248, 479.333)
 
 [node name="Player&Enemy" type="Node2D" parent="."]
 
