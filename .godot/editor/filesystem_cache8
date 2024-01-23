@@ -1,146 +1,150 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705974832
-::res://asset/::1704416156
-main.mp3::AudioStreamMP3::404772758752895564::1703677326::1703677326::1::::<><>::
-::res://asset/2D RPG/::1695184592
-::res://asset/2D RPG/Assets/::1704293169
-Buildings.png::CompressedTexture2D::2206358159589209338::1664872552::1704293169::1::::<><>::
-Hive.png::CompressedTexture2D::5357990685294541074::1664872412::1704293169::1::::<><>::
-Interior-01.png::CompressedTexture2D::3635606588779527057::1667208930::1704293169::1::::<><>::
-Props-Rocks.png::CompressedTexture2D::4283458686430749208::1664872204::1704293169::1::::<><>::
-Tiles.png::CompressedTexture2D::4076311473159556983::1667208974::1704293169::1::::<><>::
-Tree-Assets.png::CompressedTexture2D::4087249662138085759::1667208990::1704293169::1::::<><>::
-::res://asset/2D RPG/Background/::1704293169
-Background.png::CompressedTexture2D::1108134999263311880::1667209646::1704293169::1::::<><>::
-::res://asset/2D RPG/Character/::1695184624
-::res://asset/2D RPG/Character/Attack-01/::1704417415
-Attack-01-Sheet.png::CompressedTexture2D::6768929696506699118::1657194656::1704293169::1::::<><>::
-Attack-01.png::CompressedTexture2D::1083021730647593660::1704417413::1704417415::1::::<><>::
-::res://asset/2D RPG/Character/Dead/::1704293169
-Dead-Sheet.png::CompressedTexture2D::8278872616426517509::1657197608::1704293169::1::::<><>::
-::res://asset/2D RPG/Character/Idle/::1704293169
-Idle-Sheet.png::CompressedTexture2D::7476473319070504002::1657186076::1704293169::1::::<><>::
-::res://asset/2D RPG/Character/Jumlp-All/::1704293169
-Jump-All-Sheet.png::CompressedTexture2D::6774686014377714918::1657197636::1704293169::1::::<><>::
-::res://asset/2D RPG/Character/Jump/::1664872732
-::res://asset/2D RPG/Character/Jump-End/::1704293169
-Jump-End-Sheet.png::CompressedTexture2D::4254996633652525388::1657197770::1704293169::1::::<><>::
-::res://asset/2D RPG/Character/Jump-Start/::1704293169
-Jump-Start-Sheet.png::CompressedTexture2D::1980853386726604591::1657197716::1704293169::1::::<><>::
-::res://asset/2D RPG/Character/Run/::1704293169
-Run-Sheet.png::CompressedTexture2D::7924855669286631520::1657186042::1704293169::1::::<><>::
-::res://asset/2D RPG/HUD/::1704293169
-Base-01.png::CompressedTexture2D::4363448132406343923::1656562566::1704293169::1::::<><>::
-::res://asset/2D RPG/Mob/::1695184843
-::res://asset/2D RPG/Mob/Boar/::1695184843
-::res://asset/2D RPG/Mob/Boar/Hit-Vanish/::1704293169
-Hit-Sheet-Black.png::CompressedTexture2D::5743680549306143856::1663996224::1704293169::1::::<><>::
-Hit-Sheet-White.png::CompressedTexture2D::1437257819835369825::1663996254::1704293169::1::::<><>::
-Hit-Sheet.png::CompressedTexture2D::9057091078115845485::1656651542::1704293169::1::::<><>::
-::res://asset/2D RPG/Mob/Boar/Idle/::1704293169
-Idle-Sheet-export-Back.png::CompressedTexture2D::8774309738453858264::1663996136::1704293169::1::::<><>::
-Idle-Sheet-White.png::CompressedTexture2D::6841076263151031607::1663996174::1704293169::1::::<><>::
-Idle-Sheet.png::CompressedTexture2D::7087484667799453422::1656651570::1704293169::1::::<><>::
-::res://asset/2D RPG/Mob/Boar/Run/::1704293169
-Run-Sheet-Black.png::CompressedTexture2D::6147919554651371514::1663995952::1704293169::1::::<><>::
-Run-Sheet-White.png::CompressedTexture2D::5621429367178740752::1663996004::1704293169::1::::<><>::
-Run-Sheet.png::CompressedTexture2D::2005429542499305204::1656651590::1704293169::1::::<><>::
-::res://asset/2D RPG/Mob/Boar/Walk/::1704293169
-Walk-Base-Sheet-White.png::CompressedTexture2D::4304603575114973432::1663996092::1704293169::1::::<><>::
-Walk-Base-Sheet.png::CompressedTexture2D::272118416070572541::1656651616::1704293169::1::::<><>::
-Walk-Base-SheetBlack.png::CompressedTexture2D::688285200753811737::1663996046::1704293169::1::::<><>::
-::res://asset/2D RPG/Mob/Small Bee/::1664872732
-::res://asset/2D RPG/Mob/Small Bee/Attack/::1704293169
-Attack-Sheet.png::CompressedTexture2D::1865096537351706137::1664526146::1704293169::1::::<><>::
-::res://asset/2D RPG/Mob/Small Bee/Fly/::1704293169
-Fly-Sheet.png::CompressedTexture2D::3789659557535088174::1664526162::1704293169::1::::<><>::
-::res://asset/2D RPG/Mob/Small Bee/Hit/::1704293169
-Hit-Sheet.png::CompressedTexture2D::1918159898305669736::1664526182::1704293169::1::::<><>::
-::res://asset/2D RPG/Mob/Snail/::1704293169
-all.png::CompressedTexture2D::3033944430990654330::1635484046::1704293169::1::::<><>::
-Dead-Sheet.png::CompressedTexture2D::8263752421137963275::1635484046::1704293169::1::::<><>::
-Hide-Sheet.png::CompressedTexture2D::4809051919684081789::1635484046::1704293169::1::::<><>::
-walk-Sheet.png::CompressedTexture2D::2462359464547658245::1635484046::1704293169::1::::<><>::
-::res://asset/2D RPG/Trees/::1704293169
-Background.png::CompressedTexture2D::303722882256111805::1664872680::1704293169::1::::<><>::
-Dark-Tree.png::CompressedTexture2D::2206049695961700340::1657202636::1704293169::1::::<><>::
-Golden-Tree.png::CompressedTexture2D::5703741424517017080::1656997518::1704293169::1::::<><>::
-Green-Tree.png::CompressedTexture2D::1529217332794944361::1656997032::1704293169::1::::<><>::
-Red-Tree.png::CompressedTexture2D::915198451580570687::1656997532::1704293169::1::::<><>::
-Yellow-Tree.png::CompressedTexture2D::2348926258671700776::1656997164::1704293169::1::::<><>::
-::res://asset/misc/::1704424127
-::res://asset/misc/particle/::1704424176
-magic_05.png::CompressedTexture2D::2553252772211917045::1573670158::1704424176::1::::<><>::
-::res://entity/::1704426574
-::res://entity/enemy/::1704428807
-::res://entity/enemy/pig_enemy/::1705972335
-pig_enemy.gd::GDScript::-1::1704960508::0::1::::<>CharacterBody2D<>::
-pig_enemy.tscn::PackedScene::7165496893908698205::1705972335::0::1::::<><>::uid://dxalum71erdf1::::res://asset/2D RPG/Mob/Boar/Idle/Idle-Sheet-export-Back.png<>res://entity/enemy/pig_enemy/pig_enemy.gd<>uid://ctudlpnjglxag::::res://asset/2D RPG/Mob/Boar/Run/Run-Sheet-Black.png<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_component/state_machine/state_machine.gd<>res://entity/enemy/pig_enemy/state/idle.gd<>uid://cn3jtx5cpqv4s::::res://asset/2D RPG/Mob/Boar/Hit-Vanish/Hit-Sheet-Black.png<>uid://j2n7r7ahx386::::res://asset/2D RPG/Mob/Boar/Walk/Walk-Base-SheetBlack.png<>res://entity/enemy/pig_enemy/state/walk.gd<>res://entity/enemy/pig_enemy/state/attack.gd<>res://entity/enemy/pig_enemy/state/hit.gd<>res://entity/enemy/pig_enemy/state/die.gd<>res://misc/custom_node_script/hit_box.gd<>res://misc/custom_node_script/health_manager.gd
-::res://entity/enemy/pig_enemy/state/::1705757760
-attack.gd::GDScript::-1::1705757760::0::1::::<>basic_walk<>::
-die.gd::GDScript::-1::1704544889::0::1::::<>basic_die<>::
-hit.gd::GDScript::-1::1705757760::0::1::::<>basic_hit<>::
-idle.gd::GDScript::-1::1705757760::0::1::::<>basic_idle<>::
-walk.gd::GDScript::-1::1704960271::0::1::::<>basic_walk<>::
-::res://entity/player/::1705972576
-flash.gdshader::Shader::-1::1705972576::0::1::::<><>::
-player.gd::GDScript::-1::1705932274::0::1::::player_character<>CharacterBody2D<>::
-player.tscn::PackedScene::2475873906045465747::1705972335::0::1::::<><>::res://misc/custom_component/state_machine/state_machine.gd<>res://entity/player/player.gd<>res://entity/player/flash.gdshader<>uid://derwoni8cmuvi::::res://asset/2D RPG/Character/Idle/Idle-Sheet.png<>uid://b1vff44n1cdui::::res://asset/2D RPG/Character/Jump-End/Jump-End-Sheet.png<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://c3o6jvk4qljj7::::res://asset/2D RPG/Character/Attack-01/Attack-01-Sheet.png<>uid://dk54hkt3ardtg::::res://asset/2D RPG/Character/Run/Run-Sheet.png<>uid://3hsmo7jm1dwh::::res://asset/2D RPG/Character/Jump-Start/Jump-Start-Sheet.png<>res://entity/player/player_state/idle.gd<>res://entity/player/player_state/walk.gd<>res://entity/player/player_state/attack.gd<>uid://c3rydaywsn0yk::::res://asset/2D RPG/Character/Jumlp-All/Jump-All-Sheet.png<>res://entity/player/player_state/fall.gd<>res://entity/player/player_state/jump.gd<>uid://dp7l27y7k4eor::::res://asset/2D RPG/Character/Dead/Dead-Sheet.png<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_node_script/hit_box.gd<>res://entity/player/player_state/hit.gd<>res://misc/custom_node_script/health_manager.gd<>res://entity/player/player_state/die.gd<>res://entity/player/player_state/swing.gd
-::res://entity/player/player_state/::1705972102
-attack.gd::GDScript::-1::1705757760::0::1::::<>basic_state<>::
-die.gd::GDScript::-1::1704698361::0::1::::<>basic_die<>::
-fall.gd::GDScript::-1::1705757760::0::1::::<>basic_state<>::
-hit.gd::GDScript::-1::1705757760::0::1::::<>basic_hit<>::
-idle.gd::GDScript::-1::1704958900::0::1::::<>basic_idle<>::
-jump.gd::GDScript::-1::1705757760::0::1::::<>basic_state<>::
-swing.gd::GDScript::-1::1705972102::0::1::::<>basic_state<>::
-walk.gd::GDScript::-1::1705757760::0::1::::<>basic_walk<>::
-::res://entity/player/player_state/myDocuments.cannedSearch/::1704352711
-::res://entity/player/player_state/myDocuments.cannedSearch/Resources/::1704352711
-::res://entity/player/player_state/myDocuments.cannedSearch/_CodeSignature/::1704352711
-::res://misc/::1704421418
-::res://misc/camera/::1705757760
-player_camera.gd::GDScript::-1::1705757760::0::1::::<>Camera2D<>::
-player_camera.tscn::PackedScene::965831700272774861::1704446258::0::1::::<><>::res://misc/camera/player_camera.gd
-::res://misc/custom_component/::1704453866
-::res://misc/custom_component/state_machine/::1705757760
-basic_die.gd::GDScript::-1::1705757590::0::1::::basic_die<>basic_state<>::
-basic_hit.gd::GDScript::-1::1705757760::0::1::::basic_hit<>basic_state<>::
-basic_idle.gd::GDScript::-1::1704957410::0::1::::basic_idle<>basic_state<>::
-basic_state.gd::GDScript::-1::1705757760::0::1::::basic_state<>Node<>::
-basic_walk.gd::GDScript::-1::1704528576::0::1::::basic_walk<>basic_state<>::
-state_machine.gd::GDScript::-1::1705757760::0::1::::state_machine<>Node<>::
-::res://misc/custom_manager/::1704414749
-timer_manager.gd::GDScript::-1::1704414749::0::1::::TimeManager<>Node<>::
-::res://misc/custom_node_script/::1705968263
-dynamic_line.gd::GDScript::-1::1705968263::0::1::::DynamicLine2D<>Line2D<>::
-health_manager.gd::GDScript::-1::1704414764::0::1::::HealthManager<>Node<>::
-hit_box.gd::GDScript::-1::1705757760::0::1::::HitBox<>Area2D<>::
-hurt_box.gd::GDScript::-1::1704414826::0::1::::HurtBox<>Area2D<>::
-interact_area.gd::GDScript::-1::1704414851::0::1::::InteractArea<>Area2D<>::
-interact_transition.gd::GDScript::-1::1704414865::0::1::::InteractChangeScene<>InteractArea<>::
-weigted_table.gd::GDScript::-1::1703677473::0::1::::WeightedTable<>RefCounted<>::
-::res://misc/custom_resource_script/::1703679059
-flag_savings.gd::GDScript::-1::1703679059::0::1::::flag_savings<>Resource<>::
-::res://misc/global/::1705757760
-global.gd::GDScript::-1::1705757760::0::1::::<>Node<>::
-::res://misc/global/bgm_player/::1703677335
-bgm_player.gd::GDScript::-1::1703677300::0::1::::<>AudioStreamPlayer2D<>::
-bgm_player.tscn::PackedScene::2366932920996654547::1703677335::0::1::::<><>::uid://f1csvyns0b7a::::res://asset/main.mp3<>res://misc/global/bgm_player/bgm_player.gd
-::res://misc/global/transition/::1705972576
-transition.gd::GDScript::-1::1704672172::0::1::::<>CanvasLayer<>::
-transition.gdshader::Shader::-1::1705972576::0::1::::<><>::
-transition.tscn::PackedScene::8273020329504889910::1705929416::0::1::::<><>::res://misc/global/transition/transition.gd<>res://misc/global/transition/transition.gdshader
-::res://misc/savings/::1703678370
-flags_savings.tres::Resource/Resource::5892052910940116118::1703678370::0::1::::<><>::res://misc/custom_resource_script/flag_savings.gd
-::res://test_video/::1705972429
-::res://ui/::1704606129
-::res://ui/title_sreen/::1704672357
-title_screen.gd::GDScript::-1::1704671935::0::1::::<>CanvasLayer<>::
-title_screen.tscn::PackedScene::1844627039011483092::1704672357::0::1::::<><>::res://ui/title_sreen/title_screen.gd
-::res://world/::1705972575
-main_world.tscn::PackedScene::1326892517596037602::1705972575::0::1::::<><>::uid://6o1nqnovlwle::::res://asset/2D RPG/Assets/Buildings.png<>uid://bsef0m1feyvsl::::res://world component/hook place/hook_place.tscn<>uid://bbjljtogn8tuh::::res://entity/player/player.tscn<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn
-::res://world component/::1705929540
-::res://world component/hook place/::1705972335
-hook_place.gd::GDScript::-1::1705970732::0::1::::HookPlace<>StaticBody2D<>::
-hook_place.tscn::PackedScene::3658426280683984995::1705972335::0::1::::<><>::res://world component/hook place/hook_place.gd<>res://misc/custom_node_script/dynamic_line.gd
+::res://::1705994545
+::res://asset/::1705985258
+main.mp3::AudioStreamMP3::404772758752895564::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/::1705985258
+::res://asset/2D RPG/Assets/::1705985258
+Buildings.png::CompressedTexture2D::2206358159589209338::1705985258::1705985258::1::::<><>::
+Hive.png::CompressedTexture2D::5357990685294541074::1705985258::1705985258::1::::<><>::
+Interior-01.png::CompressedTexture2D::3635606588779527057::1705985258::1705985258::1::::<><>::
+Props-Rocks.png::CompressedTexture2D::4283458686430749208::1705985258::1705985258::1::::<><>::
+Tiles.png::CompressedTexture2D::4076311473159556983::1705985258::1705985258::1::::<><>::
+Tree-Assets.png::CompressedTexture2D::4087249662138085759::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Background/::1705985258
+Background.png::CompressedTexture2D::1108134999263311880::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Character/::1705985258
+::res://asset/2D RPG/Character/Attack-01/::1705985258
+Attack-01-Sheet.png::CompressedTexture2D::6768929696506699118::1705985258::1705985258::1::::<><>::
+Attack-01.png::CompressedTexture2D::1083021730647593660::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Character/Dead/::1705985258
+Dead-Sheet.png::CompressedTexture2D::8278872616426517509::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Character/Idle/::1705985258
+Idle-Sheet.png::CompressedTexture2D::7476473319070504002::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Character/Jumlp-All/::1705985258
+Jump-All-Sheet.png::CompressedTexture2D::6774686014377714918::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Character/Jump/::1705985258
+::res://asset/2D RPG/Character/Jump-End/::1705985258
+Jump-End-Sheet.png::CompressedTexture2D::4254996633652525388::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Character/Jump-Start/::1705985258
+Jump-Start-Sheet.png::CompressedTexture2D::1980853386726604591::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Character/Run/::1705985258
+Run-Sheet.png::CompressedTexture2D::7924855669286631520::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/HUD/::1705985258
+Base-01.png::CompressedTexture2D::4363448132406343923::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Mob/::1705985258
+::res://asset/2D RPG/Mob/Boar/::1705985258
+::res://asset/2D RPG/Mob/Boar/Hit-Vanish/::1705985258
+Hit-Sheet-Black.png::CompressedTexture2D::5743680549306143856::1705985258::1705985258::1::::<><>::
+Hit-Sheet-White.png::CompressedTexture2D::1437257819835369825::1705985258::1705985258::1::::<><>::
+Hit-Sheet.png::CompressedTexture2D::9057091078115845485::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Mob/Boar/Idle/::1705985258
+Idle-Sheet-export-Back.png::CompressedTexture2D::8774309738453858264::1705985258::1705985258::1::::<><>::
+Idle-Sheet-White.png::CompressedTexture2D::6841076263151031607::1705985258::1705985258::1::::<><>::
+Idle-Sheet.png::CompressedTexture2D::7087484667799453422::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Mob/Boar/Run/::1705985258
+Run-Sheet-Black.png::CompressedTexture2D::6147919554651371514::1705985258::1705985258::1::::<><>::
+Run-Sheet-White.png::CompressedTexture2D::5621429367178740752::1705985258::1705985258::1::::<><>::
+Run-Sheet.png::CompressedTexture2D::2005429542499305204::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Mob/Boar/Walk/::1705985258
+Walk-Base-Sheet-White.png::CompressedTexture2D::4304603575114973432::1705985258::1705985258::1::::<><>::
+Walk-Base-Sheet.png::CompressedTexture2D::272118416070572541::1705985258::1705985258::1::::<><>::
+Walk-Base-SheetBlack.png::CompressedTexture2D::688285200753811737::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Mob/Small Bee/::1705985258
+::res://asset/2D RPG/Mob/Small Bee/Attack/::1705985258
+Attack-Sheet.png::CompressedTexture2D::1865096537351706137::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Mob/Small Bee/Fly/::1705985258
+Fly-Sheet.png::CompressedTexture2D::3789659557535088174::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Mob/Small Bee/Hit/::1705985258
+Hit-Sheet.png::CompressedTexture2D::1918159898305669736::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Mob/Snail/::1705985258
+all.png::CompressedTexture2D::3033944430990654330::1705985258::1705985258::1::::<><>::
+Dead-Sheet.png::CompressedTexture2D::8263752421137963275::1705985258::1705985258::1::::<><>::
+Hide-Sheet.png::CompressedTexture2D::4809051919684081789::1705985258::1705985258::1::::<><>::
+walk-Sheet.png::CompressedTexture2D::2462359464547658245::1705985258::1705985258::1::::<><>::
+::res://asset/2D RPG/Trees/::1705985258
+Background.png::CompressedTexture2D::303722882256111805::1705985258::1705985258::1::::<><>::
+Dark-Tree.png::CompressedTexture2D::2206049695961700340::1705985258::1705985258::1::::<><>::
+Golden-Tree.png::CompressedTexture2D::5703741424517017080::1705985258::1705985258::1::::<><>::
+Green-Tree.png::CompressedTexture2D::1529217332794944361::1705985258::1705985258::1::::<><>::
+Red-Tree.png::CompressedTexture2D::915198451580570687::1705985258::1705985258::1::::<><>::
+Yellow-Tree.png::CompressedTexture2D::2348926258671700776::1705985258::1705985258::1::::<><>::
+::res://asset/misc/::1705985258
+::res://asset/misc/particle/::1705985258
+magic_05.png::CompressedTexture2D::2553252772211917045::1705985258::1705985258::1::::<><>::
+::res://entity/::1705985258
+::res://entity/enemy/::1705985258
+::res://entity/enemy/pig_enemy/::1705994482
+pig_enemy.gd::GDScript::-1::1705985258::0::1::::<>CharacterBody2D<>::
+pig_enemy.tscn::PackedScene::7165496893908698205::1705994482::0::1::::<><>::uid://dxalum71erdf1::::res://asset/2D RPG/Mob/Boar/Idle/Idle-Sheet-export-Back.png<>res://entity/enemy/pig_enemy/pig_enemy.gd<>uid://ctudlpnjglxag::::res://asset/2D RPG/Mob/Boar/Run/Run-Sheet-Black.png<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_component/state_machine/state_machine.gd<>res://entity/enemy/pig_enemy/state/idle.gd<>uid://cn3jtx5cpqv4s::::res://asset/2D RPG/Mob/Boar/Hit-Vanish/Hit-Sheet-Black.png<>uid://j2n7r7ahx386::::res://asset/2D RPG/Mob/Boar/Walk/Walk-Base-SheetBlack.png<>res://entity/enemy/pig_enemy/state/walk.gd<>res://entity/enemy/pig_enemy/state/attack.gd<>res://entity/enemy/pig_enemy/state/hit.gd<>res://entity/enemy/pig_enemy/state/die.gd<>res://misc/custom_node_script/hit_box.gd<>res://misc/custom_node_script/health_manager.gd
+::res://entity/enemy/pig_enemy/state/::1705985258
+attack.gd::GDScript::-1::1705985258::0::1::::<>basic_walk<>::
+die.gd::GDScript::-1::1705985258::0::1::::<>basic_die<>::
+hit.gd::GDScript::-1::1705985258::0::1::::<>basic_hit<>::
+idle.gd::GDScript::-1::1705985258::0::1::::<>basic_idle<>::
+walk.gd::GDScript::-1::1705985258::0::1::::<>basic_walk<>::
+::res://entity/player/::1705994522
+flash.gdshader::Shader::-1::1705994522::0::1::::<><>::
+player.gd::GDScript::-1::1705986252::0::1::::player_character<>CharacterBody2D<>::
+player.tscn::PackedScene::2475873906045465747::1705994482::0::1::::<><>::res://misc/custom_component/state_machine/state_machine.gd<>res://entity/player/player.gd<>res://entity/player/flash.gdshader<>uid://derwoni8cmuvi::::res://asset/2D RPG/Character/Idle/Idle-Sheet.png<>uid://b1vff44n1cdui::::res://asset/2D RPG/Character/Jump-End/Jump-End-Sheet.png<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://c3o6jvk4qljj7::::res://asset/2D RPG/Character/Attack-01/Attack-01-Sheet.png<>uid://dk54hkt3ardtg::::res://asset/2D RPG/Character/Run/Run-Sheet.png<>uid://3hsmo7jm1dwh::::res://asset/2D RPG/Character/Jump-Start/Jump-Start-Sheet.png<>res://entity/player/player_state/idle.gd<>res://entity/player/player_state/walk.gd<>res://entity/player/player_state/attack.gd<>uid://c3rydaywsn0yk::::res://asset/2D RPG/Character/Jumlp-All/Jump-All-Sheet.png<>res://entity/player/player_state/fall.gd<>res://entity/player/player_state/jump.gd<>uid://dp7l27y7k4eor::::res://asset/2D RPG/Character/Dead/Dead-Sheet.png<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_node_script/hit_box.gd<>res://entity/player/player_state/hit.gd<>res://misc/custom_node_script/health_manager.gd<>res://entity/player/player_state/die.gd<>res://entity/player/player_state/swing.gd
+::res://entity/player/player_state/::1705994446
+attack.gd::GDScript::-1::1705985258::0::1::::<>basic_state<>::
+die.gd::GDScript::-1::1705985258::0::1::::<>basic_die<>::
+fall.gd::GDScript::-1::1705985258::0::1::::<>air_state<>::
+hit.gd::GDScript::-1::1705985258::0::1::::<>basic_hit<>::
+idle.gd::GDScript::-1::1705985258::0::1::::<>basic_idle<>::
+jump.gd::GDScript::-1::1705985258::0::1::::<>air_state<>::
+swing.gd::GDScript::-1::1705994446::0::1::::<>basic_state<>::
+walk.gd::GDScript::-1::1705985258::0::1::::<>basic_walk<>::
+::res://entity/player/player_state/myDocuments.cannedSearch/::1705985258
+::res://entity/player/player_state/myDocuments.cannedSearch/Resources/::1705985258
+::res://entity/player/player_state/myDocuments.cannedSearch/_CodeSignature/::1705985258
+::res://misc/::1705985258
+::res://misc/camera/::1705985258
+player_camera.gd::GDScript::-1::1705985258::0::1::::<>Camera2D<>::
+player_camera.tscn::PackedScene::965831700272774861::1705985258::0::1::::<><>::res://misc/camera/player_camera.gd
+::res://misc/custom_component/::1705985258
+::res://misc/custom_component/state_machine/::1705985258
+air_state.gd::GDScript::-1::1705985258::0::1::::air_state<>basic_state<>::
+basic_die.gd::GDScript::-1::1705985258::0::1::::basic_die<>basic_state<>::
+basic_hit.gd::GDScript::-1::1705985258::0::1::::basic_hit<>basic_state<>::
+basic_idle.gd::GDScript::-1::1705985258::0::1::::basic_idle<>basic_state<>::
+basic_state.gd::GDScript::-1::1705985258::0::1::::basic_state<>Node<>::
+basic_walk.gd::GDScript::-1::1705985258::0::1::::basic_walk<>basic_state<>::
+state_machine.gd::GDScript::-1::1705985258::0::1::::state_machine<>Node<>::
+::res://misc/custom_manager/::1705985258
+timer_manager.gd::GDScript::-1::1705985258::0::1::::TimeManager<>Node<>::
+::res://misc/custom_node_script/::1705985258
+dynamic_line.gd::GDScript::-1::1705985258::0::1::::DynamicLine2D<>Line2D<>::
+health_manager.gd::GDScript::-1::1705985258::0::1::::HealthManager<>Node<>::
+hit_box.gd::GDScript::-1::1705985258::0::1::::HitBox<>Area2D<>::
+hurt_box.gd::GDScript::-1::1705985258::0::1::::HurtBox<>Area2D<>::
+interact_area.gd::GDScript::-1::1705985258::0::1::::InteractArea<>Area2D<>::
+interact_transition.gd::GDScript::-1::1705985258::0::1::::InteractChangeScene<>InteractArea<>::
+weigted_table.gd::GDScript::-1::1705985258::0::1::::WeightedTable<>RefCounted<>::
+::res://misc/custom_resource_script/::1705985258
+flag_savings.gd::GDScript::-1::1705985258::0::1::::flag_savings<>Resource<>::
+::res://misc/global/::1705985258
+global.gd::GDScript::-1::1705985258::0::1::::<>Node<>::
+::res://misc/global/bgm_player/::1705985258
+bgm_player.gd::GDScript::-1::1705985258::0::1::::<>AudioStreamPlayer2D<>::
+bgm_player.tscn::PackedScene::2366932920996654547::1705985258::0::1::::<><>::uid://f1csvyns0b7a::::res://asset/main.mp3<>res://misc/global/bgm_player/bgm_player.gd
+::res://misc/global/transition/::1705994522
+transition.gd::GDScript::-1::1705985258::0::1::::<>CanvasLayer<>::
+transition.gdshader::Shader::-1::1705994522::0::1::::<><>::
+transition.tscn::PackedScene::8273020329504889910::1705985258::0::1::::<><>::res://misc/global/transition/transition.gd<>res://misc/global/transition/transition.gdshader
+::res://misc/savings/::1705985258
+flags_savings.tres::Resource/Resource::5892052910940116118::1705985258::0::1::::<><>::res://misc/custom_resource_script/flag_savings.gd
+::res://test_video/::1705990999
+::res://ui/::1705985258
+::res://ui/title_sreen/::1705985258
+title_screen.gd::GDScript::-1::1705985258::0::1::::<>CanvasLayer<>::
+title_screen.tscn::PackedScene::1844627039011483092::1705985258::0::1::::<><>::res://ui/title_sreen/title_screen.gd
+::res://world/::1705994481
+main_world.tscn::PackedScene::1326892517596037602::1705994481::0::1::::<><>::uid://6o1nqnovlwle::::res://asset/2D RPG/Assets/Buildings.png<>uid://bsef0m1feyvsl::::res://world component/hook place/hook_place.tscn<>uid://bbjljtogn8tuh::::res://entity/player/player.tscn<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn<>uid://sddf8tqylegb::::res://world component/hook place new/hook_place_new.tscn
+::res://world component/::1705993402
+::res://world component/hook place/::1705994482
+hook_place.gd::GDScript::-1::1705985258::0::1::::HookPlace<>StaticBody2D<>::
+hook_place.tscn::PackedScene::3658426280683984995::1705994482::0::1::::<><>::res://world component/hook place/hook_place.gd<>res://misc/custom_node_script/dynamic_line.gd
+::res://world component/hook place new/::1705994482
+hook_place_new.gd::GDScript::-1::1705993522::0::1::::HookPlaceNew<>StaticBody2D<>::
+hook_place_new.tscn::PackedScene::1269785162075900789::1705994482::0::1::::<><>::res://world component/hook place new/hook_place_new.gd
