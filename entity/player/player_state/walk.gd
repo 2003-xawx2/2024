@@ -18,7 +18,7 @@ func _physics_process(delta: float) -> void:
 func _process(delta: float) -> void:
 	super(delta)
 	move_direction = character.get_input_movement()
-	
+
 	#state change
 	if !character.is_on_floor():
 		change_state("fall")

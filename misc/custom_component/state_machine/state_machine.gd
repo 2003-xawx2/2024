@@ -32,7 +32,7 @@ func _ready() -> void:
 			continue
 		state_dictionary[child.state_name] = child
 		(child as basic_state).set_up_state(character,animation_player)
-	
+
 	set_process(false)
 
 

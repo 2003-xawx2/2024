@@ -46,7 +46,7 @@ func _physics_process(delta: float) -> void:
 func _process(delta: float) -> void:
 	super(delta)
 	is_character_on_floor = character.is_on_floor()
-	
+
 	if !pre_input_jump_timer.is_stopped():
 		if is_character_on_floor:
 			change_state("jump")

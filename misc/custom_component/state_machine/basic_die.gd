@@ -1,6 +1,8 @@
 extends basic_state
 class_name basic_die
 
+signal die_animation_finished
+
 @export var hit_collision:CollisionShape2D
 
 
@@ -28,6 +30,7 @@ func _process(delta: float) -> void:
 
 func animation_call_back()->void:
 	await animation_player.animation_finished
+	die_animation_finished.emit()
 	character.process_mode = Node.PROCESS_MODE_DISABLED
 
 

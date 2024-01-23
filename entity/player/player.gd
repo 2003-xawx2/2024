@@ -5,6 +5,7 @@ class_name player_character
 @onready var state_factory: state_machine = $state_machine
 @onready var graphic: Node2D = $Graphic
 @onready var hit_box: HitBox = $Component/HitBox
+@onready var swing: Node = $state_machine/swing
 @onready var hit: Node = $state_machine/hit
 @onready var animation_player: AnimationPlayer = $Graphic/AnimationPlayer
 
@@ -67,8 +68,31 @@ func get_face_direction()->Vector2:
 	return Vector2(1,0) if graphic.scale.x == 1 else Vector2(-1,0)
 
 
+func _on_dead() -> void:
+	pass # Replace with function body.
+
+
 func _on_hurt_box_hurt() -> void:
 	Global.current_camera.shake(.2,30,10)
 	Global.hit_stop(.05,.5)
+
+#endregion
+
+#region interact
+
+func if_can_swing()->bool:
+	if state_factory.current_state.state_name == "jump" || "fall":
+		return true
+	return false
+
+
+func release_swing()->void:
+	swing.release_swing()
+
+
+func enter_swing_state(connect_place:RigidBody2D)->void:
+	swing.player_connect = connect_place
+	state_factory.current_state.change_state("swing")
+
 
 #endregion

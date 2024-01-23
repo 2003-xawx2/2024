@@ -34,7 +34,7 @@ func _process(delta: float) -> void:
 			#print("change")
 			move_direction = - move_direction
 			if_can_change_direction = false
-	
+
 	if detect_player_ray.is_colliding():
 		state_change_timer.start(state_change_time)
 		move_direction = character.get_attack_vector()

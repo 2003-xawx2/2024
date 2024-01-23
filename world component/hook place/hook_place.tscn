@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsef0m1feyvsl"]
+
+[ext_resource type="Script" path="res://world component/hook place/hook_place.gd" id="1_l1kv2"]
+[ext_resource type="Script" path="res://misc/custom_node_script/dynamic_line.gd" id="2_aj01d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1lnyh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_makac"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nt1s0"]
+radius = 20.025
+
+[node name="HookPlace" type="StaticBody2D"]
+script = ExtResource("1_l1kv2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1lnyh")
+
+[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = 3.0
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
+node_a = NodePath("..")
+node_b = NodePath("../PlayerConnect")
+length = 10.0
+stiffness = 64.0
+damping = 0.1
+
+[node name="PlayerConnect" type="RigidBody2D" parent="."]
+position = Vector2(-65, 15)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConnect"]
+shape = SubResource("CircleShape2D_makac")
+
+[node name="ColorRect" type="ColorRect" parent="PlayerConnect"]
+offset_left = -2.0
+offset_right = 1.0
+offset_bottom = 3.0
+pivot_offset = Vector2(2, 1)
+
+[node name="DetectPlayer" type="Area2D" parent="PlayerConnect"]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConnect/DetectPlayer"]
+shape = SubResource("CircleShape2D_nt1s0")
+
+[node name="Line2D" type="Line2D" parent="." node_paths=PackedStringArray("pointA", "pointB")]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 2.0
+script = ExtResource("2_aj01d")
+pointA = NodePath("..")
+pointB = NodePath("../PlayerConnect")
+
+[node name="PreHookInteractTimer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true

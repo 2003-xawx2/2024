@@ -21,19 +21,19 @@ func _physics_process(delta: float) -> void:
 		hit_frames -= 1
 		hit(delta)
 		return
-	
+
 	character.velocity.y+=default_gravity*delta
 	character.move_and_slide()
 
 
 func _process(delta: float) -> void:
 	super(delta)
-	
+
 	#state change
 	if animation_player.current_animation == "hit":
 		return
-	
-	if died: 
+
+	if died:
 		change_state("die")
 		return
 	if character.is_on_floor():

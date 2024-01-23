@@ -23,9 +23,9 @@ func _physics_process(delta: float) -> void:
 		temp_jump_frames -= 1
 		jump(delta)
 		return
-	
+
 	var input_vector = character.get_input_movement()
-	
+
 	if character.is_jump_input() and state_time < .5:
 		move(delta,input_vector,default_gravity/2)
 	else:
@@ -41,9 +41,9 @@ func _process(delta: float) -> void:
 
 func jump(delta)->void:
 	var velocity :Vector2 = character.velocity
-	
+
 	velocity.x = lerp(velocity.x,character.get_input_movement().x*max_speed,1-exp(-delta*acceleration))
 	velocity.y = lerp(velocity.y,jump_velocity_y,1-exp(-delta*jump_acceleration_y))
-	
+
 	character.velocity = velocity
 	character.move_and_slide()

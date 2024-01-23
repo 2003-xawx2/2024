@@ -18,7 +18,7 @@ func _on_area_entered(area: Area2D) -> void:
 	if health_component==null:
 		print_debug("HealthManager is null!")
 		return
-	
+
 	var hurt_box_component = area as HurtBox
 	hurt_box_component.hurt.emit()
 	health_component.damage(hurt_box_component.damage)

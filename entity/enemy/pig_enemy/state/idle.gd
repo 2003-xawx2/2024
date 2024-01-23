@@ -4,7 +4,7 @@ extends basic_idle
 @onready var detect_player_ray: ShapeCast2D = $"../../Graphic/Ray/DetectPlayerRay"
 @onready var state_change_timer: Timer = $StateChangeTimer
 
-@export var state_change_time:int = 8 
+@export var state_change_time:int = 8
 
 
 func initialize()->void:

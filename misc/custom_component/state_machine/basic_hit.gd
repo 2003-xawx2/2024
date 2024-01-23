@@ -33,8 +33,8 @@ func _physics_process(delta: float) -> void:
 		hit_frames -= 1
 		hit(delta)
 		return
-	
-	
+
+
 	character.velocity.y += default_gravity * delta/4
 	hit_velocity_x /= 1.01
 	character.velocity.x = hit_velocity_x
@@ -48,6 +48,6 @@ func hit(delta:float)->void:
 		hit_target_velocity.y = hit_velocity
 	velocity = velocity.lerp(hit_target_velocity,1-exp(-delta*hit_acceleration))
 	hit_velocity_x = velocity.x
-	
+
 	character.velocity = velocity
 	character.move_and_slide()

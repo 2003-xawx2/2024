@@ -16,7 +16,7 @@ var _last_offset = Vector2(0, 0)
 
 func _ready() -> void:
 	Global.current_camera = self
-	
+
 	var used :Rect2i =map.get_used_rect().grow(-1)
 	var _scale := map.scale.x
 	var tile_size :Vector2i= map.tile_set.tile_size
@@ -27,7 +27,7 @@ func _ready() -> void:
 	limit_right=int(used.end.x*tile_size.x*_scale)
 	reset_smoothing()
 	force_update_scroll()
-	
+
 	set_process(true)
 
 

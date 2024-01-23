@@ -17,13 +17,13 @@ func quit()->void:
 
 func _process(delta: float) -> void:
 	super(delta)
-	
+
 	#state change
 	if animation_player.is_playing():
 		return
-	
+
 	print_debug(died)
-	if died: 
+	if died:
 		change_state("die")
 	elif character.get_input_movement() != Vector2.ZERO:
 		change_state("walk")

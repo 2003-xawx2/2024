@@ -2,7 +2,7 @@ shader_type canvas_item;
 
 uniform bool if_work = false;
 
-void fragment() 
+void fragment()
 {
 	if (if_work)
 	{

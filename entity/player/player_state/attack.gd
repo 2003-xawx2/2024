@@ -30,10 +30,10 @@ func _process(delta: float) -> void:
 	super(delta)
 	if if_can_jump and !pre_input_jump_timer.is_stopped():
 		change_state("jump")
-	
+
 	if !attack_timer.is_stopped():
 		return
-	
+
 	if character.get_input_movement()==Vector2.ZERO:
 		change_state("idle")
 	else:

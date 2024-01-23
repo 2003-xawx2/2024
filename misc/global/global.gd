@@ -3,25 +3,25 @@ extends Node
 
 class Flags:
 	signal changed
-	
+
 	var flag_saving := preload("res://misc/savings/flags_savings.tres")
 	var _flags := []
-	
+
 	func has(flag:String)->bool:
 		return flag in _flags
-	
+
 	func add(flag:String)->void:
 		if !has(flag):
 			_flags.append(flag)
 			changed.emit()
 			save()
-	
+
 	func save()->void:
 		flag_saving.save(_flags)
-	
+
 	func _load()->void:
 		_flags = flag_saving.flags
-	
+
 	func reset()->void:
 		_flags.clear()
 		save()
