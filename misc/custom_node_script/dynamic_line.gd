@@ -1,4 +1,3 @@
-@tool
 extends Line2D
 class_name DynamicLine2D
 
@@ -23,10 +22,6 @@ class_name DynamicLine2D
 	get:
 		return pointB
 
-
-func _ready() -> void:
-	points.append(pointA.position)
-	points.append(pointB.position)
 
 
 func _process(delta: float) -> void:

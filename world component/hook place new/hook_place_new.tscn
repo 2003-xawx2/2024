@@ -18,8 +18,8 @@ corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
 [node name="HookPlaceNew" type="StaticBody2D"]
-position = Vector2(134, 53)
 script = ExtResource("1_usftx")
+rope_piece_nums = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_sxtar")
@@ -58,3 +58,7 @@ metadata/_edit_use_anchors_ = true
 [node name="PreHookInteractTimer" type="Timer" parent="."]
 wait_time = 0.4
 one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(2, 84)
+zoom = Vector2(3.98, 3.98)

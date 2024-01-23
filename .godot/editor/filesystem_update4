@@ -5,3 +5,6 @@ res://entity/enemy/pig_enemy/pig_enemy.tscn
 res://world component/hook place/hook_place.tscn
 res://world component/hook place new/RopePiece/rope_piece.tscn
 res://world component/hook place new/hook_place_new.tscn
+res://misc/custom_node_script/dynamic_line.gd
+res://world component/hook place new/RopePiece/rope_piece.gd
+res://test_video/test/test.tscn
