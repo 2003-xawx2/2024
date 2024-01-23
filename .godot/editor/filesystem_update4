@@ -4,9 +4,3 @@ res://entity/player/flash.gdshader
 res://entity/player/player.tscn
 res://entity/enemy/pig_enemy/pig_enemy.tscn
 res://world component/hook place/hook_place.tscn
-res://entity/player/player_state/swing.gd
-res://entity/player/player_state/fall.gd
-res://world component/hook place/hook_place.gd
-res://entity/player/player.gd
-res://misc/custom_component/state_machine/air_state.gd
-res://entity/player/player_state/jump.gd
