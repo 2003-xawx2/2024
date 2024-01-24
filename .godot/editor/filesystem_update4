@@ -1,12 +1,11 @@
+res://world/main_world.tscn
 res://misc/global/transition/transition.gdshader
 res://entity/player/flash.gdshader
-res://world component/chain/chain.tscn
-res://world component/hook place new/hook_place_new.tscn
-res://world component/hook place new/hook_place_new.gd
-res://world component/chain/chain.gd
-res://world/main_world.tscn
 res://entity/player/player.tscn
 res://entity/enemy/pig_enemy/pig_enemy.tscn
 res://world component/hook place/hook_place.tscn
-res://world component/hook place new/node.tscn
+res://world component/hook place new/hook_place_new.tscn
+res://misc/camera/player_camera.tscn
 res://entity/player/player_state/swing.gd
+res://entity/player/player.gd
+res://world component/hook place new/hook_place_new.gd

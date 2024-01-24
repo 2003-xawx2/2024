@@ -45,7 +45,7 @@ func _physics_process(delta: float) -> void:
 
 	var new_position = player_connect.global_position
 	#player_connect.apply_force(default_gravity*Vector2.DOWN)
-	record_velocity = (new_position - character.global_position)/delta*2
+	record_velocity = (new_position - character.global_position)/delta
 	character.global_position = new_position
 	character.velocity = Vector2.ZERO
 	character.move_and_slide()
