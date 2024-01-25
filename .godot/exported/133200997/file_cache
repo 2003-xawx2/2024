@@ -1,0 +1,11 @@
+res://entity/enemy/pig_enemy/pig_enemy.tscn::095f05f4f83d9944144be9695f130b39::1706017187::res://.godot/exported/133200997/export-264b659d07d0218eb6c7c9143bdd99ad-pig_enemy.scn
+res://entity/player/player.tscn::88c5e0e4a4049ffe1d3120116d98fcbf::1706017187::res://.godot/exported/133200997/export-ac91e20421dbc10da0328e4e9da81e18-player.scn
+res://misc/camera/player_camera.tscn::bf4645a154e0c3a49303d260b52ad735::1706017187::res://.godot/exported/133200997/export-fa6d66491eaad6ece7a84903176a1a27-player_camera.scn
+res://misc/global/bgm_player/bgm_player.tscn::4f8ce33335372bf91ebd9ac5f015839e::1706013734::res://.godot/exported/133200997/export-a12f374b1adcc45153ab190e2cb06162-bgm_player.scn
+res://misc/global/transition/transition.tscn::1101cc28757c9ab2fd32596d63db9b18::1706013734::res://.godot/exported/133200997/export-a68034bb047350126ffe648a0cf2399b-transition.scn
+res://misc/savings/flags_savings.tres::d91fe00f2d9acd47e3cf292890513f09::1706013734::res://.godot/exported/133200997/export-b854034f92fbd18b501b5bf7c000b312-flags_savings.res
+res://test_video/test/test.tscn::e6d93a9ab39d21ea50a190715105fbbc::1706013734::res://.godot/exported/133200997/export-ca9402795fdd59aeb91e91c737350ba2-test.scn
+res://ui/title_sreen/title_screen.tscn::f1c112521402fe7a1b15877100d85210::1706013734::res://.godot/exported/133200997/export-aa2d23bbd3dac85cce3860ebd7a78d5b-title_screen.scn
+res://world/main_world.tscn::aa7d326d112e4280158d2be9f33b415e::1706017187::res://.godot/exported/133200997/export-3e98858a520924f991004c2c68533458-main_world.scn
+res://world component/hook place/hook_place.tscn::eb607cd896bf93b59371184cbad13000::1706017187::res://.godot/exported/133200997/export-c9f20dca3f1b795118e5f41e8be7a456-hook_place.scn
+res://world component/hook place new/hook_place_new.tscn::45bac7a6682340070b33aa5d85cd4f22::1706017187::res://.godot/exported/133200997/export-8a841865fd7f7d84bd0057bf308b0f6e-hook_place_new.scn

@@ -1243,7 +1243,10 @@ layer_0/tile_data = PackedInt32Array(1638406, 131072, 4, 1572870, 131072, 2, 150
 position = Vector2(461.333, 551.333)
 
 [node name="HookPlaceNew" parent="TileMap" instance=ExtResource("3_g40u2")]
-position = Vector2(248, 479.333)
+position = Vector2(329.333, 494.667)
+
+[node name="HookPlaceNew2" parent="TileMap" instance=ExtResource("3_g40u2")]
+position = Vector2(230.667, 481.333)
 
 [node name="Player&Enemy" type="Node2D" parent="."]
 
