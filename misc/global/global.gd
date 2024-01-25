@@ -27,8 +27,16 @@ class Flags:
 		save()
 
 var flags := Flags.new()
-
 var current_camera:Camera2D
+var player_born_position:Vector2
+var current_check_point:CheckPoint = null
+
+
+func get_player_recover_position()->Vector2:
+	if current_check_point == null:
+		return player_born_position
+	else:
+		return current_check_point.global_position
 
 
 func hit_stop(time:float = .1,time_scale:float = .5):

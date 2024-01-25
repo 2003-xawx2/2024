@@ -5,12 +5,14 @@ extends basic_state
 @onready var particles: GPUParticles2D = $"../../Graphic/PlayerSprite/GPUParticles2D"
 @onready var hurt_collision: CollisionShape2D = $"../../Graphic/HurtBox/CollisionShape2D"
 
+@export var random_talk:Array[String]
 var if_can_jump:= false
 
 
 func initialize()->void:
 	super()
 	animation_player.play("attack")
+	(character as player_character).ridicule.talk(random_talk.pick_random(),.8)
 	attack_timer.start()
 
 

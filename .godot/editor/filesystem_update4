@@ -1,0 +1,14 @@
+res://entity/player/player.tscn
+res://misc/global/transition/transition.gdshader
+res://entity/player/flash.gdshader
+res://entity/player/player_state/dead_recover.gd
+res://world/main_world.tscn
+res://ui/ridicule_word/ridicule.tscn
+res://misc/global/BigWorldMode/big_world_mode.tscn
+res://world component/check point/check_point.tscn
+res://misc/custom_node_script/modulate_tween.gd
+res://misc/global/global.gd
+res://entity/player/player.gd
+res://misc/custom_component/state_machine/basic_die.gd
+res://misc/custom_component/state_machine/basic_state.gd
+res://misc/custom_component/state_machine/state_machine.gd

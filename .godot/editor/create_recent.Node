@@ -1,0 +1,15 @@
+Node
+basic_state
+CollisionShape2D
+ColorRect
+Sprite2D
+Area2D
+PhantomCamera2D
+Node2D
+Control
+AnimationPlayer
+CanvasLayer
+Timer
+Label
+PinJoint2D
+RigidBody2D

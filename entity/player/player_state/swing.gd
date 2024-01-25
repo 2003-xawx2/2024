@@ -1,6 +1,7 @@
 extends basic_state
 
 @export var force_mulitiper:float = 5
+@export var enhance_y_vel:= 40
 
 var right:=true
 var left:=false
@@ -12,6 +13,7 @@ var first_apply_delta:=0
 
 func initialize():
 	super()
+	(character as player_character).ridicule.talk("就是玩",.6)
 	first_apply_delta = 1
 
 
@@ -30,6 +32,7 @@ func _physics_process(delta: float) -> void:
 
 	if last_apply_delta == 1:
 		last_apply_delta = 0
+		var enhanced_velocity = Vector2(record_velocity.x,record_velocity.y - enhance_y_vel)
 		character.velocity = record_velocity
 		character.move_and_slide()
 		change_state("fall")

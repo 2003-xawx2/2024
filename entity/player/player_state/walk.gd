@@ -5,6 +5,7 @@ extends basic_walk
 
 func initialize()->void:
 	super()
+	(character as player_character).ridicule.talk("润！",.1)
 
 
 func quit()->void:
