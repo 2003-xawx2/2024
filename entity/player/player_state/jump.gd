@@ -5,6 +5,8 @@ extends air_state
 @export var jump_acceleration_y:float=300
 @export var jump_velocity_y:float=-300
 
+@export var random_talk:Array[String]
+
 var temp_jump_frames:int
 
 
@@ -12,6 +14,7 @@ func initialize()->void:
 	super()
 	temp_jump_frames = jump_frames
 	animation_player.play("jump")
+	(character as player_character).ridicule.talk(random_talk.pick_random())
 
 
 func quit()->void:

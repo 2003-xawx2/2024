@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://bbjljtogn8tuh"]
+[gd_scene load_steps=47 format=3 uid="uid://bbjljtogn8tuh"]
 
 [ext_resource type="Script" path="res://misc/custom_component/state_machine/state_machine.gd" id="1_1bmcs"]
 [ext_resource type="Script" path="res://entity/player/player.gd" id="1_1yvdm"]
@@ -22,6 +22,8 @@
 [ext_resource type="Script" path="res://misc/custom_node_script/health_manager.gd" id="16_igdg8"]
 [ext_resource type="Script" path="res://entity/player/player_state/die.gd" id="18_en46a"]
 [ext_resource type="Script" path="res://entity/player/player_state/swing.gd" id="18_nqtyu"]
+[ext_resource type="Script" path="res://entity/player/player_state/dead_recover.gd" id="21_p5rsq"]
+[ext_resource type="PackedScene" uid="uid://dykneo2waob8j" path="res://ui/ridicule_word/ridicule.tscn" id="23_8kj2w"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qx6ba"]
 shader = ExtResource("2_i6wmt")
@@ -762,6 +764,7 @@ process_mode = 3
 script = ExtResource("1_1bmcs")
 animation_player = NodePath("../Graphic/AnimationPlayer")
 character = NodePath("..")
+debug = true
 
 [node name="idle" type="Node" parent="state_machine"]
 script = ExtResource("4_n1js4")
@@ -774,6 +777,7 @@ max_speed = 160.0
 
 [node name="attack" type="Node" parent="state_machine"]
 script = ExtResource("6_mobyt")
+random_talk = Array[String](["一刀", "我砍", "谁难受？"])
 state_name = "attack"
 max_speed = 150.0
 
@@ -808,6 +812,7 @@ script = ExtResource("8_v12s6")
 jump_frames = 2
 jump_acceleration_y = 120.0
 jump_velocity_y = -200.0
+random_talk = Array[String](["起飞", "诶 飞～", "我蹦"])
 state_name = "jump"
 acceleration = 6.0
 max_speed = 160.0
@@ -815,6 +820,7 @@ max_speed = 160.0
 [node name="swing" type="Node" parent="state_machine"]
 script = ExtResource("18_nqtyu")
 force_mulitiper = 80.0
+enhance_y_vel = 400
 state_name = "swing"
 
 [node name="hit" type="Node" parent="state_machine" node_paths=PackedStringArray("hit_collision")]
@@ -834,6 +840,10 @@ state_name = "die"
 acceleration = 5.0
 max_speed = 100.0
 
+[node name="recover" type="Node" parent="state_machine"]
+script = ExtResource("21_p5rsq")
+state_name = "recover"
+
 [node name="Component" type="Node2D" parent="."]
 
 [node name="HitBox" type="Area2D" parent="Component" node_paths=PackedStringArray("health_component")]
@@ -849,6 +859,9 @@ shape = SubResource("CapsuleShape2D_7tnum")
 [node name="HealthManager" type="Node" parent="Component"]
 script = ExtResource("16_igdg8")
 max_health = 1.0
+
+[node name="Ridicule" parent="Component" instance=ExtResource("23_8kj2w")]
+position = Vector2(0, -60)
 
 [connection signal="hurt" from="Graphic/HurtBox" to="." method="_on_hurt_box_hurt"]
 [connection signal="die_animation_finished" from="state_machine/die" to="." method="_on_dead"]

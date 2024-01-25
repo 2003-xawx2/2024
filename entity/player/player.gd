@@ -7,11 +7,13 @@ class_name player_character
 @onready var swing: Node = $state_machine/swing
 @onready var hit: Node = $state_machine/hit
 @onready var graphic: Node2D = $Graphic
+@onready var ridicule: Node2D = $Component/Ridicule
 
 var died:=false
 
 
 func _ready() -> void:
+	Global.player_born_position = global_position
 	state_factory.change_state("idle")
 
 
@@ -68,7 +70,7 @@ func get_face_direction()->Vector2:
 
 
 func _on_dead() -> void:
-	pass # Replace with function body.
+	state_factory.current_state.change_state("recover")
 
 
 func _on_hurt_box_hurt() -> void:

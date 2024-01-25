@@ -64,7 +64,10 @@ func _process(delta: float) -> void:
 
 func change_state(state:String):
 	quit()
-	print(name+"->"+state)
+	if state_factory == null:
+		state_factory = get_parent()
+	if state_factory.debug == true:
+		print(name+"->"+state)
 	state_factory.change_state(state)
 	process_mode = Node.PROCESS_MODE_DISABLED
 

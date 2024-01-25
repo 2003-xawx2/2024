@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://s50yxe53a18y"]
+[gd_scene load_steps=10 format=3 uid="uid://s50yxe53a18y"]
 
 [ext_resource type="Texture2D" uid="uid://6o1nqnovlwle" path="res://asset/2D RPG/Assets/Buildings.png" id="1_1rpts"]
 [ext_resource type="PackedScene" uid="uid://bsef0m1feyvsl" path="res://world component/hook place/hook_place.tscn" id="2_i40nc"]
 [ext_resource type="PackedScene" uid="uid://bbjljtogn8tuh" path="res://entity/player/player.tscn" id="2_tn4p0"]
 [ext_resource type="PackedScene" uid="uid://n04dvxjs2y18" path="res://misc/camera/player_camera.tscn" id="3_0nxrr"]
-[ext_resource type="PackedScene" uid="uid://sddf8tqylegb" path="res://world component/hook place new/hook_place_new.tscn" id="3_g40u2"]
+[ext_resource type="PackedScene" uid="uid://dadaxmd5wikav" path="res://entity/enemy/pig_enemy/pig_enemy.tscn" id="5_0k74x"]
+[ext_resource type="PackedScene" uid="uid://dxg53ewaxreom" path="res://world component/check point/check_point.tscn" id="6_0nayi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ke37u"]
 texture = ExtResource("1_1rpts")
@@ -1231,6 +1232,9 @@ terrain_set_0/terrain_0/name = "TA"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 sources/0 = SubResource("TileSetAtlasSource_ke37u")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jhgcr"]
+size = Vector2(41, 125)
+
 [node name="MainWorld" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1242,11 +1246,8 @@ layer_0/tile_data = PackedInt32Array(1638406, 131072, 4, 1572870, 131072, 2, 150
 [node name="HookPlace" parent="TileMap" instance=ExtResource("2_i40nc")]
 position = Vector2(461.333, 551.333)
 
-[node name="HookPlaceNew" parent="TileMap" instance=ExtResource("3_g40u2")]
-position = Vector2(329.333, 494.667)
-
-[node name="HookPlaceNew2" parent="TileMap" instance=ExtResource("3_g40u2")]
-position = Vector2(230.667, 481.333)
+[node name="HookPlace2" parent="TileMap" instance=ExtResource("2_i40nc")]
+position = Vector2(293.333, 498.667)
 
 [node name="Player&Enemy" type="Node2D" parent="."]
 
@@ -1254,5 +1255,14 @@ position = Vector2(230.667, 481.333)
 position = Vector2(292, 900)
 
 [node name="PlayerCamera" parent="Player&Enemy/Player" node_paths=PackedStringArray("map") instance=ExtResource("3_0nxrr")]
-position = Vector2(0, -25)
 map = NodePath("../../../TileMap")
+
+[node name="PigEnemy" parent="Player&Enemy" instance=ExtResource("5_0k74x")]
+position = Vector2(1029, 956)
+
+[node name="CheckPoint" parent="." instance=ExtResource("6_0nayi")]
+position = Vector2(890, 941)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CheckPoint"]
+position = Vector2(-21, -28)
+shape = SubResource("RectangleShape2D_jhgcr")

@@ -1,11 +1,14 @@
-res://world/main_world.tscn
+res://entity/player/player.tscn
 res://misc/global/transition/transition.gdshader
 res://entity/player/flash.gdshader
-res://entity/player/player.tscn
-res://entity/enemy/pig_enemy/pig_enemy.tscn
-res://world component/hook place/hook_place.tscn
-res://world component/hook place new/hook_place_new.tscn
-res://misc/camera/player_camera.tscn
-res://entity/player/player_state/swing.gd
+res://entity/player/player_state/dead_recover.gd
+res://world/main_world.tscn
+res://ui/ridicule_word/ridicule.tscn
+res://misc/global/BigWorldMode/big_world_mode.tscn
+res://world component/check point/check_point.tscn
+res://misc/custom_node_script/modulate_tween.gd
+res://misc/global/global.gd
 res://entity/player/player.gd
-res://world component/hook place new/hook_place_new.gd
+res://misc/custom_component/state_machine/basic_die.gd
+res://misc/custom_component/state_machine/basic_state.gd
+res://misc/custom_component/state_machine/state_machine.gd

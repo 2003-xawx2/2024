@@ -7,6 +7,7 @@ func _ready() -> void:
 
 func initialize()->void:
 	super()
+	(character as player_character).ridicule.talk("难受～",1)
 	Global.hit_stop(.15,.3)
 	Global.current_camera.shake(.1,200,10)
 

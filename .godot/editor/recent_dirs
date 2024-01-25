@@ -1,7 +1,9 @@
+res://entity/player/player_state
+res://world component/check point
+res://misc/global/BigWorldMode
+res://ui/ridicule_word
 D:/ggj/2024
 res://world component/hook place new
-res://world component/chain
-res://entity/player/player_state
 res://world component/hook place
 res://world
 res://ui/title_sreen

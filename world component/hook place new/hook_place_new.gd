@@ -3,7 +3,6 @@ class_name HookPlaceNew
 
 @onready var detect_player: Area2D = $PlayerConnect/DetectPlayer
 @onready var player_connect: RigidBody2D = $PlayerConnect
-@onready var damped_spring: DampedSpringJoint2D = $DampedSpringJoint2D
 @onready var pre_hook_interact_timer: Timer = $PreHookInteractTimer
 @onready var cooling_timer: Timer = $CoolingTimer
 
