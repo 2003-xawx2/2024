@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://xi3mskq0sk5"]
+
+[ext_resource type="Script" path="res://misc/custom_component/random_audio_player/random_audio_player.gd" id="1_nexip"]
+
+[node name="RandomAudioPlayer" type="AudioStreamPlayer"]
+bus = &"effects"
+script = ExtResource("1_nexip")

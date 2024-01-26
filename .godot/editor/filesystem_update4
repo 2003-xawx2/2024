@@ -1,13 +1,7 @@
-res://entity/player/player.tscn
+res://world component/visible collision manager/visible_collision_manager.tscn
 res://misc/global/transition/transition.gdshader
 res://entity/player/flash.gdshader
-res://entity/player/player.gd
-res://misc/camera/player_camera.gd
-res://misc/camera/player_camera.tscn
+res://world component/visible collision manager/visible_collision_manager.gd
 res://world/main_world.tscn
-res://ui/ridicule_word/ridicule.tscn
-res://misc/global/BigWorldMode/big_world_mode.tscn
+res://entity/player/player.tscn
 res://world component/check point/check_point.tscn
-res://entity/player/player_state/show.gd
-res://entity/enemy/pig_enemy/pig_enemy.tscn
-res://entity/player/player_state/fall.gd

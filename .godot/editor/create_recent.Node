@@ -1,4 +1,7 @@
 Timer
+Label
+TimeManager
+CanvasLayer
 Node
 AnimationPlayer
 Node2D
@@ -9,6 +12,3 @@ Sprite2D
 Area2D
 PhantomCamera2D
 Control
-CanvasLayer
-Label
-PinJoint2D

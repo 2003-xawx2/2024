@@ -5,7 +5,7 @@ class_name player_camera
 @onready var signal_timer: Timer = $SignalTimer
 
 @export var map:Node2D
-@export var zoom_in_check_time = 1.5
+@export var zoom_in_check_time = 4
 @export var check_out_offset:Vector2
 
 signal check_out_ready
@@ -51,18 +51,20 @@ func check_out(object:Node2D,time:float = 1)->void:
 	if_checking = true
 	target_global_position = object.position + check_out_offset
 
-	signal_timer.start(zoom_in_check_time)
+	signal_timer.start(zoom_in_check_time - .1)
 	check_out_timer.start(zoom_in_check_time + time)
 
 	if check_out_tween and check_out_tween.is_running():
 		check_out_tween.kill()
 
-	check_out_tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
-	check_out_tween.tween_property(self,"zoom",10 * Vector2.ONE,zoom_in_check_time)
+	check_out_tween =create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
+	check_out_tween.parallel().tween_property(self,"global_position",target_global_position,zoom_in_check_time).\
+	set_trans(Tween.TRANS_ELASTIC)
+	check_out_tween.parallel().tween_property(self,"zoom",10 * Vector2.ONE,zoom_in_check_time).\
+	set_trans(Tween.TRANS_CIRC)
 
 	check_out_tween.tween_interval(time)
 	check_out_tween.tween_property(self,"zoom",reset_zoom,.6)
-
 
 
 func _process(delta: float) -> void:

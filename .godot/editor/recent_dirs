@@ -1,8 +1,9 @@
+res://world component/visible collision manager
+res://misc/custom_component/random_audio_player
 res://entity/player/player_state
 res://world component/check point
 res://misc/global/BigWorldMode
 res://ui/ridicule_word
-D:/ggj/2024
 res://world component/hook place new
 res://world component/hook place
 res://world

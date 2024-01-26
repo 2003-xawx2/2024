@@ -55,7 +55,8 @@ func _physics_process(delta: float) -> void:
 
 
 func release_swing()->void:
-	last_apply_delta = 1
+	if state_time > .5:
+		last_apply_delta = 1
 
 
 func _input(event: InputEvent) -> void:

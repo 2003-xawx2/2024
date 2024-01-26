@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://buj4jd6exbib3"]
+
+[ext_resource type="Script" path="res://world component/visible collision manager/visible_collision_manager.gd" id="1_f4v2q"]
+
+[node name="VisibleCollisionManager" type="Node2D"]
+script = ExtResource("1_f4v2q")
+
+[node name="ChangeTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="ChangeTimer" to="." method="_on_change_timer_timeout"]
