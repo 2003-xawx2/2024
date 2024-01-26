@@ -57,10 +57,10 @@ func check_out(object:Node2D,time:float = 1)->void:
 	if check_out_tween and check_out_tween.is_running():
 		check_out_tween.kill()
 
-	check_out_tween =create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
+	check_out_tween =create_tween()
 	check_out_tween.parallel().tween_property(self,"global_position",target_global_position,zoom_in_check_time)
 	check_out_tween.parallel().tween_property(self,"zoom",10 * Vector2.ONE,zoom_in_check_time).\
-	set_trans(Tween.TRANS_CIRC)
+	set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_CIRC)
 
 	check_out_tween.tween_interval(time)
 	check_out_tween.tween_property(self,"zoom",reset_zoom,.6)
