@@ -382,10 +382,10 @@ die.gd::GDScript::-1::1704544889::0::1::::<>basic_die<>::
 hit.gd::GDScript::-1::1706018044::0::1::::<>basic_hit<>::
 idle.gd::GDScript::-1::1706018044::0::1::::<>basic_idle<>::
 walk.gd::GDScript::-1::1706018044::0::1::::<>basic_walk<>::
-::res://entity/player/::1706266707
-flash.gdshader::Shader::-1::1706266707::0::1::::<><>::
+::res://entity/player/::1706278448
+flash.gdshader::Shader::-1::1706278448::0::1::::<><>::
 player.gd::GDScript::-1::1706247842::0::1::::player_character<>CharacterBody2D<>::
-player.tscn::PackedScene::2475873906045465747::1706266614::0::1::::<><>::res://misc/custom_component/state_machine/state_machine.gd<>res://entity/player/player.gd<>res://entity/player/flash.gdshader<>uid://derwoni8cmuvi::::res://asset/2D RPG/Character/Idle/Idle-Sheet.png<>uid://b1vff44n1cdui::::res://asset/2D RPG/Character/Jump-End/Jump-End-Sheet.png<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://c3o6jvk4qljj7::::res://asset/2D RPG/Character/Attack-01/Attack-01-Sheet.png<>uid://dk54hkt3ardtg::::res://asset/2D RPG/Character/Run/Run-Sheet.png<>uid://3hsmo7jm1dwh::::res://asset/2D RPG/Character/Jump-Start/Jump-Start-Sheet.png<>res://entity/player/player_state/idle.gd<>res://entity/player/player_state/walk.gd<>res://entity/player/player_state/attack.gd<>uid://c3rydaywsn0yk::::res://asset/2D RPG/Character/Jumlp-All/Jump-All-Sheet.png<>res://entity/player/player_state/fall.gd<>res://entity/player/player_state/jump.gd<>uid://dp7l27y7k4eor::::res://asset/2D RPG/Character/Dead/Dead-Sheet.png<>res://entity/player/player_state/show.gd<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_node_script/hit_box.gd<>res://entity/player/player_state/hit.gd<>res://misc/custom_node_script/health_manager.gd<>res://entity/player/player_state/die.gd<>res://entity/player/player_state/swing.gd<>res://entity/player/player_state/dead_recover.gd<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn<>res://entity/player/RecoverInvincible.gd
+player.tscn::PackedScene::2475873906045465747::1706270702::0::1::::<><>::res://misc/custom_component/state_machine/state_machine.gd<>res://entity/player/player.gd<>res://entity/player/flash.gdshader<>uid://derwoni8cmuvi::::res://asset/2D RPG/Character/Idle/Idle-Sheet.png<>uid://b1vff44n1cdui::::res://asset/2D RPG/Character/Jump-End/Jump-End-Sheet.png<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://c3o6jvk4qljj7::::res://asset/2D RPG/Character/Attack-01/Attack-01-Sheet.png<>uid://dk54hkt3ardtg::::res://asset/2D RPG/Character/Run/Run-Sheet.png<>uid://3hsmo7jm1dwh::::res://asset/2D RPG/Character/Jump-Start/Jump-Start-Sheet.png<>res://entity/player/player_state/idle.gd<>res://entity/player/player_state/walk.gd<>res://entity/player/player_state/attack.gd<>uid://c3rydaywsn0yk::::res://asset/2D RPG/Character/Jumlp-All/Jump-All-Sheet.png<>res://entity/player/player_state/fall.gd<>res://entity/player/player_state/jump.gd<>uid://dp7l27y7k4eor::::res://asset/2D RPG/Character/Dead/Dead-Sheet.png<>res://entity/player/player_state/show.gd<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_node_script/hit_box.gd<>res://entity/player/player_state/hit.gd<>res://misc/custom_node_script/health_manager.gd<>res://entity/player/player_state/die.gd<>res://entity/player/player_state/swing.gd<>res://entity/player/player_state/dead_recover.gd<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn<>res://entity/player/RecoverInvincible.gd
 RecoverInvincible.gd::GDScript::-1::1706245201::0::1::::<>Node2D<>::
 ::res://entity/player/player_state/::1706266604
 attack.gd::GDScript::-1::1706183253::0::1::::<>basic_state<>::
@@ -438,9 +438,9 @@ bgm_player.tscn::PackedScene::2366932920996654547::1703677335::0::1::::<><>::uid
 ::res://misc/global/BigWorldMode/::1706255887
 big_world_mode.gd::GDScript::-1::1706190662::0::1::::<>CanvasLayer<>::
 big_world_mode.tscn::PackedScene::909188508760742160::1706255887::0::1::::<><>::res://misc/global/BigWorldMode/big_world_mode.gd<>uid://dcrwh8ptt2mhd::::res://asset/ui/阿里妈妈刀隶体/AlimamaDaoLiTi.ttf
-::res://misc/global/transition/::1706266707
+::res://misc/global/transition/::1706278448
 transition.gd::GDScript::-1::1704672172::0::1::::<>CanvasLayer<>::
-transition.gdshader::Shader::-1::1706266707::0::1::::<><>::
+transition.gdshader::Shader::-1::1706278448::0::1::::<><>::
 transition.tscn::PackedScene::8273020329504889910::1705929416::0::1::::<><>::res://misc/global/transition/transition.gd<>res://misc/global/transition/transition.gdshader
 ::res://misc/savings/::1703678370
 flags_savings.tres::Resource/Resource::5892052910940116118::1703678370::0::1::::<><>::res://misc/custom_resource_script/flag_savings.gd
@@ -454,18 +454,20 @@ ridicule.tscn::PackedScene::8865235318051014879::1706249206::0::1::::<><>::uid:/
 ::res://ui/title_sreen/::1704672357
 title_screen.gd::GDScript::-1::1704671935::0::1::::<>CanvasLayer<>::
 title_screen.tscn::PackedScene::1844627039011483092::1704672357::0::1::::<><>::res://ui/title_sreen/title_screen.gd
-::res://world/::1706266496
-main_world.tscn::PackedScene::1326892517596037602::1706266496::0::1::::<><>::uid://6o1nqnovlwle::::res://asset/2D RPG/Assets/Buildings.png<>uid://bsef0m1feyvsl::::res://world component/hook place/hook_place.tscn<>uid://bbjljtogn8tuh::::res://entity/player/player.tscn<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn<>uid://dadaxmd5wikav::::res://entity/enemy/pig_enemy/pig_enemy.tscn<>uid://dxg53ewaxreom::::res://world component/check point/check_point.tscn<>res://misc/custom_manager/timer_manager.gd
+::res://world/::1706278585
+main_world.tscn::PackedScene::1326892517596037602::1706270702::0::1::::<><>::uid://6o1nqnovlwle::::res://asset/2D RPG/Assets/Buildings.png<>uid://bsef0m1feyvsl::::res://world component/hook place/hook_place.tscn<>uid://bbjljtogn8tuh::::res://entity/player/player.tscn<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn<>uid://dadaxmd5wikav::::res://entity/enemy/pig_enemy/pig_enemy.tscn<>uid://dxg53ewaxreom::::res://world component/check point/check_point.tscn<>res://misc/custom_manager/timer_manager.gd
+::res://world/check_1_super_man/::1706278544
+::res://world/check_2_lick_dog/::1706278585
 ::res://world component/::1706265408
-::res://world component/check point/::1706266496
+::res://world component/check point/::1706270702
 check_point.gd::GDScript::-1::1706191078::0::1::::CheckPoint<>Area2D<>::
-check_point.tscn::PackedScene::8787863477401244400::1706266496::0::1::::<><>::res://world component/check point/check_point.gd
+check_point.tscn::PackedScene::8787863477401244400::1706270702::0::1::::<><>::res://world component/check point/check_point.gd
 ::res://world component/hook place/::1706238147
 hook_place.gd::GDScript::-1::1706238147::0::1::::HookPlace<>StaticBody2D<>::
 hook_place.tscn::PackedScene::3658426280683984995::1706177487::0::1::::<><>::res://world component/hook place/hook_place.gd<>res://misc/custom_node_script/dynamic_line.gd
 ::res://world component/hook place new/::1706177487
 hook_place_new.gd::GDScript::-1::1706176879::0::1::::HookPlaceNew<>StaticBody2D<>::
 hook_place_new.tscn::PackedScene::1269785162075900789::1706177487::0::1::::<><>::res://world component/hook place new/hook_place_new.gd
-::res://world component/visible collision manager/::1706266674
-visible_collision_manager.gd::GDScript::-1::1706265971::0::1::::<>Node2D<>::
-visible_collision_manager.tscn::PackedScene::3810554026847171606::1706266674::0::1::::<><>::res://world component/visible collision manager/visible_collision_manager.gd
+::res://world component/visible collision manager/::1706278448
+visible_collision_manager.gd::GDScript::-1::1706267599::0::1::::<>Node2D<>::
+visible_collision_manager.tscn::PackedScene::3810554026847171606::1706278448::0::1::::<><>::res://world component/visible collision manager/visible_collision_manager.gd
