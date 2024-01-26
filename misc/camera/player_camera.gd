@@ -5,7 +5,7 @@ class_name player_camera
 @onready var signal_timer: Timer = $SignalTimer
 
 @export var map:Node2D
-@export var zoom_in_check_time = 4
+@export var zoom_in_check_time = 10
 @export var check_out_offset:Vector2
 
 signal check_out_ready
@@ -58,8 +58,7 @@ func check_out(object:Node2D,time:float = 1)->void:
 		check_out_tween.kill()
 
 	check_out_tween =create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
-	check_out_tween.parallel().tween_property(self,"global_position",target_global_position,zoom_in_check_time).\
-	set_trans(Tween.TRANS_ELASTIC)
+	check_out_tween.parallel().tween_property(self,"global_position",target_global_position,zoom_in_check_time)
 	check_out_tween.parallel().tween_property(self,"zoom",10 * Vector2.ONE,zoom_in_check_time).\
 	set_trans(Tween.TRANS_CIRC)
 

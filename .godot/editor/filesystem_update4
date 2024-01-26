@@ -1,7 +1,8 @@
-res://world component/visible collision manager/visible_collision_manager.tscn
+res://world/main_world.tscn
 res://misc/global/transition/transition.gdshader
 res://entity/player/flash.gdshader
-res://world component/visible collision manager/visible_collision_manager.gd
-res://world/main_world.tscn
 res://entity/player/player.tscn
 res://world component/check point/check_point.tscn
+res://world component/visible collision manager/visible_collision_manager.tscn
+res://world/check_1_super_man/check_1_superman.tscn
+res://misc/camera/player_camera.gd
