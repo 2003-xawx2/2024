@@ -7,6 +7,7 @@ signal die_animation_finished
 
 
 func _ready() -> void:
+	super()
 	set_process(false)
 
 

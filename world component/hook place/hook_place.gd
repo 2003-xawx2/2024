@@ -30,7 +30,7 @@ func release_player()->void:
 	player = null
 
 
-func _input(event: InputEvent) -> void:
+func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("hook swing interact"):
 		if !is_swing:
 			pre_hook_interact_timer.start()

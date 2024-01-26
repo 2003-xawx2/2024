@@ -810,8 +810,8 @@ one_shot = true
 [node name="jump" type="Node" parent="state_machine"]
 script = ExtResource("8_v12s6")
 jump_frames = 2
-jump_acceleration_y = 120.0
-jump_velocity_y = -200.0
+jump_acceleration_y = 700.0
+jump_velocity_y = -400.0
 random_talk = Array[String](["起飞", "诶 飞～", "我蹦"])
 state_name = "jump"
 acceleration = 6.0
@@ -820,7 +820,7 @@ max_speed = 160.0
 [node name="swing" type="Node" parent="state_machine"]
 script = ExtResource("18_nqtyu")
 force_mulitiper = 80.0
-enhance_y_vel = 400
+enhance_y_vel = 50
 state_name = "swing"
 
 [node name="hit" type="Node" parent="state_machine" node_paths=PackedStringArray("hit_collision")]
@@ -838,7 +838,7 @@ script = ExtResource("18_en46a")
 hit_collision = NodePath("../../Component/HitBox/CollisionShape2D")
 state_name = "die"
 acceleration = 5.0
-max_speed = 100.0
+max_speed = 160.0
 
 [node name="recover" type="Node" parent="state_machine"]
 script = ExtResource("21_p5rsq")

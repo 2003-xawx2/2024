@@ -24,7 +24,7 @@ func quit():
 func _physics_process(delta: float) -> void:
 	if first_apply_delta == 1:
 		first_apply_delta = 0
-		var force = Vector2(character.velocity.x*2,character.velocity.y/2)
+		var force = Vector2(character.velocity.x,character.velocity.y / 2)
 		player_connect.apply_impulse(force)
 		character.velocity = Vector2.ZERO
 		character.move_and_slide()
@@ -32,8 +32,8 @@ func _physics_process(delta: float) -> void:
 
 	if last_apply_delta == 1:
 		last_apply_delta = 0
-		var enhanced_velocity = Vector2(record_velocity.x,record_velocity.y - enhance_y_vel)
-		character.velocity = record_velocity
+		var enhanced_velocity = Vector2(record_velocity.x * 1.2,record_velocity.y - enhance_y_vel)
+		character.velocity = enhanced_velocity
 		character.move_and_slide()
 		change_state("fall")
 		return

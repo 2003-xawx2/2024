@@ -30,9 +30,9 @@ func _physics_process(delta: float) -> void:
 	var input_vector = character.get_input_movement()
 
 	if character.is_jump_input() and state_time < .5:
-		air_move(delta,default_gravity / 2)
+		air_move(delta,default_gravity / 1.3)
 	else:
-		air_move(delta,default_gravity * 2)
+		air_move(delta,default_gravity * 1.3)
 
 
 func _process(delta: float) -> void:

@@ -13,7 +13,7 @@ func quit()->void:
 var vel_x:float
 func air_move(delta:float,gravity:= default_gravity)->void:
 	var new_direction = (character as player_character).get_input_movement()
-	character.velocity.y += default_gravity * delta / 4
+	character.velocity.y += gravity * delta
 	if new_direction!=Vector2.ZERO:
 		vel_x = character.velocity.x
 		vel_x = lerp(vel_x,new_direction.x*max_speed,1-exp(-acceleration*delta))

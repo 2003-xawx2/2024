@@ -2,6 +2,7 @@ extends Node2D
 class_name ridicule
 
 var tween:Tween
+
 @export var tween_time: = .5
 @export var auto_hide_time: = 1
 @export_range(0,1) var talk_chance := .3

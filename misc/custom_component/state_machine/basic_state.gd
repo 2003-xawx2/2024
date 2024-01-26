@@ -40,7 +40,7 @@ func quit()->void:
 func stand(delta:float,gravity:float = default_gravity)->void:
 	var velocity :Vector2 = character.get_real_velocity()
 
-	velocity.y += gravity * delta/4
+	velocity.y += gravity * delta
 	velocity.x = lerp(velocity.x,float(0),1-exp(-delta*acceleration))
 
 	character.velocity = velocity
@@ -49,9 +49,9 @@ func stand(delta:float,gravity:float = default_gravity)->void:
 
 func move(delta:float,direction:Vector2,gravity:float = default_gravity)->void:
 
-	var velocity :Vector2 = character.get_real_velocity()
+	var velocity :Vector2 = character.velocity
 
-	velocity.y += gravity * delta/4
+	velocity.y += gravity * delta
 	velocity.x = lerp(velocity.x,direction.x*max_speed,1-exp(-delta*acceleration))
 
 	character.velocity = velocity
