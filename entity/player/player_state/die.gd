@@ -3,9 +3,9 @@ extends basic_die
 
 
 func initialize()->void:
+	super()
 	(character as player_character).ridicule.talk("完蛋",1)
 	BigWorldMode.show_word_two("你","死了")
-	super()
 
 
 func quit()->void:

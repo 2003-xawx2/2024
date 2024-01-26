@@ -39,3 +39,7 @@ func _on_hit_box_be_hit(direction: Vector2) -> void:
 func _on_health_manager_die() -> void:
 	hit.died = true
 #endregion
+
+
+func _on_die_die_animation_finished() -> void:
+	queue_free()

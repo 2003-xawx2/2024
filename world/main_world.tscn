@@ -1249,20 +1249,33 @@ position = Vector2(461.333, 551.333)
 [node name="HookPlace2" parent="TileMap" instance=ExtResource("2_i40nc")]
 position = Vector2(293.333, 498.667)
 
+[node name="CheckPoint" parent="TileMap" instance=ExtResource("6_0nayi")]
+position = Vector2(593.333, 627.333)
+scale = Vector2(0.666667, 0.666667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/CheckPoint"]
+position = Vector2(-21, -28)
+shape = SubResource("RectangleShape2D_jhgcr")
+
+[node name="CheckPoint2" parent="TileMap" instance=ExtResource("6_0nayi")]
+position = Vector2(925.333, 660.667)
+scale = Vector2(0.666667, 0.666667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/CheckPoint2"]
+position = Vector2(-21, -28)
+shape = SubResource("RectangleShape2D_jhgcr")
+
 [node name="Player&Enemy" type="Node2D" parent="."]
 
 [node name="Player" parent="Player&Enemy" instance=ExtResource("2_tn4p0")]
 position = Vector2(292, 900)
 
 [node name="PlayerCamera" parent="Player&Enemy/Player" node_paths=PackedStringArray("map") instance=ExtResource("3_0nxrr")]
+position = Vector2(1293, 24)
 map = NodePath("../../../TileMap")
 
 [node name="PigEnemy" parent="Player&Enemy" instance=ExtResource("5_0k74x")]
+position = Vector2(1570, 942)
+
+[node name="PigEnemy2" parent="Player&Enemy" instance=ExtResource("5_0k74x")]
 position = Vector2(1029, 956)
-
-[node name="CheckPoint" parent="." instance=ExtResource("6_0nayi")]
-position = Vector2(890, 941)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CheckPoint"]
-position = Vector2(-21, -28)
-shape = SubResource("RectangleShape2D_jhgcr")

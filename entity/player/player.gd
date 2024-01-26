@@ -6,15 +6,19 @@ class_name player_character
 @onready var hit_box: HitBox = $Component/HitBox
 @onready var swing: Node = $state_machine/swing
 @onready var hit: Node = $state_machine/hit
+@onready var health_manager: HealthManager = $Component/HealthManager
 @onready var graphic: Node2D = $Graphic
+@onready var recover_invincible: Node2D = $Component/RecoverInvincible
 @onready var ridicule: Node2D = $Component/Ridicule
 
+static var instance:player_character
 var died:=false
 
 
 func _ready() -> void:
+	instance = self
 	Global.player_born_position = global_position
-	state_factory.change_state("idle")
+	state_factory.change_state("show")
 
 
 func _process(delta: float) -> void:
@@ -29,6 +33,13 @@ func flip_on_velocity()->void:
 		graphic.scale.x = 1
 	elif velocity_x < -1:
 		graphic.scale.x = -1
+
+
+func recover_from_die():
+	recover_invincible.recover()
+	health_manager.reset()
+	hit.died = false
+	died = false
 
 
 #region handle input
@@ -53,8 +64,9 @@ func is_jump_input()->bool:
 #region handle signal
 
 func _on_hit_box_be_hit(direction: Vector2) -> void:
-	if died:
+	if died or state_factory.current_state.state_name == "die" || "recover" || "hit":
 		return
+
 	state_factory.current_state.change_state("hit")
 	hit.hit_direction = direction
 
@@ -97,3 +109,6 @@ func enter_swing_state(connect_place:RigidBody2D)->void:
 
 
 #endregion
+
+
+

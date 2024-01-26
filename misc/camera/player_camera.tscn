@@ -12,3 +12,13 @@ drag_left_margin = 0.1
 drag_right_margin = 0.1
 editor_draw_drag_margin = true
 script = ExtResource("1_u6ygw")
+check_out_offset = Vector2(2.08165e-12, -28)
+
+[node name="CheckOutTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="SignalTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="CheckOutTimer" to="." method="_on_check_out_timer_timeout"]
+[connection signal="timeout" from="SignalTimer" to="." method="_on_signal_timer_timeout"]

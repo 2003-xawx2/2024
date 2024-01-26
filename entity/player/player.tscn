@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://bbjljtogn8tuh"]
+[gd_scene load_steps=53 format=3 uid="uid://bbjljtogn8tuh"]
 
 [ext_resource type="Script" path="res://misc/custom_component/state_machine/state_machine.gd" id="1_1bmcs"]
 [ext_resource type="Script" path="res://entity/player/player.gd" id="1_1yvdm"]
@@ -16,6 +16,7 @@
 [ext_resource type="Script" path="res://entity/player/player_state/fall.gd" id="7_34y71"]
 [ext_resource type="Script" path="res://entity/player/player_state/jump.gd" id="8_v12s6"]
 [ext_resource type="Texture2D" uid="uid://dp7l27y7k4eor" path="res://asset/2D RPG/Character/Dead/Dead-Sheet.png" id="10_x3os4"]
+[ext_resource type="Script" path="res://entity/player/player_state/show.gd" id="13_c6br1"]
 [ext_resource type="Script" path="res://misc/custom_node_script/hurt_box.gd" id="14_pe2bb"]
 [ext_resource type="Script" path="res://misc/custom_node_script/hit_box.gd" id="15_77035"]
 [ext_resource type="Script" path="res://entity/player/player_state/hit.gd" id="16_icu2k"]
@@ -24,6 +25,7 @@
 [ext_resource type="Script" path="res://entity/player/player_state/swing.gd" id="18_nqtyu"]
 [ext_resource type="Script" path="res://entity/player/player_state/dead_recover.gd" id="21_p5rsq"]
 [ext_resource type="PackedScene" uid="uid://dykneo2waob8j" path="res://ui/ridicule_word/ridicule.tscn" id="23_8kj2w"]
+[ext_resource type="Script" path="res://entity/player/RecoverInvincible.gd" id="25_jd2pr"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qx6ba"]
 shader = ExtResource("2_i6wmt")
@@ -196,6 +198,18 @@ tracks/9/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("..:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_xqn1o"]
@@ -666,6 +680,21 @@ tracks/3/keys = {
 "values": [Vector2(0, -24)]
 }
 
+[sub_resource type="Animation" id="Animation_36l1t"]
+resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kcbam"]
 _data = {
 "RESET": SubResource("Animation_of40m"),
@@ -676,6 +705,7 @@ _data = {
 "idle": SubResource("Animation_viggs"),
 "jump": SubResource("Animation_nrsq1"),
 "land": SubResource("Animation_fs4m5"),
+"show": SubResource("Animation_36l1t"),
 "walk": SubResource("Animation_t5s40")
 }
 
@@ -695,6 +725,44 @@ radius = 32.0156
 radius = 8.0
 height = 34.0
 
+[sub_resource type="Animation" id="Animation_y3ln0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../..:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8wydw"]
+resource_name = "recover"
+length = 0.3
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../..:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.223529)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y2d04"]
+_data = {
+"RESET": SubResource("Animation_y3ln0"),
+"recover": SubResource("Animation_8wydw")
+}
+
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 5
@@ -702,6 +770,7 @@ platform_on_leave = 1
 script = ExtResource("1_1yvdm")
 
 [node name="PlayerCollision" type="CollisionPolygon2D" parent="."]
+visible = false
 position = Vector2(0, -21)
 polygon = PackedVector2Array(0, 21, 3, 18, 7, 5, 4, -12, -4, -12, -7, 5, -3, 18)
 
@@ -750,6 +819,7 @@ texture = SubResource("GradientTexture2D_0tsvu")
 texture_scale = 2.0
 
 [node name="HurtBox" type="Area2D" parent="Graphic"]
+visible = false
 collision_layer = 8
 collision_mask = 0
 script = ExtResource("14_pe2bb")
@@ -766,6 +836,10 @@ animation_player = NodePath("../Graphic/AnimationPlayer")
 character = NodePath("..")
 debug = true
 
+[node name="show" type="Node" parent="state_machine"]
+script = ExtResource("13_c6br1")
+state_name = "show"
+
 [node name="idle" type="Node" parent="state_machine"]
 script = ExtResource("4_n1js4")
 state_name = "idle"
@@ -774,20 +848,6 @@ state_name = "idle"
 script = ExtResource("5_gshbm")
 acceleration = 7.0
 max_speed = 160.0
-
-[node name="attack" type="Node" parent="state_machine"]
-script = ExtResource("6_mobyt")
-random_talk = Array[String](["一刀", "我砍", "谁难受？"])
-state_name = "attack"
-max_speed = 150.0
-
-[node name="AttackTimer" type="Timer" parent="state_machine/attack"]
-wait_time = 0.82
-one_shot = true
-
-[node name="PreInputJumpTimer" type="Timer" parent="state_machine/attack"]
-wait_time = 0.15
-one_shot = true
 
 [node name="fall" type="Node" parent="state_machine"]
 script = ExtResource("7_34y71")
@@ -822,6 +882,20 @@ script = ExtResource("18_nqtyu")
 force_mulitiper = 80.0
 enhance_y_vel = 50
 state_name = "swing"
+
+[node name="attack" type="Node" parent="state_machine"]
+script = ExtResource("6_mobyt")
+random_talk = Array[String](["一刀", "我砍", "谁难受？"])
+state_name = "attack"
+max_speed = 150.0
+
+[node name="AttackTimer" type="Timer" parent="state_machine/attack"]
+wait_time = 0.82
+one_shot = true
+
+[node name="PreInputJumpTimer" type="Timer" parent="state_machine/attack"]
+wait_time = 0.15
+one_shot = true
 
 [node name="hit" type="Node" parent="state_machine" node_paths=PackedStringArray("hit_collision")]
 script = ExtResource("16_icu2k")
@@ -858,12 +932,25 @@ shape = SubResource("CapsuleShape2D_7tnum")
 
 [node name="HealthManager" type="Node" parent="Component"]
 script = ExtResource("16_igdg8")
-max_health = 1.0
+max_health = 4.0
 
 [node name="Ridicule" parent="Component" instance=ExtResource("23_8kj2w")]
 position = Vector2(0, -60)
+
+[node name="RecoverInvincible" type="Node2D" parent="Component"]
+script = ExtResource("25_jd2pr")
+
+[node name="RecoverTimer" type="Timer" parent="Component/RecoverInvincible"]
+wait_time = 3.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Component/RecoverInvincible"]
+libraries = {
+"": SubResource("AnimationLibrary_y2d04")
+}
 
 [connection signal="hurt" from="Graphic/HurtBox" to="." method="_on_hurt_box_hurt"]
 [connection signal="die_animation_finished" from="state_machine/die" to="." method="_on_dead"]
 [connection signal="be_hit" from="Component/HitBox" to="." method="_on_hit_box_be_hit"]
 [connection signal="die" from="Component/HealthManager" to="." method="_on_health_manager_die"]
+[connection signal="timeout" from="Component/RecoverInvincible/RecoverTimer" to="Component/RecoverInvincible" method="_on_recover_timer_timeout"]

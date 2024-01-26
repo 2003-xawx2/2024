@@ -13,13 +13,6 @@ var is_character_on_floor:=false
 func _ready() -> void:
 	super()
 	await owner.ready
-	animation_player.animation_finished.connect(func(animation:String):
-		if animation != "land" or !is_work:
-			return
-		if character.get_input_movement()==Vector2.ZERO:
-			change_state("idle")
-		else:
-			change_state("walk"))
 
 
 func initialize()->void:
@@ -27,6 +20,14 @@ func initialize()->void:
 	is_landing = false
 	is_character_on_floor = false
 	animation_player.play("fall")
+	animation_player.animation_finished.connect(func(animation:String):
+		if animation != "land" or !is_work:
+			return
+		if character.get_input_movement()==Vector2.ZERO:
+			change_state("idle")
+		else:
+			change_state("walk")
+			,CONNECT_ONE_SHOT)
 	if state_factory.previos_state.state_name == "walk":
 		coyote_timer.start()
 

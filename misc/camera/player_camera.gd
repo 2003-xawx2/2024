@@ -1,5 +1,14 @@
 extends Camera2D
+class_name player_camera
 
+@onready var check_out_timer: Timer = $CheckOutTimer
+@onready var signal_timer: Timer = $SignalTimer
+
+@export var map:Node2D
+@export var zoom_in_check_time = 1.5
+@export var check_out_offset:Vector2
+
+signal check_out_ready
 
 var _duration = 0.0
 var _period_in_ms = 0.0
@@ -10,11 +19,14 @@ var _previous_x = 0.0
 var _previous_y = 0.0
 var _last_offset = Vector2(0, 0)
 
-
-@export var map:Node2D
+var check_out_tween:Tween
+var target_global_position:Vector2
+var reset_zoom:Vector2
+var if_checking:bool = false
 
 
 func _ready() -> void:
+	reset_zoom = zoom
 	Global.current_camera = self
 
 	var used :Rect2i =map.get_used_rect().grow(-1)
@@ -31,8 +43,36 @@ func _ready() -> void:
 	set_process(true)
 
 
+func check_out_player(time:float = 1)->void:
+	check_out(player_character.instance,time)
+
+
+func check_out(object:Node2D,time:float = 1)->void:
+	if_checking = true
+	target_global_position = object.position + check_out_offset
+
+	signal_timer.start(zoom_in_check_time)
+	check_out_timer.start(zoom_in_check_time + time)
+
+	if check_out_tween and check_out_tween.is_running():
+		check_out_tween.kill()
+
+	check_out_tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
+	check_out_tween.tween_property(self,"zoom",10 * Vector2.ONE,zoom_in_check_time)
+
+	check_out_tween.tween_interval(time)
+	check_out_tween.tween_property(self,"zoom",reset_zoom,.6)
+
+
+
 func _process(delta: float) -> void:
+	if if_checking:
+		check_out_process(delta)
 	shake_process(delta)
+
+
+func check_out_process(delta:float)->void:
+	global_position = global_position.lerp(target_global_position,1-exp(-delta * 5))
 
 
 # Shake with decreasing intensity while there's time remaining.
@@ -78,3 +118,12 @@ func shake(duration:float= .2, frequency:= 20, amplitude:= 20):
 	# Reset previous offset, if any.
 	set_offset(get_offset() - _last_offset)
 	_last_offset = Vector2(0, 0)
+
+
+func _on_check_out_timer_timeout() -> void:
+	position = Vector2.ZERO
+	if_checking = false
+
+
+func _on_signal_timer_timeout() -> void:
+	check_out_ready.emit()

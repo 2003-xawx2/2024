@@ -471,5 +471,6 @@ max_health = 5.0
 [connection signal="timeout" from="state_machine/walk/StopChangeMoveDirectionTimer" to="state_machine/walk" method="_on_stop_change_move_direction_timer_timeout"]
 [connection signal="timeout" from="state_machine/attack/StateChangeTimer" to="state_machine/attack" method="_on_state_change_timer_timeout"]
 [connection signal="timeout" from="state_machine/attack/StopChangeMoveDirectionTimer" to="state_machine/attack" method="_on_stop_change_move_direction_timer_timeout"]
+[connection signal="die_animation_finished" from="state_machine/die" to="." method="_on_die_die_animation_finished"]
 [connection signal="be_hit" from="Component/HitBox" to="." method="_on_hit_box_be_hit"]
 [connection signal="die" from="Component/HealthManager" to="." method="_on_health_manager_die"]

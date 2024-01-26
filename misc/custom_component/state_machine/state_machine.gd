@@ -43,13 +43,14 @@ func get_state(state_name:String)->basic_state:
 		return null
 
 
-func change_state(state_name:String)->void:
+func change_state(state_name:String)->bool:
 	var new_state:=get_state(state_name)
 	if current_state == new_state:
-		return
+		return false
 	current_state = new_state
 	current_state.process_mode = Node.PROCESS_MODE_ALWAYS
 	current_state.initialize()
+	return true
 
 
 #hit stop logic -------------------------------------------------------

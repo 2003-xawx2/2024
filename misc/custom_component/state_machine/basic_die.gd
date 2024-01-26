@@ -12,9 +12,9 @@ func _ready() -> void:
 
 
 func initialize()->void:
+	hit_collision.disabled = true
 	super()
 	print_debug("initialize DEAD!")
-	hit_collision.disabled = true
 	set_process(true)
 	set_physics_process(true)
 
@@ -37,7 +37,7 @@ func animation_call_back()->void:
 
 func quit()->void:
 	#character.process_mode = Node.PROCESS_MODE_INHERIT
-	hit_collision.disabled = false
+	#hit_collision.disabled = false
 	character.show()
 	super()
 

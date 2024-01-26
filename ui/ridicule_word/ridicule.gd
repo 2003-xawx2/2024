@@ -38,8 +38,6 @@ func hide_label()->void:
 
 	tween = create_tween().set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_CIRC)
 	tween.tween_property(label,"modulate:a",0,tween_time)
-	#label.text = ""
-
 
 
 func _on_auto_hide_timer_timeout() -> void:

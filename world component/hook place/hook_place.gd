@@ -44,3 +44,5 @@ func _physics_process(delta: float) -> void:
 
 	if pick_up_player():
 		pre_hook_interact_timer.stop()
+
+
