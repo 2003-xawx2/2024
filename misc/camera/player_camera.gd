@@ -5,7 +5,7 @@ class_name player_camera
 @onready var signal_timer: Timer = $SignalTimer
 
 @export var map:Node2D
-@export var zoom_in_check_time = 10
+@export var zoom_in_check_time = 7
 @export var check_out_offset:Vector2
 
 signal check_out_ready
@@ -67,8 +67,6 @@ func check_out(object:Node2D,time:float = 1)->void:
 
 
 func _process(delta: float) -> void:
-	if if_checking:
-		check_out_process(delta)
 	shake_process(delta)
 
 

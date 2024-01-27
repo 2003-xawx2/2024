@@ -2,10 +2,14 @@
 
 [ext_resource type="Script" path="res://world component/visible collision manager/visible_collision_manager.gd" id="1_f4v2q"]
 
-[node name="VisibleCollisionManager" type="Node2D"]
+[node name="VisibleCollisionManager" type="Area2D"]
+collision_layer = 0
+collision_mask = 32
 script = ExtResource("1_f4v2q")
 
 [node name="ChangeTimer" type="Timer" parent="."]
 one_shot = true
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="ChangeTimer" to="." method="_on_change_timer_timeout"]

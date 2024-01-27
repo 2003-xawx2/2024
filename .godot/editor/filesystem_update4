@@ -1,8 +1,14 @@
-res://world/main_world.tscn
+res://world/check_1_super_man/check_1_superman.tscn
 res://misc/global/transition/transition.gdshader
 res://entity/player/flash.gdshader
-res://entity/player/player.tscn
-res://world component/check point/check_point.tscn
 res://world component/visible collision manager/visible_collision_manager.tscn
-res://world/check_1_super_man/check_1_superman.tscn
-res://misc/camera/player_camera.gd
+res://world/check_1_super_man/super_man/superman.tscn
+res://world/check_1_super_man/super_man/superman.gd
+res://world/check_1_super_man/super_man/super_man_state/dash.gd
+res://world/check_1_super_man/super_man/super_man_state/hit.gd
+res://world/check_1_super_man/super_man/super_man_state/die.gd
+res://world/check_1_super_man/super_man/egg yolk bullet/egg_yolk_bullet.tscn
+res://world/check_1_super_man/super_man/egg yolk bullet/egg_yolk_bullet.gd
+res://world component/visible collision manager/visible_collision_manager.gd
+res://world/check_1_super_man/super_man/Head.gd
+res://world/check_1_super_man/super_man/super_man_state/show.gd

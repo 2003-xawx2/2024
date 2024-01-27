@@ -1,3 +1,6 @@
+res://world/check_1_super_man/super_man
+res://world/check_1_super_man/super_man/egg yolk bullet
+res://world/check_1_super_man/super_man/super_man_state
 res://world/check_3_barrel_cat
 res://world/check_2_lick_dog
 res://world/check_1_super_man
@@ -17,6 +20,3 @@ res://misc/camera
 res://entity/player
 res://
 res://misc/savings/
-res://misc/global/bgm_player
-res://misc/global/transition
-res://misc/global

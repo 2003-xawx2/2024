@@ -1,4 +1,4 @@
-extends Node2D
+extends Area2D
 
 enum State{
 	NoCollisionWithVisiual,
@@ -28,9 +28,9 @@ func _ready() -> void:
 func interact()->void:
 	change_timer.start(change_time)
 	if object_state == State.NoCollisionWithVisiual:
-		change_modulate(0)
+		change_modulate(0.1)
 	elif object_state == State.NoVisiualWithCollison:
-		change_modulate(1)
+		change_modulate(0.9)
 
 
 func change_modulate(target:float,duration:int = 1):
@@ -46,3 +46,11 @@ func _on_change_timer_timeout() -> void:
 		change_modulate(1)
 	elif object_state == State.NoVisiualWithCollison:
 		change_modulate(0)
+
+
+func _on_body_entered(body: Node2D) -> void:
+	interact()
+
+
+func _on_area_entered(area: Area2D) -> void:
+	interact()
