@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://61xd15vqdksg"
+path="res://.godot/imported/气流-快速划过2-LTT20070516.wav-4d38268559d306601281a63ba2cc6834.sample"
+
+[deps]
+
+source_file="res://world/check_1_super_man/super_man/super ani/audio/气流-快速划过2-LTT20070516.wav"
+dest_files=["res://.godot/imported/气流-快速划过2-LTT20070516.wav-4d38268559d306601281a63ba2cc6834.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

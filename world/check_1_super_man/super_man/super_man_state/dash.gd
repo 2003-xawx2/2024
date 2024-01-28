@@ -4,7 +4,7 @@ extends basic_state
 @onready var dash_particle: GPUParticles2D = $"../../Graphic/PlayerSprite/DashParticle"
 
 @export var dash_time :float = .5
-
+@export var random_talk:Array[String]
 var dash_direction:Vector2
 var target_velocity:Vector2
 
@@ -16,8 +16,9 @@ func _ready() -> void:
 
 func initialize()->void:
 	super()
+	character.ridicule.talk(random_talk.pick_random(),.5)
+	$RandomAudioPlayer.play_random()
 	dash_particle.emitting = true
-	character.ridicule.talk("超人所向披靡！",.1)
 	animation_player.play("dash")
 	dash_timer.start(dash_time)
 	dash_direction = character.mouse_direction

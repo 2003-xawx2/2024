@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwalbje50e5st"]
+
+[ext_resource type="FontFile" uid="uid://dcrwh8ptt2mhd" path="res://asset/ui/阿里妈妈刀隶体/AlimamaDaoLiTi.ttf" id="1_l76ai"]
+
+[sub_resource type="Animation" id="Animation_6i0ks"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(790, 1146)]
+}
+
+[sub_resource type="Animation" id="Animation_ky5rb"]
+resource_name = "ending"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(790, 1146), Vector2(790, -708)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_piu4s"]
+_data = {
+"RESET": SubResource("Animation_6i0ks"),
+"ending": SubResource("Animation_ky5rb")
+}
+
+[node name="Ending" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0823529, 0.0705882, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_piu4s")
+}
+autoplay = "ending"
+speed_scale = 0.1
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 790.0
+offset_top = 1146.0
+offset_right = 1130.0
+offset_bottom = 1815.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_l76ai")
+theme_override_font_sizes/font_size = 80
+text = "美术：
+asking
+芝麻
+不咕鸟
+
+程序：
+傅昊阳
+lmy_2004"
+horizontal_alignment = 1
+vertical_alignment = 1

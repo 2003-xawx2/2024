@@ -1,14 +1,33 @@
-res://world/check_1_super_man/check_1_superman.tscn
+res://world/check_1_super_man/super_man/superman.tscn
 res://misc/global/transition/transition.gdshader
 res://entity/player/flash.gdshader
-res://world component/visible collision manager/visible_collision_manager.tscn
-res://world/check_1_super_man/super_man/superman.tscn
+res://world/check_3_barrel_cat/barrel_cat/view.gdshader
+res://world/check_3_barrel_cat/check_3_barrel_cat.tscn
+res://world/check_1_super_man/check_1_superman.tscn
+res://misc/global/BigWorldMode/big_world_mode.tscn
+res://ui/ending/ending.tscn
+res://ui/title_sreen/title_screen.tscn
+res://misc/custom_component/random_audio_player/random_audio_player.tscn
+res://world/check_1_super_man/super_man/Head.gd
+res://misc/global/bgm_player/bgm_player.tscn
+res://misc/global/bgm_player/bgm_player.gd
+res://world/check_3_barrel_cat/spring/spring.tscn
+res://world/check_3_barrel_cat/spring/spring.gd
+res://world/check_3_barrel_cat/barrel_cat/barrel_cat.tscn
+res://world/check_3_barrel_cat/barrel_cat/barrel_cat.gd
+res://world/check_3_barrel_cat/check_3_barrel_cat.gd
+res://world component/yunnan mashroom/yunnan_mushroom.tscn
+res://misc/global/BigWorldMode/big_world_mode.gd
+res://world component/yunnan mashroom/yunnan_mushroom.gd
 res://world/check_1_super_man/super_man/superman.gd
-res://world/check_1_super_man/super_man/super_man_state/dash.gd
 res://world/check_1_super_man/super_man/super_man_state/hit.gd
 res://world/check_1_super_man/super_man/super_man_state/die.gd
-res://world/check_1_super_man/super_man/egg yolk bullet/egg_yolk_bullet.tscn
-res://world/check_1_super_man/super_man/egg yolk bullet/egg_yolk_bullet.gd
-res://world component/visible collision manager/visible_collision_manager.gd
-res://world/check_1_super_man/super_man/Head.gd
-res://world/check_1_super_man/super_man/super_man_state/show.gd
+res://world/check_1_super_man/super_man/super_man_state/dead_recover.gd
+res://world/check_1_super_man/super_man/super_man_state/dash.gd
+res://world/check_1_super_man/super_man/super_man_state/fall.gd
+res://world/check_1_super_man/super_man/super_man_state/walk.gd
+res://world/check_1_super_man/super_man/super_man_state/idle.gd
+res://world/check_1_super_man/super_man/super_man_state/jump.gd
+res://ui/hint/hint.gd
+res://ui/hint/hint.tscn
+res://ui/ridicule_word/ridicule.tscn

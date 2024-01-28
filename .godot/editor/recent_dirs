@@ -1,9 +1,18 @@
+res://ui
+res://ui/hint
+res://world/check_1_super_man
+res://world/check_3_barrel_cat/spring
+res://ui/ending
+res://world component/moving_platform
+res://asset/mouse
+res://misc/custom_component/state_machine
+res://world/check_3_barrel_cat
+res://world component/yunnan mashroom
+res://world/check_3_barrel_cat/barrel_cat
 res://world/check_1_super_man/super_man
 res://world/check_1_super_man/super_man/egg yolk bullet
 res://world/check_1_super_man/super_man/super_man_state
-res://world/check_3_barrel_cat
 res://world/check_2_lick_dog
-res://world/check_1_super_man
 res://world component/visible collision manager
 res://misc/custom_component/random_audio_player
 res://entity/player/player_state
@@ -11,12 +20,3 @@ res://world component/check point
 res://misc/global/BigWorldMode
 res://ui/ridicule_word
 res://world component/hook place new
-res://world component/hook place
-res://world
-res://ui/title_sreen
-res://entity/enemy/pig_enemy/state
-res://entity/enemy
-res://misc/camera
-res://entity/player
-res://
-res://misc/savings/

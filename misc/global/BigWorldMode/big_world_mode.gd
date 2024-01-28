@@ -8,6 +8,7 @@ extends CanvasLayer
 
 @export var slow_down_scale:= .1
 
+
 var labels : Array[Label]
 var tween:Tween
 
@@ -19,24 +20,26 @@ func _ready() -> void:
 
 
 
-func show_word_one(a:String)->void:
+func show_word_one(a:String,speed_scale:=1)->void:
 	change_modulate(1)
 	change_engine_time_scale(slow_down_scale)
 
 	top_label.text = a
-	await animation_player.animation_finished
+	animation_player.speed_scale  *= speed_scale
 	animation_player.play("One")
+	await animation_player.animation_finished
 
 	change_modulate(0)
 	change_engine_time_scale(1)
 
 
-func show_word_two(a:String,b:String)->void:
+func show_word_two(a:String,b:String,speed_scale:=1)->void:
 	change_modulate(1)
 	change_engine_time_scale(slow_down_scale)
 
 	top_label.text = a
 	middle_label.text = b
+	animation_player.speed_scale *= speed_scale
 	animation_player.play("Two")
 	await animation_player.animation_finished
 
@@ -44,13 +47,14 @@ func show_word_two(a:String,b:String)->void:
 	change_engine_time_scale(1)
 
 
-func show_word_three(a:String,b:String,c:String)->void:
+func show_word_three(a:String,b:String,c:String,speed_scale:float=1)->void:
 	change_modulate(1)
 	change_engine_time_scale(slow_down_scale)
 
 	top_label.text = a
 	middle_label.text = b
 	down_label.text = c
+	animation_player.speed_scale *= speed_scale
 	animation_player.play("Three")
 	await animation_player.animation_finished
 

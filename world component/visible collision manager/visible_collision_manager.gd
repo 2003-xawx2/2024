@@ -3,18 +3,33 @@ extends Area2D
 enum State{
 	NoCollisionWithVisiual,
 	NoVisiualWithCollison,
+	Normal,
 }
 
+@export var object_state:State:
+	set(value):
+		object_state=value
+		if !is_node_ready():
+			await ready
+		if object_state == State.NoCollisionWithVisiual:
+			change_modulate(1)
+			collision.disabled = true
+		elif object_state == State.NoVisiualWithCollison:
+			change_modulate(0)
+			collision.disabled = false
+		elif object_state == State.Normal:
+			change_modulate(1)
+			collision.disabled = false
+	get:
+		return object_state
 @onready var change_timer: Timer = $ChangeTimer
 
 @export var change_time:float = 4
 @export var collision:CollisionShape2D
 @export var manage_object:Node2D
-@export var object_state:State
 
 
 var tween:Tween
-
 
 func _ready() -> void:
 	if object_state == State.NoCollisionWithVisiual:
@@ -23,6 +38,10 @@ func _ready() -> void:
 	elif object_state == State.NoVisiualWithCollison:
 		change_modulate(0)
 		collision.disabled = false
+	elif object_state == State.Normal:
+		change_modulate(1)
+		collision.disabled = false
+
 
 
 func interact()->void:

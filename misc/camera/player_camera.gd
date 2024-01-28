@@ -49,7 +49,7 @@ func check_out_player(time:float = 1)->void:
 
 func check_out(object:Node2D,time:float = 1)->void:
 	if_checking = true
-	target_global_position = object.position + check_out_offset
+	target_global_position = object.global_position + check_out_offset
 
 	signal_timer.start(zoom_in_check_time - .1)
 	check_out_timer.start(zoom_in_check_time + time)

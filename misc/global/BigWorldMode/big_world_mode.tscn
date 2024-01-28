@@ -194,7 +194,7 @@ tracks/8/keys = {
 
 [sub_resource type="Animation" id="Animation_3f0qr"]
 resource_name = "Three"
-length = 1.7
+length = 3.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

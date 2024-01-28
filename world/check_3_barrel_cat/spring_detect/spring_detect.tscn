@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://yt8qa4tbpx7d"]
+
+[ext_resource type="Script" path="res://world/check_3_barrel_cat/spring_detect/spring_detect.gd" id="1_ehf87"]
+
+[node name="SpringDetect" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_ehf87")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

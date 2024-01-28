@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://egduu1drx3ry"
+path="res://.godot/imported/在雪中爆炸YS20070426.wav-2384d718158662e66fe3420ae5507cbd.sample"
+
+[deps]
+
+source_file="res://world/check_1_super_man/super_man/super ani/audio/在雪中爆炸YS20070426.wav"
+dest_files=["res://.godot/imported/在雪中爆炸YS20070426.wav-2384d718158662e66fe3420ae5507cbd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bp5rm6soff6cf"
+path="res://.godot/imported/xys被击倒2.wav-50c826febd383423e46933527c5de9ab.sample"
+
+[deps]
+
+source_file="res://world/check_1_super_man/super_man/super ani/audio/xys被击倒2.wav"
+dest_files=["res://.godot/imported/xys被击倒2.wav-50c826febd383423e46933527c5de9ab.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

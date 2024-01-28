@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://ddp82a7wqk4ab"]
+[gd_scene load_steps=16 format=3 uid="uid://ddp82a7wqk4ab"]
 
 [ext_resource type="Script" path="res://world/check_1_super_man/super_man/egg yolk bullet/egg_yolk_bullet.gd" id="1_4egta"]
-[ext_resource type="Texture2D" uid="uid://bcm2x2lwe8civ" path="res://asset/misc/particle/magic_05.png" id="1_u10ic"]
+[ext_resource type="Texture2D" uid="uid://l6rf743366yv" path="res://world/check_1_super_man/particle bullet/bullet.png" id="2_6ipn6"]
+[ext_resource type="Texture2D" uid="uid://dcov3ntn5fpwj" path="res://world/check_1_super_man/particle bullet/particle.png" id="3_6bjmb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_twi1g"]
 
@@ -23,7 +24,7 @@ damping_max = 70.0
 scale_min = 0.5
 scale_max = 0.9
 scale_curve = SubResource("CurveTexture_3t7wp")
-color = Color(1, 0.945098, 0.533333, 1)
+color = Color(1, 0.980392, 0.811765, 0.737255)
 hue_variation_min = -0.1
 hue_variation_max = 0.1
 
@@ -43,24 +44,9 @@ gravity = Vector3(0, 98, 0)
 scale_min = 0.5
 scale_max = 0.9
 scale_curve = SubResource("CurveTexture_fl45n")
-color = Color(1, 0.945098, 0.533333, 1)
+color = Color(1, 0.980392, 0.811765, 0.737255)
+hue_variation_min = -0.1
 hue_variation_max = 0.1
-
-[sub_resource type="Animation" id="Animation_5bkb8"]
-resource_name = "emit"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("EmitParticle:emitting")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
 
 [sub_resource type="Animation" id="Animation_88jjg"]
 length = 0.001
@@ -99,6 +85,22 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(2, 2)]
+}
+
+[sub_resource type="Animation" id="Animation_5bkb8"]
+resource_name = "emit"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EmitParticle:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_q3qxn"]
@@ -150,7 +152,7 @@ shape = SubResource("CircleShape2D_twi1g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
-texture = ExtResource("1_u10ic")
+texture = ExtResource("2_6ipn6")
 
 [node name="ContactGroundParticle" type="GPUParticles2D" parent="."]
 light_mask = 524289
@@ -158,7 +160,7 @@ rotation = -1.5708
 emitting = false
 amount = 24
 process_material = SubResource("ParticleProcessMaterial_nt3nh")
-texture = ExtResource("1_u10ic")
+texture = ExtResource("3_6bjmb")
 lifetime = 0.8
 explosiveness = 0.1
 randomness = 1.0
@@ -167,7 +169,7 @@ randomness = 1.0
 emitting = false
 amount = 20
 process_material = SubResource("ParticleProcessMaterial_glas3")
-texture = ExtResource("1_u10ic")
+texture = ExtResource("3_6bjmb")
 lifetime = 0.6
 explosiveness = 0.1
 randomness = 1.0
@@ -181,6 +183,7 @@ libraries = {
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
+visible = false
 shape = SubResource("CircleShape2D_6scdy")
 
 [connection signal="body_entered" from="DetectArea" to="." method="_on_detect_area_body_entered"]

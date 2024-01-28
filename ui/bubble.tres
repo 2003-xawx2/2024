@@ -1,0 +1,12 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://dgkyu6scdlycj"]
+
+[ext_resource type="Texture2D" uid="uid://db1mvvu10eins" path="res://asset/ui/道具指示文字背景黑快.png" id="1_fvya3"]
+
+[resource]
+texture = ExtResource("1_fvya3")
+texture_margin_left = 13.1441
+texture_margin_top = 11.8594
+texture_margin_right = 14.8995
+texture_margin_bottom = 12.8185
+region_rect = Rect2(1, 2, 199, 65)
+modulate_color = Color(1, 1, 1, 0.443137)

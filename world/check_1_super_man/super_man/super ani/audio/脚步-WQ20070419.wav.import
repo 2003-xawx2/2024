@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dj70efkusdp3"
+path="res://.godot/imported/脚步-WQ20070419.wav-a7a7fd089c3c091e880ae087121baf01.sample"
+
+[deps]
+
+source_file="res://world/check_1_super_man/super_man/super ani/audio/脚步-WQ20070419.wav"
+dest_files=["res://.godot/imported/脚步-WQ20070419.wav-a7a7fd089c3c091e880ae087121baf01.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

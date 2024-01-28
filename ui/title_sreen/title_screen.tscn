@@ -1,48 +1,65 @@
-[gd_scene load_steps=2 format=3 uid="uid://1js0c6vvvm3u"]
+[gd_scene load_steps=10 format=3 uid="uid://1js0c6vvvm3u"]
 
 [ext_resource type="Script" path="res://ui/title_sreen/title_screen.gd" id="1_26oat"]
+[ext_resource type="FontFile" uid="uid://dn753fmx2u0g4" path="res://asset/ui/HanYiQingZhouXing-Jian/AlimamaDaoLiTi.woff2" id="2_bkods"]
+[ext_resource type="StyleBox" uid="uid://dgkyu6scdlycj" path="res://ui/bubble.tres" id="2_d5h2u"]
+[ext_resource type="StyleBox" uid="uid://dpa7yvxlq043a" path="res://addons/phantom_camera/panel/viewfinder/deadzone_style_box.tres" id="3_o0twh"]
+[ext_resource type="Texture2D" uid="uid://diqf3k0qn64m2" path="res://ui/title_sreen/title.png" id="4_lik4h"]
+[ext_resource type="Texture2D" uid="uid://dedeiptkwbwa" path="res://ui/title_sreen/play.png" id="5_vpo15"]
+[ext_resource type="Texture2D" uid="uid://r2x1nixab8vs" path="res://ui/title_sreen/play_1.png" id="6_7fdd2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ucny"]
+texture = ExtResource("5_vpo15")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qfnov"]
+texture = ExtResource("6_7fdd2")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 
 [node name="TitleScreen" type="CanvasLayer"]
 script = ExtResource("1_26oat")
 
-[node name="Title" type="Label" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -193.0
-offset_top = -346.0
-offset_right = 193.0
-offset_bottom = -44.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 221
-text = "GGJ"
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="Buttoncontainer" type="VBoxContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -99.0
-offset_top = -23.0
-offset_right = 100.0
-offset_bottom = 219.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Start" type="Button" parent="Buttoncontainer"]
+[node name="Quit" type="Button" parent="Control"]
+custom_minimum_size = Vector2(2.08165e-12, 111.12)
 layout_mode = 2
+offset_left = 1681.0
+offset_top = 955.0
+offset_right = 1878.0
+offset_bottom = 1066.12
+theme_override_fonts/font = ExtResource("2_bkods")
 theme_override_font_sizes/font_size = 81
-text = "Start"
+theme_override_styles/normal = ExtResource("2_d5h2u")
+theme_override_styles/pressed = ExtResource("3_o0twh")
+text = "quit"
 
-[node name="Quit" type="Button" parent="Buttoncontainer"]
+[node name="Start" type="Button" parent="Control"]
+custom_minimum_size = Vector2(439.63, 431.76)
 layout_mode = 2
+offset_left = 242.0
+offset_top = 148.0
+offset_right = 681.63
+offset_bottom = 579.76
+theme_override_fonts/font = ExtResource("2_bkods")
 theme_override_font_sizes/font_size = 81
-text = "Quit
+theme_override_styles/normal = SubResource("StyleBoxTexture_5ucny")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qfnov")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qfnov")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_5ucny")
+theme_override_styles/focus = SubResource("StyleBoxTexture_5ucny")
+text = "
 "
 
-[connection signal="pressed" from="Buttoncontainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Buttoncontainer/Quit" to="." method="_on_quit_pressed"]
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(963, 554)
+texture = ExtResource("4_lik4h")
+
+[connection signal="pressed" from="Control/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Control/Start" to="." method="_on_start_pressed"]

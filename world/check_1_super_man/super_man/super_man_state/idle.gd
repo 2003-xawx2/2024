@@ -1,9 +1,11 @@
 extends basic_idle
 
 @onready var detect_wall_ray: RayCast2D = $"../../Graphic/DetectWallRay"
+@export var random_talk:Array[String]
 
 
 func initialize()->void:
+	character.ridicule.talk(random_talk.pick_random(),.2)
 	super()
 
 

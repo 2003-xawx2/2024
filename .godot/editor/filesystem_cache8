@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706315279
+::res://::1706407536
+default_bus_layout.tres::AudioBusLayout::5076252974689140266::1706404504::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1706172977::0::1::::<><>::
 ::res://addons/::1706266545
 ::res://addons/anim_player_refactor/::1702089908
@@ -143,7 +144,7 @@ softbody2d.svg::CompressedTexture2D::4050105470812322469::1706039370::1706188292
 softbody2d_rigidbody.gd::GDScript::-1::1706039370::0::1::::SoftBody2DRigidBody<>RigidBody2D<>::
 voronoi2d.gd::GDScript::-1::1706039370::0::1::::Voronoi2D<>Node2D<>res://addons/softbody2d/voronoi_icon.png::
 voronoi_icon.png::CompressedTexture2D::2577092346989972249::1706039370::1706188292::1::::<><>::
-::res://asset/::1706265114
+::res://asset/::1706345712
 main.mp3::AudioStreamMP3::404772758752895564::1703677326::1703677326::1::::<><>::
 ::res://asset/2D RPG/::1706018044
 ::res://asset/2D RPG/Assets/::1704293169
@@ -263,6 +264,8 @@ switch15.ogg::AudioStreamOggVorbis::3461790817071942179::1509125748::1706236351:
 ::res://asset/misc/::1706018044
 ::res://asset/misc/particle/::1706172977
 magic_05.png::CompressedTexture2D::2553252772211917045::1706172977::1704424176::1::::<><>::
+::res://asset/mouse/::1706346378
+aiming-export.png::CompressedTexture2D::2699850621772578681::1706346228::1706346378::1::::<><>::
 ::res://asset/Particle Pack/::1706317678
 circle_01.png::CompressedTexture2D::4315265205144217806::1573670150::1706236352::1::::<><>::
 circle_02.png::CompressedTexture2D::693014298556199317::1573670150::1706236352::1::::<><>::
@@ -373,17 +376,17 @@ INSTRUCTION.txt::TextFile::-1::1688543091::0::1::::<><>::
 LICENSE.txt::TextFile::-1::1688543091::0::1::::<><>::
 ::res://entity/::1706280328
 ::res://entity/enemy/::1704428807
-::res://entity/enemy/pig_enemy/::1706255328
+::res://entity/enemy/pig_enemy/::1706339219
 pig_enemy.gd::GDScript::-1::1706245985::0::1::::<>CharacterBody2D<>::
-pig_enemy.tscn::PackedScene::7165496893908698205::1706255328::0::1::::<><>::uid://dxalum71erdf1::::res://asset/2D RPG/Mob/Boar/Idle/Idle-Sheet-export-Back.png<>res://entity/enemy/pig_enemy/pig_enemy.gd<>uid://ctudlpnjglxag::::res://asset/2D RPG/Mob/Boar/Run/Run-Sheet-Black.png<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_component/state_machine/state_machine.gd<>res://entity/enemy/pig_enemy/state/idle.gd<>uid://cn3jtx5cpqv4s::::res://asset/2D RPG/Mob/Boar/Hit-Vanish/Hit-Sheet-Black.png<>uid://j2n7r7ahx386::::res://asset/2D RPG/Mob/Boar/Walk/Walk-Base-SheetBlack.png<>res://entity/enemy/pig_enemy/state/walk.gd<>res://entity/enemy/pig_enemy/state/attack.gd<>res://entity/enemy/pig_enemy/state/hit.gd<>res://entity/enemy/pig_enemy/state/die.gd<>res://misc/custom_node_script/hit_box.gd<>res://misc/custom_node_script/health_manager.gd
-::res://entity/enemy/pig_enemy/state/::1706018044
+pig_enemy.tscn::PackedScene::7165496893908698205::1706339219::0::1::::<><>::uid://dxalum71erdf1::::res://asset/2D RPG/Mob/Boar/Idle/Idle-Sheet-export-Back.png<>res://entity/enemy/pig_enemy/pig_enemy.gd<>uid://ctudlpnjglxag::::res://asset/2D RPG/Mob/Boar/Run/Run-Sheet-Black.png<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_component/state_machine/state_machine.gd<>res://entity/enemy/pig_enemy/state/idle.gd<>uid://cn3jtx5cpqv4s::::res://asset/2D RPG/Mob/Boar/Hit-Vanish/Hit-Sheet-Black.png<>uid://j2n7r7ahx386::::res://asset/2D RPG/Mob/Boar/Walk/Walk-Base-SheetBlack.png<>res://entity/enemy/pig_enemy/state/walk.gd<>res://entity/enemy/pig_enemy/state/attack.gd<>res://entity/enemy/pig_enemy/state/hit.gd<>res://entity/enemy/pig_enemy/state/die.gd<>res://misc/custom_node_script/hit_box.gd<>res://misc/custom_node_script/health_manager.gd
+::res://entity/enemy/pig_enemy/state/::1706339105
 attack.gd::GDScript::-1::1706018044::0::1::::<>basic_walk<>::
 die.gd::GDScript::-1::1704544889::0::1::::<>basic_die<>::
 hit.gd::GDScript::-1::1706018044::0::1::::<>basic_hit<>::
-idle.gd::GDScript::-1::1706018044::0::1::::<>basic_idle<>::
+idle.gd::GDScript::-1::1706339105::0::1::::<>basic_idle<>::
 walk.gd::GDScript::-1::1706018044::0::1::::<>basic_walk<>::
-::res://entity/player/::1706318662
-flash.gdshader::Shader::-1::1706318662::0::1::::<><>::
+::res://entity/player/::1706414310
+flash.gdshader::Shader::-1::1706414310::0::1::::<><>::
 player.gd::GDScript::-1::1706280470::0::1::::player_character<>CharacterBody2D<>::
 player.tscn::PackedScene::2475873906045465747::1706284430::0::1::::<><>::res://misc/custom_component/state_machine/state_machine.gd<>res://entity/player/player.gd<>res://entity/player/flash.gdshader<>uid://derwoni8cmuvi::::res://asset/2D RPG/Character/Idle/Idle-Sheet.png<>uid://b1vff44n1cdui::::res://asset/2D RPG/Character/Jump-End/Jump-End-Sheet.png<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://c3o6jvk4qljj7::::res://asset/2D RPG/Character/Attack-01/Attack-01-Sheet.png<>uid://dk54hkt3ardtg::::res://asset/2D RPG/Character/Run/Run-Sheet.png<>uid://3hsmo7jm1dwh::::res://asset/2D RPG/Character/Jump-Start/Jump-Start-Sheet.png<>res://entity/player/player_state/idle.gd<>res://entity/player/player_state/walk.gd<>res://entity/player/player_state/attack.gd<>uid://c3rydaywsn0yk::::res://asset/2D RPG/Character/Jumlp-All/Jump-All-Sheet.png<>res://entity/player/player_state/fall.gd<>res://entity/player/player_state/jump.gd<>uid://dp7l27y7k4eor::::res://asset/2D RPG/Character/Dead/Dead-Sheet.png<>res://entity/player/player_state/show.gd<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_node_script/hit_box.gd<>res://entity/player/player_state/hit.gd<>res://misc/custom_node_script/health_manager.gd<>res://entity/player/player_state/die.gd<>res://entity/player/player_state/swing.gd<>res://entity/player/player_state/dead_recover.gd<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn<>res://entity/player/RecoverInvincible.gd
 RecoverInvincible.gd::GDScript::-1::1706245201::0::1::::<>Node2D<>::
@@ -402,21 +405,21 @@ walk.gd::GDScript::-1::1706234916::0::1::::<>basic_walk<>::
 ::res://entity/player/player_state/myDocuments.cannedSearch/Resources/::1704352711
 ::res://entity/player/player_state/myDocuments.cannedSearch/_CodeSignature/::1704352711
 ::res://misc/::1706255259
-::res://misc/camera/::1706281712
-player_camera.gd::GDScript::-1::1706281712::0::1::::player_camera<>Camera2D<>::
+::res://misc/camera/::1706357973
+player_camera.gd::GDScript::-1::1706357973::0::1::::player_camera<>Camera2D<>::
 player_camera.tscn::PackedScene::965831700272774861::1706255869::0::1::::<><>::res://misc/camera/player_camera.gd
 ::res://misc/custom_component/::1706255272
-::res://misc/custom_component/random_audio_player/::1706255379
+::res://misc/custom_component/random_audio_player/::1706406868
 random_audio_player.gd::GDScript::-1::1706255379::0::1::::RandomAudioPlayer<>AudioStreamPlayer<>::
-random_audio_player.tscn::PackedScene::48017085078264258::1706255301::0::1::::<><>::res://misc/custom_component/random_audio_player/random_audio_player.gd
-::res://misc/custom_component/state_machine/::1706284390
+random_audio_player.tscn::PackedScene::48017085078264258::1706406868::0::1::::<><>::res://misc/custom_component/random_audio_player/random_audio_player.gd
+::res://misc/custom_component/state_machine/::1706320149
 air_state.gd::GDScript::-1::1706284390::0::1::::air_state<>basic_state<>::
 basic_die.gd::GDScript::-1::1706245339::0::1::::basic_die<>basic_state<>::
 basic_hit.gd::GDScript::-1::1706245757::0::1::::basic_hit<>basic_state<>::
 basic_idle.gd::GDScript::-1::1706018044::0::1::::basic_idle<>basic_state<>::
 basic_state.gd::GDScript::-1::1706245857::0::1::::basic_state<>Node<>::
 basic_walk.gd::GDScript::-1::1706234836::0::1::::basic_walk<>basic_state<>::
-state_machine.gd::GDScript::-1::1706245841::0::1::::state_machine<>Node<>::
+state_machine.gd::GDScript::-1::1706320149::0::1::::state_machine<>Node<>::
 ::res://misc/custom_manager/::1704414749
 timer_manager.gd::GDScript::-1::1704414749::0::1::::TimeManager<>Node<>::
 ::res://misc/custom_node_script/::1706245582
@@ -432,76 +435,194 @@ weigted_table.gd::GDScript::-1::1703677473::0::1::::WeightedTable<>RefCounted<>:
 flag_savings.gd::GDScript::-1::1703679059::0::1::::flag_savings<>Resource<>::
 ::res://misc/global/::1706192299
 global.gd::GDScript::-1::1706192299::0::1::::<>Node<>::
-::res://misc/global/bgm_player/::1703677335
-bgm_player.gd::GDScript::-1::1703677300::0::1::::<>AudioStreamPlayer2D<>::
-bgm_player.tscn::PackedScene::2366932920996654547::1703677335::0::1::::<><>::uid://f1csvyns0b7a::::res://asset/main.mp3<>res://misc/global/bgm_player/bgm_player.gd
-::res://misc/global/BigWorldMode/::1706255887
-big_world_mode.gd::GDScript::-1::1706190662::0::1::::<>CanvasLayer<>::
-big_world_mode.tscn::PackedScene::909188508760742160::1706255887::0::1::::<><>::res://misc/global/BigWorldMode/big_world_mode.gd<>uid://dcrwh8ptt2mhd::::res://asset/ui/阿里妈妈刀隶体/AlimamaDaoLiTi.ttf
-::res://misc/global/transition/::1706318662
+::res://misc/global/bgm_player/::1706407587
+bgm_player.gd::GDScript::-1::1706407518::0::1::::<>AudioStreamPlayer2D<>::
+bgm_player.tscn::PackedScene::2366932920996654547::1706407587::0::1::::<><>::uid://f1csvyns0b7a::::res://asset/main.mp3<>res://misc/global/bgm_player/bgm_player.gd
+::res://misc/global/BigWorldMode/::1706411116
+big_world_mode.gd::GDScript::-1::1706409771::0::1::::<>CanvasLayer<>::
+big_world_mode.tscn::PackedScene::909188508760742160::1706411116::0::1::::<><>::res://misc/global/BigWorldMode/big_world_mode.gd<>uid://dcrwh8ptt2mhd::::res://asset/ui/阿里妈妈刀隶体/AlimamaDaoLiTi.ttf
+::res://misc/global/transition/::1706414310
 transition.gd::GDScript::-1::1704672172::0::1::::<>CanvasLayer<>::
-transition.gdshader::Shader::-1::1706318662::0::1::::<><>::
-transition.tscn::PackedScene::8273020329504889910::1705929416::0::1::::<><>::res://misc/global/transition/transition.gd<>res://misc/global/transition/transition.gdshader
+transition.gdshader::Shader::-1::1706414310::0::1::::<><>::
+transition.tscn::PackedScene::8273020329504889910::1706325983::0::1::::<><>::res://misc/global/transition/transition.gd<>res://misc/global/transition/transition.gdshader
 ::res://misc/savings/::1703678370
 flags_savings.tres::Resource/Resource::5892052910940116118::1703678370::0::1::::<><>::res://misc/custom_resource_script/flag_savings.gd
 ::res://test_video/::1706281787
 ::res://test_video/test/::1706176943
 test.tscn::PackedScene::2066306443420226916::1706176943::0::1::::<><>::
-::res://ui/::1706180623
-::res://ui/ridicule_word/::1706249206
+::res://ui/::1706413850
+bubble.tres::StyleBoxTexture::7602533470278262261::1706413850::0::1::::<><>::uid://db1mvvu10eins::::res://asset/ui/道具指示文字背景黑快.png
+::res://ui/ending/::1706407594
+ending.tscn::PackedScene::8704086764116384223::1706407594::0::1::::<><>::uid://dcrwh8ptt2mhd::::res://asset/ui/阿里妈妈刀隶体/AlimamaDaoLiTi.ttf
+::res://ui/hint/::1706412240
+hint.tscn::PackedScene::1782486802825815761::1706412240::0::1::::<><>::res://ui/hint/hint.gd
+hint.gd::GDScript::-1::1706412240::0::1::::<>CanvasLayer<>::
+::res://ui/ridicule_word/::1706413837
 ridicule.gd::GDScript::-1::1706237441::0::1::::ridicule<>Node2D<>::
-ridicule.tscn::PackedScene::8865235318051014879::1706249206::0::1::::<><>::uid://db1mvvu10eins::::res://asset/ui/道具指示文字背景黑快.png<>res://ui/ridicule_word/ridicule.gd<>uid://dcrwh8ptt2mhd::::res://asset/ui/阿里妈妈刀隶体/AlimamaDaoLiTi.ttf
-::res://ui/title_sreen/::1704672357
-title_screen.gd::GDScript::-1::1704671935::0::1::::<>CanvasLayer<>::
-title_screen.tscn::PackedScene::1844627039011483092::1704672357::0::1::::<><>::res://ui/title_sreen/title_screen.gd
-::res://world/::1706318739
+ridicule.tscn::PackedScene::8865235318051014879::1706413837::0::1::::<><>::uid://db1mvvu10eins::::res://asset/ui/道具指示文字背景黑快.png<>res://ui/ridicule_word/ridicule.gd<>uid://dcrwh8ptt2mhd::::res://asset/ui/阿里妈妈刀隶体/AlimamaDaoLiTi.ttf
+::res://ui/title_sreen/::1706414317
+play.png::CompressedTexture2D::219013780320625632::1706413952::1706414318::1::::<><>::
+play_1.png::CompressedTexture2D::1250392158888400584::1706413987::1706414318::1::::<><>::
+title.png::CompressedTexture2D::7754156996040891439::1706361004::1706413784::1::::<><>::
+title_screen.gd::GDScript::-1::1706335648::0::1::::<>CanvasLayer<>::
+title_screen.tscn::PackedScene::1844627039011483092::1706414310::0::1::::<><>::res://ui/title_sreen/title_screen.gd<>uid://dn753fmx2u0g4::::res://asset/ui/HanYiQingZhouXing-Jian/AlimamaDaoLiTi.woff2<>uid://dgkyu6scdlycj::::res://ui/bubble.tres<>uid://dpa7yvxlq043a::::res://addons/phantom_camera/panel/viewfinder/deadzone_style_box.tres<>uid://diqf3k0qn64m2::::res://ui/title_sreen/title.png
+::res://world/::1706340203
 main_world.tscn::PackedScene::1326892517596037602::1706279676::0::1::::<><>::uid://bsef0m1feyvsl::::res://world component/hook place/hook_place.tscn<>uid://bbjljtogn8tuh::::res://entity/player/player.tscn<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn<>uid://dadaxmd5wikav::::res://entity/enemy/pig_enemy/pig_enemy.tscn<>uid://dxg53ewaxreom::::res://world component/check point/check_point.tscn<>res://misc/custom_manager/timer_manager.gd
-::res://world/check_1_super_man/::1706318739
-check_1_superman.tscn::PackedScene::2125385742206446048::1706318662::0::1::::<><>::uid://6o1nqnovlwle::::res://asset/2D RPG/Assets/Buildings.png<>uid://dxg53ewaxreom::::res://world component/check point/check_point.tscn<>uid://buj4jd6exbib3::::res://world component/visible collision manager/visible_collision_manager.tscn<>uid://bgj32yxxx6uc4::::res://asset/Particle Pack/window_01.png<>uid://bd2kcieo5qwgl::::res://world/check_1_super_man/super_man/superman.tscn<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn<>uid://dadaxmd5wikav::::res://entity/enemy/pig_enemy/pig_enemy.tscn<>res://misc/custom_manager/timer_manager.gd
-::res://world/check_1_super_man/super_man/::1706318751
+::res://world/check_1_super_man/::1706412446
+check_1_superman.tscn::PackedScene::2125385742206446048::1706412446::0::1::::<><>::uid://bianagvxkkp2::::res://world component/moving_platform/special_platform.tscn<>uid://bd2kcieo5qwgl::::res://world/check_1_super_man/super_man/superman.tscn<>uid://ck8qcn6qrk83c::::res://world/check_1_super_man/map/Sprite-0007.png<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn<>uid://co8ilb3n5dhyi::::res://world/check_1_super_man/map/Sprite-0008.png<>uid://dqn30ud0q5i1m::::res://world component/yunnan mashroom/yunnan_mushroom.tscn<>uid://b0285jxmaur5p::::res://world/check_1_super_man/map/Sprite-0010.png<>uid://dwbavswb2lap1::::res://world/check_1_super_man/spine.tscn<>res://misc/custom_manager/timer_manager.gd<>uid://buj4jd6exbib3::::res://world component/visible collision manager/visible_collision_manager.tscn<>uid://crh8o48vxb1v2::::res://world/check_1_super_man/map/Sprite-0011.png<>uid://dgsbcq1lg1c0p::::res://world/check_1_super_man/map/block.png<>uid://dxg53ewaxreom::::res://world component/check point/check_point.tscn<>uid://2wmmat24a8xr::::res://world/check_1_super_man/map/supermanBG-export.png<>uid://cvcvas3m8jp4m::::res://world/check_1_super_man/map/supermanBG-export2.png<>uid://8ytblsn0hhj4::::res://misc/global/bgm_player/bgm_player.tscn<>uid://cad65jke1sytf::::res://world/check_1_super_man/superman.mp3<>uid://0npkdt4cbii0::::res://ui/hint/hint.tscn
+spine.tscn::PackedScene::8705519470030027328::1706325983::0::1::::<><>::res://misc/custom_node_script/hurt_box.gd
+superman.mp3::AudioStreamMP3::4780970789616706459::1706407136::1706407482::1::::<><>::
+::res://world/check_1_super_man/map/::1706401727
+block.png::CompressedTexture2D::7617619082108499577::1706364362::1706400240::1::::<><>::
+Sprite-0007.png::CompressedTexture2D::5543830044565177182::1706346288::1706346951::1::::<><>::
+Sprite-0008.png::CompressedTexture2D::5824115120286464876::1706346326::1706346951::1::::<><>::
+Sprite-0009.png::CompressedTexture2D::2139847088026115111::1706347176::1706353520::1::::<><>::
+Sprite-0010.png::CompressedTexture2D::4198937717368649519::1706354646::1706354155::1::::<><>::
+Sprite-0011.png::CompressedTexture2D::5982532590527782565::1706353978::1706354155::1::::<><>::
+supermanBG-export2.png::CompressedTexture2D::6252211885405619962::1706366194::1706400240::1::::<><>::
+supermanBG-export.png::CompressedTexture2D::1941265152873078803::1706365960::1706400240::1::::<><>::
+::res://world/check_1_super_man/particle bullet/::1706330503
+bullet.png::CompressedTexture2D::837115835098160697::1706326658::1706330503::1::::<><>::
+particle.png::CompressedTexture2D::7329866798775438617::1706326674::1706330503::1::::<><>::
+::res://world/check_1_super_man/super_man/::1706411456
 flash.gdshader::Shader::-1::1706280319::0::1::::<><>::
-RecoverInvincible.gd::GDScript::-1::1706281546::0::1::::<>Node2D<>::
-Head.gd::GDScript::-1::1706316532::0::1::::<>Sprite2D<>::
-superman.gd::GDScript::-1::1706316394::0::1::::superman<>CharacterBody2D<>::
-superman.tscn::PackedScene::2653336582525145935::1706318410::0::1::::<><>::res://world/check_1_super_man/super_man/superman.gd<>res://world/check_1_super_man/super_man/flash.gdshader<>res://world/check_1_super_man/super_man/Head.gd<>uid://derwoni8cmuvi::::res://asset/2D RPG/Character/Idle/Idle-Sheet.png<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://c3o6jvk4qljj7::::res://asset/2D RPG/Character/Attack-01/Attack-01-Sheet.png<>uid://dp7l27y7k4eor::::res://asset/2D RPG/Character/Dead/Dead-Sheet.png<>uid://c3rydaywsn0yk::::res://asset/2D RPG/Character/Jumlp-All/Jump-All-Sheet.png<>uid://3hsmo7jm1dwh::::res://asset/2D RPG/Character/Jump-Start/Jump-Start-Sheet.png<>uid://b1vff44n1cdui::::res://asset/2D RPG/Character/Jump-End/Jump-End-Sheet.png<>uid://dk54hkt3ardtg::::res://asset/2D RPG/Character/Run/Run-Sheet.png<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_component/state_machine/state_machine.gd<>res://world/check_1_super_man/super_man/super_man_state/show.gd<>res://world/check_1_super_man/super_man/super_man_state/idle.gd<>res://world/check_1_super_man/super_man/super_man_state/walk.gd<>res://world/check_1_super_man/super_man/super_man_state/fall.gd<>res://world/check_1_super_man/super_man/super_man_state/jump.gd<>res://world/check_1_super_man/super_man/super_man_state/hit.gd<>res://world/check_1_super_man/super_man/super_man_state/dash.gd<>res://world/check_1_super_man/super_man/super_man_state/die.gd<>res://world/check_1_super_man/super_man/super_man_state/dead_recover.gd<>res://misc/custom_node_script/hit_box.gd<>res://misc/custom_node_script/health_manager.gd<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn<>res://world/check_1_super_man/super_man/RecoverInvincible.gd
-::res://world/check_1_super_man/super_man/egg yolk bullet/::1706318410
-egg_yolk_bullet.tscn::PackedScene::7402846175956151045::1706318410::0::1::::<><>::res://world/check_1_super_man/super_man/egg yolk bullet/egg_yolk_bullet.gd<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png
+Head.gd::GDScript::-1::1706406851::0::1::::<>Sprite2D<>::
+RecoverInvincible.gd::GDScript::-1::1706355336::0::1::::<>Node2D<>::
+superman.gd::GDScript::-1::1706410192::0::1::::superman<>CharacterBody2D<>::
+superman.tscn::PackedScene::2653336582525145935::1706411456::0::1::::<><>::res://world/check_1_super_man/super_man/superman.gd<>uid://kark66b2tipr::::res://world/check_1_super_man/super_man/super ani/head.png<>res://world/check_1_super_man/super_man/flash.gdshader<>res://world/check_1_super_man/super_man/Head.gd<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://cxcivjq3sxpvb::::res://world/check_1_super_man/super_man/super ani/audio/沉闷的击中mcx20060416.wav<>uid://xxflak30nvx0::::res://world/check_1_super_man/super_man/super ani/audio/沉闷的击中mcx20070416.wav.wav<>uid://crfb0go7nkwmj::::res://world/check_1_super_man/super_man/super ani/fly.png<>uid://iwhvpgkx6y8o::::res://world/check_1_super_man/super_man/super ani/dead.png<>uid://csk1afgulvufq::::res://world/check_1_super_man/super_man/super ani/fall.png<>uid://dc4pwk0g2w558::::res://world/check_1_super_man/super_man/super ani/idle-Sheet.png<>res://misc/custom_node_script/hurt_box.gd<>uid://ctnanwx2u1nim::::res://world/check_1_super_man/super_man/super ani/jump.png<>uid://ks2vlnd60r87::::res://world/check_1_super_man/super_man/super ani/run-Sheet.png<>res://misc/custom_component/state_machine/state_machine.gd<>uid://jw68u8y11bwd::::res://world/check_1_super_man/super_man/super ani/boom.png<>res://world/check_1_super_man/super_man/super_man_state/show.gd<>uid://clu3l4hphm04c::::res://world/check_1_super_man/super_man/super ani/fist.png<>res://world/check_1_super_man/super_man/super_man_state/idle.gd<>res://world/check_1_super_man/super_man/super_man_state/walk.gd<>res://world/check_1_super_man/super_man/super_man_state/fall.gd<>res://world/check_1_super_man/super_man/super_man_state/jump.gd<>res://world/check_1_super_man/super_man/super_man_state/hit.gd<>uid://dj70efkusdp3::::res://world/check_1_super_man/super_man/super ani/audio/脚步-WQ20070419.wav<>res://world/check_1_super_man/super_man/super_man_state/dash.gd<>uid://bi3c84gj6lufi::::res://world/check_1_super_man/super_man/super ani/audio/脚步声-xys20070511.wav<>res://world/check_1_super_man/super_man/super_man_state/die.gd<>res://world/check_1_super_man/super_man/super_man_state/dead_recover.gd<>uid://pquexrn0htrl::::res://world/check_1_super_man/super_man/super ani/audio/xys被击倒1.wav<>res://misc/custom_node_script/hit_box.gd<>res://misc/custom_node_script/health_manager.gd<>uid://bp5rm6soff6cf::::res://world/check_1_super_man/super_man/super ani/audio/xys被击倒2.wav<>uid://5tvawkcw4qjm::::res://world/check_1_super_man/super_man/super ani/audio/XS瞬间起身1.wav<>uid://2fff12w8632q::::res://world/check_1_super_man/super_man/super ani/audio/XS瞬间起身2.wav<>uid://by5acqd81f16r::::res://world/check_1_super_man/super_man/super ani/audio/xys被击倒3.wav<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn<>uid://xi3mskq0sk5::::res://misc/custom_component/random_audio_player/random_audio_player.tscn<>res://world/check_1_super_man/super_man/RecoverInvincible.gd<>uid://b4aa2n6mi4hjm::::res://world/check_1_super_man/super_man/super ani/audio/xys被击倒4.wav<>uid://dex0nrpvrr6om::::res://world/check_1_super_man/super_man/super ani/audio/佛光普照－xh20070516.wav<>uid://bmsifgpiml14j::::res://world/check_1_super_man/super_man/super ani/audio/XS死亡1.wav<>uid://dor4ggklvqwot::::res://world/check_1_super_man/super_man/super ani/audio/补血之光1－xh20070516.wav<>uid://dghax7ruobgts::::res://world/check_1_super_man/super_man/super ani/audio/XS死亡2.wav<>uid://d1byk4ps67uc1::::res://world/check_1_super_man/super_man/super ani/audio/补血之光－xh20070516.wav<>uid://sfo3xuoj01ck::::res://world/check_1_super_man/super_man/super ani/audio/气流-快速划过1-LTT20070516.wav<>uid://61xd15vqdksg::::res://world/check_1_super_man/super_man/super ani/audio/气流-快速划过2-LTT20070516.wav
+::res://world/check_1_super_man/super_man/egg yolk bullet/::1706331658
 egg_yolk_bullet.gd::GDScript::-1::1706317045::0::1::::<>RigidBody2D<>::
-::res://world/check_1_super_man/super_man/superman ani/::1706312879
-attack-Sheet.png::CompressedTexture2D::8849902045703393221::1706290078::1706318766::1::::<><>::
-fall-Sheet.png::CompressedTexture2D::435072820079193455::1706290100::1706318766::1::::<><>::
-idle-Sheet.png::CompressedTexture2D::1757168108446731409::1706290038::1706318766::1::::<><>::
-jump-Sheet.png::CompressedTexture2D::8670585468590276271::1706290130::1706318766::1::::<><>::
-run-Sheet.png::CompressedTexture2D::6444000623342063478::1706290162::1706318766::1::::<><>::
-::res://world/check_1_super_man/super_man/super_man_state/::1706317045
+egg_yolk_bullet.tscn::PackedScene::7402846175956151045::1706331658::0::1::::<><>::res://world/check_1_super_man/super_man/egg yolk bullet/egg_yolk_bullet.gd<>uid://l6rf743366yv::::res://world/check_1_super_man/particle bullet/bullet.png<>uid://dcov3ntn5fpwj::::res://world/check_1_super_man/particle bullet/particle.png
+::res://world/check_1_super_man/super_man/super ani/::1706403855
+attack.png::CompressedTexture2D::8167693233037285882::1706325860::1706326351::1::::<><>::
+boom.png::CompressedTexture2D::679058163877995811::1706367832::1706401824::1::::<><>::
+dead.png::CompressedTexture2D::607390377920358136::1706331822::1706332032::1::::<><>::
+fall.png::CompressedTexture2D::6058463245033144930::1706325818::1706326351::1::::<><>::
+fist.png::CompressedTexture2D::5587927456698341040::1706367724::1706401824::1::::<><>::
+fly.png::CompressedTexture2D::5976479298082527897::1706327366::1706327437::1::::<><>::
+head.png::CompressedTexture2D::702940159391467095::1706325934::1706326351::1::::<><>::
+idle-Sheet.png::CompressedTexture2D::7360457299743711989::1706326030::1706326351::1::::<><>::
+jump.png::CompressedTexture2D::6133290714931083264::1706325698::1706326351::1::::<><>::
+run-Sheet.png::CompressedTexture2D::740724694448142238::1706326046::1706326351::1::::<><>::
+::res://world/check_1_super_man/super_man/super ani/audio/::1706406677
+XS死亡1.wav::AudioStreamWAV::3266340610526371747::1373941298::1706405751::1::::<><>::
+XS死亡2.wav::AudioStreamWAV::7594888538382072280::1373941298::1706405751::1::::<><>::
+XS瞬间起身1.wav::AudioStreamWAV::2146164714399379206::1373941298::1706405859::1::::<><>::
+XS瞬间起身2.wav::AudioStreamWAV::1905734589292283166::1373941298::1706405859::1::::<><>::
+xys被击倒1.wav::AudioStreamWAV::1087085416589486017::1373941300::1706405211::1::::<><>::
+xys被击倒2.wav::AudioStreamWAV::3502239945962612733::1373941300::1706405211::1::::<><>::
+xys被击倒3.wav::AudioStreamWAV::4132888681757838271::1373941300::1706405211::1::::<><>::
+xys被击倒4.wav::AudioStreamWAV::4421946096881025154::1373941300::1706405211::1::::<><>::
+佛光普照－xh20070516.wav::AudioStreamWAV::7489040171161317596::1373941446::1706405326::1::::<><>::
+冲击波气流1－mcx20070509.wav::AudioStreamWAV::4564666638359362237::1373941532::1706405086::1::::<><>::
+冲击波气流－mcx20070509.wav::AudioStreamWAV::743906221328228502::1373941534::1706405086::1::::<><>::
+气流-快速划过1-LTT20070516.wav::AudioStreamWAV::1274622353965226702::1373941468::1706405606::1::::<><>::
+气流-快速划过2-LTT20070516.wav::AudioStreamWAV::2230931235526793034::1373941468::1706405606::1::::<><>::
+气流-快速发射-ltt20070426.wav::AudioStreamWAV::3832784905515908750::1373941468::1706405606::1::::<><>::
+气流-快速发射-带类似吼叫声音-ltt20070426.wav::AudioStreamWAV::9084241093159403198::1373941468::1706405606::1::::<><>::
+沉闷的击中mcx20060416.wav::AudioStreamWAV::6391837262907390943::1373941504::1706406677::1::::<><>::
+沉闷的击中mcx20070416.wav.wav::AudioStreamWAV::1662147337469086323::1373941504::1706406677::1::::<><>::
+脚步-WQ20070419.wav::AudioStreamWAV::231133737615999478::1373942794::1706405417::1::::<><>::
+脚步声-xys20070511.wav::AudioStreamWAV::3005915907992209898::1373942794::1706405417::1::::<><>::
+补血之光1－xh20070516.wav::AudioStreamWAV::8178772122501082103::1373941446::1706405326::1::::<><>::
+补血之光－xh20070516.wav::AudioStreamWAV::8987712976397414430::1373941446::1706405326::1::::<><>::
+::res://world/check_1_super_man/super_man/super_man_state/::1706411304
 attack.gd::GDScript::-1::1706280319::0::1::::<>basic_state<>::
-dash.gd::GDScript::-1::1706313864::0::1::::<>basic_state<>::
-dead_recover.gd::GDScript::-1::1706280319::0::1::::<>basic_state<>::
-die.gd::GDScript::-1::1706313107::0::1::::<>basic_die<>::
-fall.gd::GDScript::-1::1706281546::0::1::::<>air_state<>::
-hit.gd::GDScript::-1::1706317045::0::1::::<>basic_hit<>::
-idle.gd::GDScript::-1::1706281546::0::1::::<>basic_idle<>::
-jump.gd::GDScript::-1::1706284430::0::1::::<>air_state<>::
-show.gd::GDScript::-1::1706280319::0::1::::<>basic_state<>::
+dash.gd::GDScript::-1::1706411304::0::1::::<>basic_state<>::
+dead_recover.gd::GDScript::-1::1706410638::0::1::::<>basic_state<>::
+die.gd::GDScript::-1::1706410601::0::1::::<>basic_die<>::
+fall.gd::GDScript::-1::1706411304::0::1::::<>air_state<>::
+hit.gd::GDScript::-1::1706410591::0::1::::<>basic_hit<>::
+idle.gd::GDScript::-1::1706411089::0::1::::<>basic_idle<>::
+jump.gd::GDScript::-1::1706411304::0::1::::<>air_state<>::
+show.gd::GDScript::-1::1706318833::0::1::::<>basic_state<>::
 swing.gd::GDScript::-1::1706280319::0::1::::<>basic_state<>::
-walk.gd::GDScript::-1::1706284421::0::1::::<>basic_walk<>::
+walk.gd::GDScript::-1::1706411044::0::1::::<>basic_walk<>::
 ::res://world/check_1_super_man/super_man/super_man_state/myDocuments.cannedSearch/::1706280319
 ::res://world/check_1_super_man/super_man/super_man_state/myDocuments.cannedSearch/Resources/::1706280319
 ::res://world/check_1_super_man/super_man/super_man_state/myDocuments.cannedSearch/_CodeSignature/::1706280319
-::res://world/check_2_lick_dog/::1706280018
-check_2_lick_dog.tscn::PackedScene::3634405975583277441::1706280018::0::1::::<><>::
-::res://world/check_3_barrel_cat/::1706280040
-check_3_barrel_cat.tscn::PackedScene::9101497195897896399::1706280040::0::1::::<><>::
-::res://world component/::1706265408
-::res://world component/check point/::1706281548
-check_point.gd::GDScript::-1::1706191078::0::1::::CheckPoint<>Area2D<>::
-check_point.tscn::PackedScene::8787863477401244400::1706281548::0::1::::<><>::res://world component/check point/check_point.gd
+::res://world/check_2_lick_dog/::1706407482
+check_2_lick_dog.tscn::PackedScene::3634405975583277441::1706339756::0::1::::<><>::uid://cilplajvuv57s::::res://asset/2D RPG/Assets/Hive.png<>uid://buyx2i6r46nop::::res://world/check_2_lick_dog/player/lick_dog.tscn<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn<>uid://c6ssmpad04018::::res://world/check_2_lick_dog/objects/standing_board.tscn<>uid://huaepdw31eyi::::res://world/check_2_lick_dog/npc/npc.tscn<>uid://c0wwrnop0yrc::::res://world/check_2_lick_dog/hole/shit_hole.tscn
+cxk.mp3::AudioStreamMP3::2601027905281056512::1706407241::1706407482::1::::<><>::
+::res://world/check_2_lick_dog/asset/::1706338736
+carry.png::CompressedTexture2D::9170192335578731006::1706335614::1706338736::1::::<><>::
+encounter.png::CompressedTexture2D::6814338373937766903::1706335531::1706338736::1::::<><>::
+fall.png::CompressedTexture2D::5794772569673324070::1706329689::1706338736::1::::<><>::
+idle.PNG::CompressedTexture2D::8332875210428191811::1706328604::1706338736::1::::<><>::
+idol.png::CompressedTexture2D::1965491052543430470::1706335549::1706338735::1::::<><>::
+jump.png::CompressedTexture2D::5151312369151823315::1706329647::1706338736::1::::<><>::
+show time.PNG::CompressedTexture2D::6097143485015740791::1706328626::1706338736::1::::<><>::
+walk and carry.png::CompressedTexture2D::8643601402307987197::1706335630::1706338736::1::::<><>::
+walk.png::CompressedTexture2D::8808968538944438848::1706329621::1706338736::1::::<><>::
+::res://world/check_2_lick_dog/hole/::1706338391
+shit_hole.gd::GDScript::-1::1706331569::0::1::::<>Node2D<>::
+shit_hole.tscn::PackedScene::193363106070890844::1706338391::0::1::::<><>::res://world/check_2_lick_dog/hole/shit_hole.gd
+::res://world/check_2_lick_dog/npc/::1706339781
+idle.gd::GDScript::-1::1706339088::0::1::::<>basic_idle<>::
+npc.gd::GDScript::-1::1706339087::0::1::::<>CharacterBody2D<>::
+npc.tscn::PackedScene::532617397245731288::1706339781::0::1::::<><>::res://world/check_2_lick_dog/npc/npc.gd<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn<>uid://dxalum71erdf1::::res://asset/2D RPG/Mob/Boar/Idle/Idle-Sheet-export-Back.png<>uid://ctudlpnjglxag::::res://asset/2D RPG/Mob/Boar/Run/Run-Sheet-Black.png<>uid://j2n7r7ahx386::::res://asset/2D RPG/Mob/Boar/Walk/Walk-Base-SheetBlack.png<>res://world/check_2_lick_dog/npc/idle.gd<>res://world/check_2_lick_dog/npc/walk.gd<>res://misc/custom_component/state_machine/state_machine.gd
+walk.gd::GDScript::-1::1706339755::0::1::::<>basic_walk<>::
+::res://world/check_2_lick_dog/npc/beutiful_lady/::1706332115
+pig_enemy.gd::GDScript::-1::1706323257::0::1::::<>CharacterBody2D<>::
+pig_enemy.tscn::PackedScene::4092006446638078379::1706332115::0::1::::<><>::res://entity/enemy/pig_enemy/pig_enemy.gd<>uid://dxalum71erdf1::::res://asset/2D RPG/Mob/Boar/Idle/Idle-Sheet-export-Back.png<>uid://ctudlpnjglxag::::res://asset/2D RPG/Mob/Boar/Run/Run-Sheet-Black.png<>uid://cn3jtx5cpqv4s::::res://asset/2D RPG/Mob/Boar/Hit-Vanish/Hit-Sheet-Black.png<>uid://j2n7r7ahx386::::res://asset/2D RPG/Mob/Boar/Walk/Walk-Base-SheetBlack.png<>res://misc/custom_node_script/hurt_box.gd<>res://misc/custom_component/state_machine/state_machine.gd<>res://entity/enemy/pig_enemy/state/idle.gd<>res://entity/enemy/pig_enemy/state/walk.gd<>res://entity/enemy/pig_enemy/state/attack.gd<>res://entity/enemy/pig_enemy/state/hit.gd<>res://entity/enemy/pig_enemy/state/die.gd<>res://misc/custom_node_script/hit_box.gd<>res://misc/custom_node_script/health_manager.gd
+::res://world/check_2_lick_dog/npc/beutiful_lady/state/::1706323257
+attack.gd::GDScript::-1::1706323257::0::1::::<>basic_walk<>::
+die.gd::GDScript::-1::1706323257::0::1::::<>basic_die<>::
+hit.gd::GDScript::-1::1706323257::0::1::::<>basic_hit<>::
+idle.gd::GDScript::-1::1706323257::0::1::::<>basic_idle<>::
+walk.gd::GDScript::-1::1706323257::0::1::::<>basic_walk<>::
+::res://world/check_2_lick_dog/objects/::1706338391
+standing_board.gd::GDScript::-1::1706325727::0::1::::<>Node2D<>::
+standing_board.tscn::PackedScene::6986969443156073553::1706338391::0::1::::<><>::res://world/check_2_lick_dog/objects/standing_board.gd
+::res://world/check_2_lick_dog/player/::1706339756
+encounter.gd::GDScript::-1::1706337346::0::1::::<>basic_state<>::
+fall.gd::GDScript::-1::1706334360::0::1::::<>air_state<>::
+idle.gd::GDScript::-1::1706320567::0::1::::<>basic_idle<>::
+jump.gd::GDScript::-1::1706281948::0::1::::<>air_state<>::
+lick_dog.gd::GDScript::-1::1706338237::0::1::::lick_dog<>CharacterBody2D<>::
+lick_dog.tscn::PackedScene::3841187798708372167::1706339756::0::1::::<><>::res://entity/player/flash.gdshader<>res://world/check_2_lick_dog/player/lick_dog.gd<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://dqyricjtbc8s2::::res://world/check_2_lick_dog/asset/idle.PNG<>res://misc/custom_component/state_machine/state_machine.gd<>uid://cotbb7t0e4b55::::res://world/check_2_lick_dog/asset/fall.png<>res://world/check_2_lick_dog/player/show.gd<>res://world/check_2_lick_dog/player/idle.gd<>uid://dxreopdrvm721::::res://world/check_2_lick_dog/asset/walk.png<>uid://cfnlmkuekr0nn::::res://world/check_2_lick_dog/asset/jump.png<>res://world/check_2_lick_dog/player/walk.gd<>res://world/check_2_lick_dog/player/fall.gd<>uid://cs4rceel46cf4::::res://world/check_2_lick_dog/asset/show time.PNG<>uid://c4c6fl8xlc1x8::::res://world/check_2_lick_dog/asset/encounter.png<>res://world/check_2_lick_dog/player/jump.gd<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn<>res://world/check_2_lick_dog/player/encounter.gd
+show.gd::GDScript::-1::1706319987::0::1::::<>basic_state<>::
+walk.gd::GDScript::-1::1706339725::0::1::::<>basic_walk<>::
+::res://world/check_3_barrel_cat/::1706413746
+cat.mp3::AudioStreamMP3::5900889514361336511::1706407152::1706407482::1::::<><>::
+CatContainer.gd::GDScript::-1::1706399636::0::1::::<>Node2D<>::
+check_3_barrel_cat.gd::GDScript::-1::1706409488::0::1::::<>Node2D<>::
+check_3_barrel_cat.tscn::PackedScene::9101497195897896399::1706413746::0::1::::<><>::uid://da8ow6jvgdoa6::::res://world/check_3_barrel_cat/barrel_cat/barrel_cat.tscn<>res://world/check_3_barrel_cat/check_3_barrel_cat.gd<>uid://ct7jxoj7prp3i::::res://world/check_3_barrel_cat/酒桶猫asset/111.png<>res://world/check_3_barrel_cat/CatContainer.gd<>uid://n04dvxjs2y18::::res://misc/camera/player_camera.tscn<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn<>uid://bjju3mshvbcot::::res://world/check_3_barrel_cat/spring/spring.tscn<>uid://dqn30ud0q5i1m::::res://world component/yunnan mashroom/yunnan_mushroom.tscn<>uid://cdqvtlub3j104::::res://world/check_3_barrel_cat/酒桶猫asset/222.png<>uid://8ytblsn0hhj4::::res://misc/global/bgm_player/bgm_player.tscn<>uid://cqco12ei80b8b::::res://world/check_3_barrel_cat/cat.mp3<>uid://0npkdt4cbii0::::res://ui/hint/hint.tscn
+风铃3-LTT20070428.mp3::AudioStreamMP3::4342722474166494012::1373941278::1706408493::1::::<><>::
+::res://world/check_3_barrel_cat/barrel_cat/::1706414310
+barrel_cat.gd::GDScript::-1::1706409631::0::1::::<>RigidBody2D<>::
+barrel_cat.tscn::PackedScene::7228277485417304239::1706410156::0::1::::<><>::res://world/check_3_barrel_cat/barrel_cat/barrel_cat.gd<>uid://co4bik3k7ycpi::::res://world/check_3_barrel_cat/酒桶猫asset/CAT.png<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png<>uid://bwdnpu1aqa1gb::::res://world/check_3_barrel_cat/酒桶猫asset/animate- 副本-Sheet-Sheet.png<>uid://btosgs7pn1g04::::res://world/check_3_barrel_cat/酒桶猫asset/未标题-1.png<>uid://b24wafnspvf13::::res://world/check_3_barrel_cat/风铃3-LTT20070428.mp3
+view.gdshader::Shader::-1::1706414310::0::1::::<><>::
+::res://world/check_3_barrel_cat/spring/::1706409636
+spring.gd::GDScript::-1::1706408158::0::1::::<>Node2D<>::
+spring.tscn::PackedScene::3037964676739431215::1706409636::0::1::::<><>::uid://yt8qa4tbpx7d::::res://world/check_3_barrel_cat/spring_detect/spring_detect.tscn<>res://world/check_3_barrel_cat/spring/spring.gd<>uid://ct7jxoj7prp3i::::res://world/check_3_barrel_cat/酒桶猫asset/111.png<>uid://xi3mskq0sk5::::res://misc/custom_component/random_audio_player/random_audio_player.tscn<>uid://b65yj5nm6l1td::::res://asset/audio/switch4.ogg<>uid://d0gdiqc182rx4::::res://asset/audio/switch5.ogg<>uid://bs51hs06v4t2m::::res://asset/audio/switch6.ogg<>uid://coudmbv0dfsc7::::res://asset/audio/switch7.ogg<>uid://5cm3tym23snl::::res://asset/audio/switch8.ogg<>uid://btuxf181hykvd::::res://asset/audio/switch9.ogg<>uid://d0p2un6n5j8oh::::res://asset/audio/switch10.ogg<>uid://bexxyrm023pxo::::res://asset/audio/switch11.ogg<>uid://bxqbyh2rp2swp::::res://asset/audio/switch12.ogg<>uid://bf34yww3qro20::::res://asset/audio/switch13.ogg
+::res://world/check_3_barrel_cat/spring_detect/::1706362488
+spring_detect.gd::GDScript::-1::1706362488::0::1::::<>Area2D<>::
+spring_detect.tscn::PackedScene::1725787703768239303::1706323114::0::1::::<><>::res://world/check_3_barrel_cat/spring_detect/spring_detect.gd
+::res://world/check_3_barrel_cat/酒桶猫asset/::1706365371
+111.png::CompressedTexture2D::6173077761538247860::1706364145::1706364383::1::::<><>::
+222.png::CompressedTexture2D::5017747538033721855::1706360165::1706361540::1::::<><>::
+animate- 副本-Sheet-Sheet.png::CompressedTexture2D::3937585575459859637::1706336708::1706340277::1::::<><>::
+CAT.png::CompressedTexture2D::5815427705516482830::1706316483::1706331821::1::::<><>::
+round cat.png::CompressedTexture2D::4352778215657192409::1706365215::1706365371::1::::<><>::
+未命名 3-Sheet-Sheet.png::CompressedTexture2D::4985404036541803147::1706316398::1706331821::1::::<><>::
+未标题-1.png::CompressedTexture2D::3750014617559756295::1706337928::1706340277::1::::<><>::
+::res://world component/::1706348108
+::res://world component/check point/::1706399927
+check_point.gd::GDScript::-1::1706353803::0::1::::CheckPoint<>Area2D<>::
+check_point.tscn::PackedScene::8787863477401244400::1706399927::0::1::::<><>::res://world component/check point/check_point.gd<>uid://5qs77b2t7r16::::res://world/check_1_super_man/map/Sprite-0009.png<>uid://dykneo2waob8j::::res://ui/ridicule_word/ridicule.tscn
 ::res://world component/hook place/::1706238147
 hook_place.gd::GDScript::-1::1706238147::0::1::::HookPlace<>StaticBody2D<>::
 hook_place.tscn::PackedScene::3658426280683984995::1706177487::0::1::::<><>::res://world component/hook place/hook_place.gd<>res://misc/custom_node_script/dynamic_line.gd
 ::res://world component/hook place new/::1706177487
 hook_place_new.gd::GDScript::-1::1706176879::0::1::::HookPlaceNew<>StaticBody2D<>::
 hook_place_new.tscn::PackedScene::1269785162075900789::1706177487::0::1::::<><>::res://world component/hook place new/hook_place_new.gd
-::res://world component/visible collision manager/::1706318410
-visible_collision_manager.gd::GDScript::-1::1706318376::0::1::::<>Area2D<>::
-visible_collision_manager.tscn::PackedScene::3810554026847171606::1706318410::0::1::::<><>::res://world component/visible collision manager/visible_collision_manager.gd
+::res://world component/moving_platform/::1706360596
+special_platform.gd::GDScript::-1::1706356169::0::1::::<>StaticBody2D<>::
+special_platform.tscn::PackedScene::86727091245385505::1706360596::0::1::::<><>::res://world component/moving_platform/special_platform.gd<>uid://buj4jd6exbib3::::res://world component/visible collision manager/visible_collision_manager.tscn
+::res://world component/visible collision manager/::1706360596
+visible_collision_manager.gd::GDScript::-1::1706356141::0::1::::<>Area2D<>::
+visible_collision_manager.tscn::PackedScene::3810554026847171606::1706360596::0::1::::<><>::res://world component/visible collision manager/visible_collision_manager.gd
+::res://world component/yunnan mashroom/::1706410156
+yunnan_mushroom.gd::GDScript::-1::1706409997::0::1::::<>Area2D<>::
+yunnan_mushroom.tscn::PackedScene::8310866236995554160::1706410156::0::1::::<><>::res://world component/yunnan mashroom/yunnan_mushroom.gd<>uid://bcm2x2lwe8civ::::res://asset/misc/particle/magic_05.png

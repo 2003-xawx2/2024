@@ -2,10 +2,13 @@ extends basic_state
 
 
 var tween:Tween
+@export var random_talk:Array[String]
 
 
 func initialize()->void:
 	super()
+	character.ridicule.talk(random_talk.pick_random(),1)
+	$RandomAudioPlayer.play_random()
 	character.died = false
 	character.process_mode = Node.PROCESS_MODE_INHERIT
 

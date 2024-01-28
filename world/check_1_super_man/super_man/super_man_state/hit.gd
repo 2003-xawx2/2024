@@ -1,5 +1,7 @@
 extends basic_hit
 
+@export var random_talk:Array[String]
+
 
 func _ready() -> void:
 	super()
@@ -7,7 +9,8 @@ func _ready() -> void:
 
 func initialize()->void:
 	super()
-	character.ridicule.talk("难受～",1)
+	character.ridicule.talk(random_talk.pick_random(),1)
+	$RandomAudioPlayer.play_random()
 	Global.hit_stop(.15,.3)
 	Global.current_camera.shake(.1,200,10)
 

@@ -1,0 +1,122 @@
+[gd_scene load_steps=20 format=3 uid="uid://bjju3mshvbcot"]
+
+[ext_resource type="PackedScene" uid="uid://yt8qa4tbpx7d" path="res://world/check_3_barrel_cat/spring_detect/spring_detect.tscn" id="1_5ieuf"]
+[ext_resource type="Script" path="res://world/check_3_barrel_cat/spring/spring.gd" id="1_66rbc"]
+[ext_resource type="Texture2D" uid="uid://ct7jxoj7prp3i" path="res://world/check_3_barrel_cat/酒桶猫asset/111.png" id="2_xvkr7"]
+[ext_resource type="PackedScene" uid="uid://xi3mskq0sk5" path="res://misc/custom_component/random_audio_player/random_audio_player.tscn" id="4_av0f7"]
+[ext_resource type="AudioStream" uid="uid://b65yj5nm6l1td" path="res://asset/audio/switch4.ogg" id="5_p15hf"]
+[ext_resource type="AudioStream" uid="uid://d0gdiqc182rx4" path="res://asset/audio/switch5.ogg" id="6_j1s12"]
+[ext_resource type="AudioStream" uid="uid://bs51hs06v4t2m" path="res://asset/audio/switch6.ogg" id="7_1j81m"]
+[ext_resource type="AudioStream" uid="uid://coudmbv0dfsc7" path="res://asset/audio/switch7.ogg" id="8_egb1d"]
+[ext_resource type="AudioStream" uid="uid://5cm3tym23snl" path="res://asset/audio/switch8.ogg" id="9_afb7d"]
+[ext_resource type="AudioStream" uid="uid://btuxf181hykvd" path="res://asset/audio/switch9.ogg" id="10_mckj1"]
+[ext_resource type="AudioStream" uid="uid://d0p2un6n5j8oh" path="res://asset/audio/switch10.ogg" id="11_hiu3q"]
+[ext_resource type="AudioStream" uid="uid://bexxyrm023pxo" path="res://asset/audio/switch11.ogg" id="12_u1gln"]
+[ext_resource type="AudioStream" uid="uid://bxqbyh2rp2swp" path="res://asset/audio/switch12.ogg" id="13_uhyih"]
+[ext_resource type="AudioStream" uid="uid://bf34yww3qro20" path="res://asset/audio/switch13.ogg" id="14_1qxru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o68ho"]
+size = Vector2(314, 118)
+
+[sub_resource type="Animation" id="Animation_ngkhj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -40)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(235.214, 82.0522, 31.4855, 11.4861)]
+}
+
+[sub_resource type="Animation" id="Animation_0v26s"]
+resource_name = "bounce"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Rect2(235.134, 81.8394, 32.1611, 11.4861), Rect2(139.215, 60.9712, 32.026, 16.0806), Rect2(235.134, 81.8394, 32.1611, 11.4861)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(5, -35), Vector2(0, -60), Vector2(5, -35)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j31k2"]
+_data = {
+"RESET": SubResource("Animation_ngkhj"),
+"bounce": SubResource("Animation_0v26s")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nf0ww"]
+size = Vector2(320, 37)
+
+[node name="Spring" type="Node2D"]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_66rbc")
+
+[node name="SpringDetect" parent="." node_paths=PackedStringArray("force_direction") instance=ExtResource("1_5ieuf")]
+position = Vector2(0, -33.8667)
+force_direction = NodePath("../Marker2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpringDetect"]
+position = Vector2(1, -4)
+shape = SubResource("RectangleShape2D_o68ho")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -190.867)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -40)
+scale = Vector2(10, 10)
+texture = ExtResource("2_xvkr7")
+region_enabled = true
+region_rect = Rect2(235.214, 82.0522, 31.4855, 11.4861)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_j31k2")
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, -33.8667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 34.5)
+shape = SubResource("RectangleShape2D_nf0ww")
+
+[node name="RandomAudioPlayer" parent="." instance=ExtResource("4_av0f7")]
+stream_array = Array[AudioStream]([ExtResource("5_p15hf"), ExtResource("6_j1s12"), ExtResource("7_1j81m"), ExtResource("8_egb1d"), ExtResource("9_afb7d"), ExtResource("10_mckj1"), ExtResource("11_hiu3q"), ExtResource("12_u1gln"), ExtResource("13_uhyih"), ExtResource("14_1qxru")])
+
+[connection signal="bounce" from="SpringDetect" to="." method="_on_spring_detect_bounce"]

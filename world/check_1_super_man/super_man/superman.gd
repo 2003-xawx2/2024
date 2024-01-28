@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name superman
 
 @onready var animation_player: AnimationPlayer = $Graphic/AnimationPlayer
-@onready var state_factory: state_machine = $state_machine
+@onready var state_factory:state_machine= $state_machine
 @onready var health_manager: HealthManager = $Component/HealthManager
 @onready var hit_box: HitBox = $Component/HitBox
 @onready var hit: Node = $state_machine/hit
@@ -30,23 +30,35 @@ var mouse_direction:Vector2
 
 
 func _ready() -> void:
+	animation_player.play("idle")
 	instance = self
 	Global.player_born_position = global_position
-	#state_factory.change_state("show")
-	state_factory.change_state("idle")
+	state_factory.change_state("show")
+	#state_factory.change_state("idle")
 
 
 func _process(delta: float) -> void:
-	update_mouse_direction_normalized()
+	update_mouse_direction_normalized(delta)
 	update_dash()
 	flip_on_velocity()
 
 
-func update_mouse_direction_normalized()->void:
+func update_mouse_direction_normalized(delta:float)->void:
 	var mouse_position = head_position_marker.get_local_mouse_position()
 	mouse_direction = mouse_position.normalized()
-	head.rotation = mouse_direction.angle()
 
+	var target_rotation:float
+
+	if mouse_direction.dot(Vector2.RIGHT)> 0 :
+		head.scale.x = 1
+		target_rotation = clamp(mouse_direction.angle(),-PI/2,PI/2)
+	else:
+		target_rotation = clamp(Vector2(-mouse_direction.x,-mouse_direction.y)\
+		.angle(),-PI/2,PI/2)
+		head.scale.x = -1
+
+
+	head.rotation = lerp_angle(head.rotation,target_rotation,1-exp(-delta * 4))
 
 func update_dash()->void:
 	if is_on_floor() == true:
@@ -74,7 +86,6 @@ func recover_from_die():
 	health_manager.reset()
 	hit.died = false
 	died = false
-
 
 #region handle input
 
@@ -141,5 +152,6 @@ func _on_hurt_box_hurt() -> void:
 
 #endregion
 
-
+func shake()->void:
+	Global.current_camera.shake()
 

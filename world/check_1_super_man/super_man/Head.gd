@@ -5,7 +5,9 @@ const EGG_YOLK_BULLET = preload("res://world/check_1_super_man/super_man/egg yol
 
 @onready var super_man: superman = $"../.."
 @onready var attack_timer: Timer = $AttackTimer
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
+@export var bullet_emit_position:Marker2D
 @export var attack_interval:= .3
 
 
@@ -15,12 +17,15 @@ func _on_super_man_attack(flag: bool) -> void:
 		attack_timer.start(attack_interval)
 	else:
 		attack_timer.stop()
+		animation_player.stop()
 
 
 func spawn_bullet()->void:
+	$RandomAudioPlayer.play_random()
+	animation_player.play("attack")
 	var egg := EGG_YOLK_BULLET.instantiate()
 	super_man.get_parent().add_child(egg)
-	egg.global_position = global_position
+	egg.global_position = bullet_emit_position.global_position
 	egg.emit(super_man.mouse_direction)
 
 

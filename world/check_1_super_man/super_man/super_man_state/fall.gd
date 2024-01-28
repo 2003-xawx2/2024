@@ -3,7 +3,7 @@ extends air_state
 @onready var pre_input_jump_timer: Timer = $PreInputJumpTimer
 @onready var coyote_timer: Timer = $CoyoteTimer
 @onready var fall_detecte_enemy_ray: RayCast2D = $"../../Graphic/FallDetecteEnemyRay"
-
+@export var random_talk:Array[String]
 
 var is_landing:bool = false
 var is_character_on_floor:=false
@@ -16,11 +16,12 @@ func _ready() -> void:
 
 func initialize()->void:
 	super()
+	character.ridicule.talk(random_talk.pick_random(),.1)
 	is_landing = false
 	is_character_on_floor = false
 	animation_player.play("fall")
 	animation_player.animation_finished.connect(func(animation:String):
-		if animation != "land" or !is_work:
+		if animation != "fall" or !is_work:
 			return
 		if character.get_input_movement()==Vector2.ZERO:
 			change_state("idle")
@@ -52,9 +53,6 @@ func _process(delta: float) -> void:
 			change_state("jump")
 	elif fall_detecte_enemy_ray.is_colliding():
 		change_state("jump")
-	elif is_character_on_floor and !is_landing:
-		is_landing = true
-		animation_player.play("land")
 
 
 

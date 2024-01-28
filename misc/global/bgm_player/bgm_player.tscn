@@ -6,6 +6,7 @@
 [node name="BgmPlayer" type="AudioStreamPlayer2D"]
 stream = ExtResource("1_glknv")
 autoplay = true
+bus = &"music"
 script = ExtResource("1_rccw1")
 
 [connection signal="finished" from="." to="." method="_on_finished"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2oqeg4gsko51"
+path="res://.godot/imported/气流-快速发射-带类似吼叫声音-ltt20070426.wav-988a361270ef5d4eca740869ce51772f.sample"
+
+[deps]
+
+source_file="res://world/check_1_super_man/super_man/super ani/audio/气流-快速发射-带类似吼叫声音-ltt20070426.wav"
+dest_files=["res://.godot/imported/气流-快速发射-带类似吼叫声音-ltt20070426.wav-988a361270ef5d4eca740869ce51772f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -12,9 +12,10 @@ var temp_jump_frames:int
 
 func initialize()->void:
 	super()
+	$RandomAudioPlayer.play_random()
 	temp_jump_frames = jump_frames
 	animation_player.play("jump")
-	character.ridicule.talk(random_talk.pick_random())
+	character.ridicule.talk(random_talk.pick_random(),.4)
 
 
 func quit()->void:
